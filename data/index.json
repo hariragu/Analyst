@@ -5,6 +5,15 @@
     "framework": "Vishal Khandelwal · safalniveshak.com",
     "owner": "hariragu"
   },
+  "screens": [
+    {
+      "id": "india-value-2026-05",
+      "title": "India · Value & Quality · May 2026",
+      "market": "India (NSE)",
+      "asOf": "2026-05-15",
+      "pickCount": 10
+    }
+  ],
   "stocks": [
     {
       "ticker": "UBER",
@@ -14,6 +23,7 @@
       "logoText": "U",
       "logoFrom": "#7c3aed",
       "logoTo": "#22d3ee",
+      "status": "analyzed",
       "rating": "HOLD",
       "ratingColor": "warn",
       "price": 74.69,
@@ -26,6 +36,146 @@
       "buyBelow": 65,
       "loadBelow": 55,
       "trimAbove": 120
+    },
+    {
+      "ticker": "HDFCBANK",
+      "name": "HDFC Bank Ltd.",
+      "exchange": "NSE",
+      "sector": "Banks · Private",
+      "logoText": "H",
+      "logoFrom": "#1e3a8a",
+      "logoTo": "#06b6d4",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 1,
+      "thesis": "Best private bank — best CASA, lowest credit costs, deepest distribution.",
+      "valueAngle": "~2.5× P/B vs historical 3.5×; merger overhang clearing."
+    },
+    {
+      "ticker": "SBIN",
+      "name": "State Bank of India",
+      "exchange": "NSE",
+      "sector": "Banks · PSU",
+      "logoText": "S",
+      "logoFrom": "#1e40af",
+      "logoTo": "#0ea5e9",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 2,
+      "thesis": "India's largest bank — ROA 1%+, ROE 16–18%, deep PSU value.",
+      "valueAngle": "~1.4–1.6× P/B adj for subsidiaries; classic PSU-bank value."
+    },
+    {
+      "ticker": "TCS",
+      "name": "Tata Consultancy Services",
+      "exchange": "NSE",
+      "sector": "IT Services",
+      "logoText": "T",
+      "logoFrom": "#1c2752",
+      "logoTo": "#4338ca",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 3,
+      "thesis": "IT cash factory — $30B+ rev, ~50% ROE, near-100% FCF conversion.",
+      "valueAngle": "~22× vs historical 28–30×; AI cannibalisation fear is overdone."
+    },
+    {
+      "ticker": "ITC",
+      "name": "ITC Ltd.",
+      "exchange": "NSE",
+      "sector": "FMCG · Tobacco · Hotels",
+      "logoText": "I",
+      "logoFrom": "#facc15",
+      "logoTo": "#f59e0b",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 4,
+      "thesis": "Tobacco cash machine funding FMCG scale-up; hotels demerged.",
+      "valueAngle": "~25× P/E + 3.5% dividend yield; ROCE 35%+."
+    },
+    {
+      "ticker": "ASIANPAINT",
+      "name": "Asian Paints Ltd.",
+      "exchange": "NSE",
+      "sector": "Decorative Paints",
+      "logoText": "A",
+      "logoFrom": "#d50032",
+      "logoTo": "#ef4444",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 5,
+      "thesis": "#1 paints (~50% share) with the most-feared dealer network in consumer India.",
+      "valueAngle": "De-rated ~35–40% on Birla Opus fears; ~50× vs historical 65–70×."
+    },
+    {
+      "ticker": "BAJAJ-AUTO",
+      "name": "Bajaj Auto Ltd.",
+      "exchange": "NSE",
+      "sector": "Auto · 2W/3W",
+      "logoText": "B",
+      "logoFrom": "#003478",
+      "logoTo": "#1e40af",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 6,
+      "thesis": "2W/3W leader with most geo-diversified franchise in Indian auto (50%+ exports).",
+      "valueAngle": "~22× earnings, ₹15,000Cr net cash, EV ramping profitably."
+    },
+    {
+      "ticker": "LT",
+      "name": "Larsen & Toubro Ltd.",
+      "exchange": "NSE",
+      "sector": "Engineering · Defense · Infra",
+      "logoText": "L",
+      "logoFrom": "#00853e",
+      "logoTo": "#16a34a",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 7,
+      "thesis": "Engineering champion — ₹5L Cr order book; defense + Middle East EPC.",
+      "valueAngle": "Core-EPC at ~22× ex IT/financial subs; ME orderbook re-acceleration."
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "name": "Sun Pharmaceutical Industries",
+      "exchange": "NSE",
+      "sector": "Pharma · Specialty + Generics",
+      "logoText": "S",
+      "logoFrom": "#f59e0b",
+      "logoTo": "#ea580c",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 8,
+      "thesis": "#1 India pharma; specialty (Ilumya, Cequa, Winlevi) scaling.",
+      "valueAngle": "~28× earnings; market under-weights specialty earnings durability."
+    },
+    {
+      "ticker": "COALINDIA",
+      "name": "Coal India Ltd.",
+      "exchange": "NSE",
+      "sector": "Mining · PSU · Energy",
+      "logoText": "C",
+      "logoFrom": "#1f2937",
+      "logoTo": "#374151",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 9,
+      "thesis": "Coal monopoly (~80% production); ₹100,000Cr+ cash; near-zero debt.",
+      "valueAngle": "~7× P/E + 7–8% dividend yield; transition optionality free."
+    },
+    {
+      "ticker": "MARUTI",
+      "name": "Maruti Suzuki India Ltd.",
+      "exchange": "NSE",
+      "sector": "Auto · Passenger Vehicles",
+      "logoText": "M",
+      "logoFrom": "#0c4da2",
+      "logoTo": "#2563eb",
+      "status": "screened",
+      "screenId": "india-value-2026-05",
+      "priorityRank": 10,
+      "thesis": "PV leader (~40% share); deepest distribution; Suzuki tech parent.",
+      "valueAngle": "~25× earnings; SUV refresh + export ramp under-appreciated; net cash ₹50,000Cr+."
     }
   ]
 }

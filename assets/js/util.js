@@ -1,11 +1,42 @@
-// Lightweight inline-markdown renderer for **bold** and _italic_.
+// Lightweight inline-markdown renderer for **bold**, _italic_, and [^source-id] citations.
 // Safe: HTML-escapes first, then re-applies markup.
+
+let _sourcesMap = null;
+
+// Register the sources list for the current page so md() can resolve citations.
+// Pass null to clear.
+export function setSources(sources){
+  if(!sources || !Array.isArray(sources)){
+    _sourcesMap = null;
+    return;
+  }
+  _sourcesMap = Object.fromEntries(
+    sources.map((s, i) => [s.id, { ...s, n: i + 1 }])
+  );
+}
+
+export function getSources(){ return _sourcesMap; }
+
+function escapeAttr(s){ return String(s||'').replace(/"/g,'&quot;').replace(/</g,'&lt;'); }
+
 export function md(text){
   if(text == null) return '';
   let s = String(text)
     .replace(/&/g,'&amp;')
     .replace(/</g,'&lt;')
     .replace(/>/g,'&gt;');
+
+  // Inline citations: [^source-id] -> superscript link to #src-source-id
+  s = s.replace(/\[\^([A-Za-z0-9_\-]+)\]/g, (_, id) => {
+    const src = _sourcesMap && _sourcesMap[id];
+    if(!src){
+      return `<sup class="cite cite-missing" title="Source not found: ${escapeAttr(id)}">[?]</sup>`;
+    }
+    const label = src.n;
+    const title = escapeAttr(`${src.type ? src.type + ' · ' : ''}${src.title}${src.date ? ' · ' + src.date : ''}`);
+    return `<sup class="cite"><a href="#src-${escapeAttr(id)}" title="${title}" data-cite="${escapeAttr(id)}">${label}</a></sup>`;
+  });
+
   s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
   s = s.replace(/_(.+?)_/g, '<em>$1</em>');
   return s;

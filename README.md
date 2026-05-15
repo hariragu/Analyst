@@ -14,14 +14,19 @@ A scalable, data-driven equity-analysis site built around Vishal Khandelwal's [1
 ├── stock.html                # Generic analysis viewer (reads ?ticker=XXX)
 ├── data/
 │   ├── index.json            # Master list of covered tickers (drives the picker)
-│   └── stocks/
-│       └── UBER.json         # One file per company — drives the full analysis
+│   ├── stocks/
+│   │   └── UBER.json         # One file per company — drives the full analysis
+│   └── screens/
+│       └── india-value-2026-05.json  # Curated watchlists (universe → picks → exclusions)
 ├── assets/
 │   ├── css/styles.css        # Shared styles
 │   └── js/
-│       ├── util.js           # Markdown, fetch, helpers (ES module)
-│       ├── index-renderer.js # Landing-page logic
-│       └── stock-renderer.js # Analysis-page renderer + Chart.js
+│       ├── util.js           # Markdown, citations, fetch, helpers (ES module)
+│       ├── index-renderer.js # Landing-page logic (analyzed + pending cards)
+│       └── stock-renderer.js # Analysis-page renderer + Chart.js + Sources
+├── .claude/skills/           # Reusable analyst skills
+│   ├── value-screener/SKILL.md   # Markets → curated watchlist (5-phase funnel)
+│   └── value-analyst/SKILL.md    # Single ticker → 15-Q deep-dive (with citation discipline)
 ├── reports/                  # Long-form prose, .docx, etc. (per-company)
 └── .github/workflows/deploy.yml  # GitHub Pages deploy
 ```
@@ -74,10 +79,11 @@ Top level:
 | `framework` | string | Credit line |
 | `verdict` | object | `{ rating, ratingColor, summary, buyBelow, loadBelow, trimAbove }` |
 | `snapshot` | object | KPI strip: price, marketCap, ev, fcfTtm, revTtm, evFcf, fcfYield, roic, wacc, fcfGrowth4y, analystPT, analystUpside, analystRating |
-| `executiveSummary` | object | `{ pros: [string], cons: [string] }` — supports `**bold**` and `_italic_` |
+| `executiveSummary` | object | `{ pros: [string], cons: [string] }` — supports `**bold**`, `_italic_`, and `[^source-id]` citations |
 | `financials` | object | See below |
 | `sections` | array | 3 sections of 5 questions — see below |
 | `scorecard` | object | `{ dimensions: [{label, score}], summary }` |
+| `sources` | array | **Bibliography.** Citation registry for all `[^id]` markers in the document. See below. |
 
 ### `financials`
 
@@ -139,6 +145,65 @@ Each section is one of `business` / `management` / `price`. Every question suppo
   "summary":"Position sizing notes..."
 }
 ```
+
+### `sources` — Bibliography
+
+Every specific number, quote, or factual claim should be tied to a primary source. The renderer collects all `[^id]` markers in any markdown string and turns them into numbered, clickable superscripts that scroll to the bibliography at the bottom.
+
+**Inline citation syntax** — anywhere a markdown string is allowed (`body`, `bullets`, `footnote`, `splitList.left/right`, `timeline.note`, `triggers.body`, `executiveSummary.pros/cons`, etc.):
+
+```
+"FCF margin reached **18.8%** in FY24[^uber-10k-2024]."
+"Buybacks scaled to **$6.5B in 2025**[^uber-q4-2024-pr]."
+"Foodpanda Taiwan blocked by FTC Dec 2024[^foodpanda-taiwan-2024]."
+```
+
+Multiple sources for a single claim: `claim[^src-a][^src-b]`.
+
+**Top-level `sources` array:**
+
+```json
+"sources": [
+  {
+    "id": "uber-10k-2024",
+    "type": "10-K",
+    "title": "Uber Technologies — Annual Report (Form 10-K) for FY2024",
+    "publisher": "SEC EDGAR",
+    "date": "2025-02-21",
+    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K",
+    "pages": "p. 47 (FCF reconciliation)",
+    "accessed": "2026-05-14",
+    "note": "Source for FCF, SBC, segment economics, insurance reserves."
+  }
+]
+```
+
+| Field | Required | Notes |
+|---|---|---|
+| `id` | ✅ | Used in `[^id]` markers. Naming: `<ticker-lower>-<type>-<year>` or `<topic>-<year>`. |
+| `type` | ✅ | `10-K` · `10-Q` · `Annual Report` · `Shareholder Letter` · `Earnings Call` · `Investor Presentation` · `Regulatory Filing` · `News` · `Research` · `Blog` · `Podcast` · `Interview` · `Reference`. Drives bibliography grouping + icon. |
+| `title` | ✅ | Full title of the source document. |
+| `url` | ✅ | Canonical / stable URL. Use SEC EDGAR / company IR page if you can't find the exact filing URL. **Never fabricate a URL.** |
+| `publisher` | optional | e.g. `SEC EDGAR`, `Reuters`, `Uber Investor Relations`. |
+| `date` | optional | YYYY-MM-DD. |
+| `pages` | optional | e.g. `p. 47 (FCF reconciliation)`. |
+| `accessed` | optional | YYYY-MM-DD — when you last viewed it. |
+| `note` | optional | One-line description of why you cited it. |
+
+Sources render in numbered order in a "Sources & further reading" section at the bottom, grouped by `type`. Clicking a `[^id]` marker scrolls to the source row and flashes it.
+
+---
+
+## Citation discipline (cite-everything-non-obvious)
+
+For each new stock, follow the rules in `.claude/skills/value-analyst/SKILL.md` (Step 4b). The short version:
+
+- Every specific number → cite the 10-K, 10-Q, earnings PR, or investor day deck.
+- Every management quote / strategy claim → cite the shareholder letter or earnings call.
+- Every insider/comp/governance data point → cite the DEF 14A (proxy).
+- Every regulatory event → cite the regulator's filing or a tier-1 outlet.
+- Pure opinions don't need citations — but mark them: "In my view…".
+- Expect **10–18 sources** for a complete deep-dive analysis.
 
 ---
 

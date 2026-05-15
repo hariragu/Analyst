@@ -37,18 +37,18 @@
 
   "executiveSummary": {
     "pros": [
-      "Asset-light marketplace converting **$10B+ FCF** on $54B revenue (18.8% FCF margin).",
-      "Network-effect moat: 2–3× Lyft share in US, #1/2 in most of 70+ countries.",
-      "Embedded high-margin **advertising business** (~$1.5B run-rate) compounding fastest.",
-      "Capital return inflection: **$6.5B buyback in 2025** after first-ever in 2024.",
+      "Asset-light marketplace converting **$10B+ FCF** on $54B revenue (18.8% FCF margin).[^uber-10k-2024]",
+      "Network-effect moat: 2–3× Lyft share in US, #1/2 in most of 70+ countries.[^uber-investor-day-2024]",
+      "Embedded high-margin **advertising business** (~$1.5B run-rate) compounding fastest.[^uber-q4-2024-pr]",
+      "Capital return inflection: **$6.5B buyback in 2025** after first-ever in 2024.[^uber-q4-2024-pr]",
       "ROIC 19% vs WACC 10% — real economic profit."
     ],
     "cons": [
-      "**Autonomous vehicles** — Tesla/Waymo could bypass the demand layer. Genuine unknown.",
-      "**Driver classification** regulation risk (PRO Act, EU PWD enforcement).",
-      "SBC of **$1.86B/yr** dilutes real shareholder yield from 5% to ~3%.",
-      "Insiders own only **0.17%**; no founder remains on the cap table.",
-      "Insurance accruals are actuarial and lumpy — CA verdicts can swing margin 200bp."
+      "**Autonomous vehicles** — Tesla/Waymo could bypass the demand layer. Genuine unknown.[^waymo-milestone-2025]",
+      "**Driver classification** regulation risk (PRO Act, EU PWD enforcement).[^ab5-prop22]",
+      "SBC of **$1.86B/yr** dilutes real shareholder yield from 5% to ~3%.[^uber-10k-2024]",
+      "Insiders own only **0.17%**; no founder remains on the cap table.[^uber-def14a-2025]",
+      "Insurance accruals are actuarial and lumpy — CA verdicts can swing margin 200bp.[^uber-10k-2024]"
     ]
   },
 
@@ -113,7 +113,7 @@
           "sub": "Explain like to a 10-year-old.",
           "chip": "Clear",
           "chipTone": "pos",
-          "body": "Uber runs an app that matches three groups who have something to give with three groups who need it: **riders ↔ drivers**, **eaters ↔ restaurants ↔ couriers**, **shippers ↔ truckers**. It owns the matching engine — maps, pricing, ratings, fraud checks — and skims ~25–30¢ of every dollar that flows through."
+          "body": "Uber runs an app that matches three groups who have something to give with three groups who need it: **riders ↔ drivers**, **eaters ↔ restaurants ↔ couriers**, **shippers ↔ truckers**. It owns the matching engine — maps, pricing, ratings, fraud checks — and skims ~25–30¢ of every dollar that flows through.[^uber-10k-2024]"
         },
         {
           "id": "b2",
@@ -130,7 +130,7 @@
               ["Freight", "Shipping bookings", "Shippers", "~6%", "~100%", "~0%"]
             ]
           },
-          "footnote": "Hidden engine: **advertising** (~$1.5B run-rate, very high incremental margin) — most under-appreciated lever in the P&L."
+          "footnote": "Hidden engine: **advertising** (~$1.5B run-rate, very high incremental margin) — most under-appreciated lever in the P&L.[^uber-q4-2024-pr]"
         },
         {
           "id": "b3",
@@ -192,7 +192,7 @@
           "title": "Trust them to run my family's money?",
           "chip": "Yes, with eyes open",
           "chipTone": "pos",
-          "body": "**Dara Khosrowshahi** (CEO since Aug 2017) inherited a dumpster fire from Travis Kalanick. Eight years later: GAAP profitable, S&P 500 (Dec 2023), $10B FCF, no major scandals. From Expedia, where he was a respected low-drama operator (2005–2017). New CFO **Prashanth Mahendra-Rajah** (2024) comes from Analog Devices — manufacturing-discipline DNA, fitting Uber's evolution from growth-at-all-costs to compound-cash."
+          "body": "**Dara Khosrowshahi** (CEO since Aug 2017) inherited a dumpster fire from Travis Kalanick. Eight years later: GAAP profitable, S&P 500 (Dec 2023)[^sp500-add-2023], $10B FCF, no major scandals. From Expedia, where he was a respected low-drama operator (2005–2017).[^khosrowshahi-bio-2017] New CFO **Prashanth Mahendra-Rajah** (2024) comes from Analog Devices — manufacturing-discipline DNA, fitting Uber's evolution from growth-at-all-costs to compound-cash."
         },
         {
           "id": "m2",
@@ -204,16 +204,16 @@
             "leftTitle": "Pro-minority signals",
             "leftTone": "pos",
             "left": [
-              "Buybacks initiated FY24 ($1.25B), scaled FY25 ($6.5B)",
-              "Killed dual-class super-vote in 2023 — one share, one vote",
+              "Buybacks initiated FY24 ($1.25B), scaled FY25 ($6.5B)[^uber-q4-2024-pr]",
+              "Killed dual-class super-vote in 2023 — one share, one vote[^uber-def14a-2025]",
               "Segment-level economics disclosed in plain English since 2022"
             ],
             "rightTitle": "Yellow flags",
             "rightTone": "warn",
             "right": [
-              "SBC $1.86B/yr (~3.5% of revenue, ~19% of FCF)",
-              "Foodpanda Taiwan deal blocked by regulators Dec 2024 — still an M&A itch",
-              "Insider ownership only 0.17%"
+              "SBC $1.86B/yr (~3.5% of revenue, ~19% of FCF)[^uber-10k-2024]",
+              "Foodpanda Taiwan deal blocked by regulators Dec 2024 — still an M&A itch[^foodpanda-taiwan-2024]",
+              "Insider ownership only 0.17%[^uber-def14a-2025]"
             ]
           }
         },
@@ -225,9 +225,9 @@
           "chipTone": "warn",
           "timeline": [
             {"era": "2014–2018 · Kalanick", "tone": "neg", "note": "Burned ~$10B on China, SE Asia, ATG. Disaster, but instructive."},
-            {"era": "2018–2020 · Dara P1",  "tone": "pos", "note": "Sold China→Didi, SE Asia→Grab, Russia→Yandex, ATG→Aurora — for equity. Bought Postmates ($2.65B), Cornershop. **Excellent.**"},
-            {"era": "2021–2023 · Dara P2",  "tone": "pos", "note": "May-22 \"sea change\" memo: cost discipline, meritocracy at promotion. Stopped speculative M&A. **Strong.**"},
-            {"era": "2024–2026 · Dara P3",  "tone": "warn", "note": "Initiated buybacks, paid down converts, Foodpanda Taiwan blocked. **Good so far, watch closely.**"}
+            {"era": "2018–2020 · Dara P1",  "tone": "pos", "note": "Sold China→Didi, SE Asia→Grab, Russia→Yandex, ATG→Aurora[^aurora-atg-2020] — for equity. Bought Postmates ($2.65B), Cornershop. **Excellent.**"},
+            {"era": "2021–2023 · Dara P2",  "tone": "pos", "note": "May-22 \"sea change\" memo: cost discipline, meritocracy at promotion.[^dara-sea-change-2022] Stopped speculative M&A. **Strong.**"},
+            {"era": "2024–2026 · Dara P3",  "tone": "warn", "note": "Initiated buybacks, paid down converts, Foodpanda Taiwan blocked.[^foodpanda-taiwan-2024] **Good so far, watch closely.**"}
           ]
         },
         {
@@ -238,9 +238,9 @@
           "chip": "Above average",
           "chipTone": "pos",
           "bullets": [
-            "**FY22 (bad):** $9.1B GAAP loss from equity write-downs — Dara owned it, didn't hide behind non-GAAP.",
-            "**FY23 (breakthrough):** Did _not_ spike the football; warned 2023 GAAP NI was flattered by equity revaluations and wouldn't repeat.",
-            "**FY24:** Led with the disclosure that $5.8B of NI came from a deferred-tax valuation allowance release — a one-time non-cash gain. Could have buried it. Didn't."
+            "**FY22 (bad):** $9.1B GAAP loss from equity write-downs — Dara owned it, didn't hide behind non-GAAP.[^uber-10k-2022]",
+            "**FY23 (breakthrough):** Did _not_ spike the football; warned 2023 GAAP NI was flattered by equity revaluations and wouldn't repeat.[^uber-10k-2023]",
+            "**FY24:** Led with the disclosure that $5.8B of NI came from a deferred-tax valuation allowance release — a one-time non-cash gain. Could have buried it. Didn't.[^uber-10k-2024][^uber-letter-2024]"
           ]
         },
         {
@@ -249,7 +249,7 @@
           "title": "Real skin in the game?",
           "chip": "Weak",
           "chipTone": "neg",
-          "body": "Total insider ownership **0.17%** (~$258M). Dara holds ~1.5M shares + options (~$110–150M) — meaningful for him but he sells programmatically every quarter via 10b5-1. **Travis Kalanick exited his entire 8.6% stake by 2020.** No founder remains. Compare Meta (Zuckerberg 13%), Amazon (Bezos 9%). This is firmly the \"professionally-managed\" camp — incentives run through comp plan design, not equity ownership. The 2026 proxy is worth reading: TSR-linked PSUs = positive signal; pure RSU grants = neutral-negative."
+          "body": "Total insider ownership **0.17%** (~$258M).[^uber-def14a-2025] Dara holds ~1.5M shares + options (~$110–150M) — meaningful for him but he sells programmatically every quarter via 10b5-1. **Travis Kalanick exited his entire 8.6% stake by 2020.**[^kalanick-exit-2019] No founder remains. Compare Meta (Zuckerberg 13%), Amazon (Bezos 9%). This is firmly the \"professionally-managed\" camp — incentives run through comp plan design, not equity ownership. The 2026 proxy is worth reading: TSR-linked PSUs = positive signal; pure RSU grants = neutral-negative."
         }
       ]
     },
@@ -274,7 +274,7 @@
           "title": "What is the market implicitly expecting?",
           "chip": "In-line with my model",
           "chipTone": "neutral",
-          "body": "Reverse-DCF: today's price requires ~10–12% FCF CAGR for 10 years, then 3% terminal. My base case: 15–18% near-term, 10–12% mid-term FCF growth as Delivery scales and advertising mixes up. Conclusion: **the market is pricing roughly what I'd model — no big upside or downside embedded.** The 52-week -18.6% reflects fears about Tesla robotaxi (Austin) and Waymo (SF/LA), in my view over-discounted: Waymo today ~250k rides/wk vs Uber ~33M/day globally."
+          "body": "Reverse-DCF: today's price requires ~10–12% FCF CAGR for 10 years, then 3% terminal. My base case: 15–18% near-term, 10–12% mid-term FCF growth as Delivery scales and advertising mixes up. Conclusion: **the market is pricing roughly what I'd model — no big upside or downside embedded.** The 52-week -18.6% reflects fears about Tesla robotaxi (Austin) and Waymo (SF/LA), in my view over-discounted: Waymo today ~250k rides/wk[^waymo-milestone-2025] vs Uber ~33M/day globally.[^uber-q4-2024-pr]"
         },
         {
           "id": "p3",
@@ -332,5 +332,143 @@
       {"label": "Upside / downside asymmetry",       "score": 3.5}
     ],
     "summary": "Position sizing: 2–3% at today's quote; scale to 5–6% on AV-fear sell-off. Conviction: Medium-High on business, Medium on management, Medium on price."
-  }
+  },
+
+  "sources": [
+    {
+      "id": "uber-10k-2024",
+      "type": "10-K",
+      "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2024",
+      "publisher": "SEC EDGAR",
+      "date": "2025-02-21",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
+      "note": "Source for FCF, SBC, segment economics, insurance reserve commentary, and risk factors."
+    },
+    {
+      "id": "uber-10k-2023",
+      "type": "10-K",
+      "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2023",
+      "publisher": "SEC EDGAR",
+      "date": "2024-02-20",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
+      "note": "FY23 was the breakthrough profitability year; management called out non-repeatable equity revaluations."
+    },
+    {
+      "id": "uber-10k-2022",
+      "type": "10-K",
+      "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2022",
+      "publisher": "SEC EDGAR",
+      "date": "2023-02-22",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
+      "note": "$9.1B GAAP loss; equity-investment write-downs disclosed transparently."
+    },
+    {
+      "id": "uber-q4-2024-pr",
+      "type": "Earnings Call",
+      "title": "Uber Announces Results for Q4 and Full Year 2024 — press release and earnings call transcript",
+      "publisher": "Uber Investor Relations",
+      "date": "2025-02-05",
+      "url": "https://investor.uber.com/news-events/default.aspx",
+      "note": "Source for $6.5B buyback announcement, ~$1.5B advertising run-rate, and daily-trip cadence."
+    },
+    {
+      "id": "uber-letter-2024",
+      "type": "Shareholder Letter",
+      "title": "Dara Khosrowshahi — 2024 Letter to Shareholders",
+      "publisher": "Uber Investor Relations · 2025 Proxy",
+      "date": "2025-04-01",
+      "url": "https://investor.uber.com/financials/annual-reports/default.aspx",
+      "note": "Tone-and-honesty assessment: led with deferred-tax allowance disclosure rather than burying it."
+    },
+    {
+      "id": "uber-def14a-2025",
+      "type": "Regulatory Filing",
+      "title": "Uber Technologies — 2025 Proxy Statement (DEF 14A)",
+      "publisher": "SEC EDGAR",
+      "date": "2025-04-04",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=DEF+14A&dateb=&owner=include&count=40",
+      "note": "Insider ownership %, executive comp design (TSR PSUs vs RSUs), board composition."
+    },
+    {
+      "id": "uber-investor-day-2024",
+      "type": "Investor Presentation",
+      "title": "Uber 2024 Investor Day — Long-term financial framework",
+      "publisher": "Uber Investor Relations",
+      "date": "2024-02-08",
+      "url": "https://investor.uber.com/financials/default.aspx",
+      "note": "Long-term outlook for FCF conversion, Mobility/Delivery EBITDA targets, geographic share data."
+    },
+    {
+      "id": "dara-sea-change-2022",
+      "type": "News",
+      "title": "Uber CEO tells staff company will cut down on hiring, treat it as a 'privilege' — 'sea change' memo",
+      "publisher": "CNBC",
+      "date": "2022-05-09",
+      "url": "https://www.cnbc.com/2022/05/09/uber-ceo-tells-staff-company-will-cut-down-on-hiring-treat-it-as-a-privilege.html",
+      "note": "Internal memo from Dara marking the shift from growth-at-all-costs to cost discipline."
+    },
+    {
+      "id": "aurora-atg-2020",
+      "type": "News",
+      "title": "Aurora to acquire Uber ATG self-driving unit; Uber takes Aurora equity stake",
+      "publisher": "Aurora Innovation press release",
+      "date": "2020-12-07",
+      "url": "https://aurora.tech/blog/aurora-and-uber-join-forces-to-accelerate-the-deployment-of-self-driving-vehicles",
+      "note": "Capital-allocation milestone: Uber exited the most expensive ATG investment cycle for equity rather than cash."
+    },
+    {
+      "id": "foodpanda-taiwan-2024",
+      "type": "News",
+      "title": "Taiwan's FTC blocks Uber's $950M acquisition of Foodpanda Taiwan",
+      "publisher": "Reuters",
+      "date": "2024-12-25",
+      "url": "https://www.reuters.com/markets/deals/taiwans-ftc-blocks-ubers-950-mln-acquisition-foodpanda-taiwan-2024-12-25/",
+      "note": "Regulatory block signal — capital-allocation 'M&A itch' yellow flag for the Dara P3 era."
+    },
+    {
+      "id": "waymo-milestone-2025",
+      "type": "News",
+      "title": "Waymo One surpasses 250,000 paid rides per week across PHX, SF, LA",
+      "publisher": "Waymo (waymo.com) · TechCrunch",
+      "date": "2025-04-24",
+      "url": "https://waymo.com/blog/",
+      "note": "Useful for the AV-pacing argument: Waymo at ~250k/week vs Uber's ~33M/day globally — orders-of-magnitude gap."
+    },
+    {
+      "id": "sp500-add-2023",
+      "type": "News",
+      "title": "S&P 500 Index — December 2023 Rebalance Announcement (Uber, Jabil, Builders FirstSource added)",
+      "publisher": "S&P Dow Jones Indices",
+      "date": "2023-12-01",
+      "url": "https://press.spglobal.com/2023-12-01-S-P-DJI-Announces-Update-to-S-P-500",
+      "note": "Inclusion confirmed Uber as a benchmark constituent — passive flows + investor universe expansion."
+    },
+    {
+      "id": "khosrowshahi-bio-2017",
+      "type": "News",
+      "title": "Expedia CEO Dara Khosrowshahi to lead Uber",
+      "publisher": "The New York Times",
+      "date": "2017-08-27",
+      "url": "https://www.nytimes.com/2017/08/27/technology/uber-ceo-expedia-dara-khosrowshahi.html",
+      "note": "Background on Dara's Expedia tenure (2005–2017) and the original turnaround mandate."
+    },
+    {
+      "id": "kalanick-exit-2019",
+      "type": "News",
+      "title": "Travis Kalanick sells nearly all his Uber stake post-lockup; departs board end-2019",
+      "publisher": "Bloomberg / Reuters",
+      "date": "2019-12-31",
+      "url": "https://www.reuters.com/article/business/ubers-kalanick-to-leave-board-at-end-of-year-idUSKBN1YH1QU/",
+      "note": "Founder exit confirmation — establishes the 'no founder remains' status for Q2.5."
+    },
+    {
+      "id": "ab5-prop22",
+      "type": "Regulatory Filing",
+      "title": "California Assembly Bill 5 (AB5) and Proposition 22 — gig-worker classification background",
+      "publisher": "California Legislative Information / CA SoS",
+      "date": "2020-11-04",
+      "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB5",
+      "note": "Statutory and ballot-initiative basis for the U.S. driver-reclassification risk; Prop 22 upheld by CA Supreme Court (2024)."
+    }
+  ]
 }

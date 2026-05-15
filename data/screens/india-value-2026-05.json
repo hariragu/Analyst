@@ -1,0 +1,169 @@
+{
+  "id": "india-value-2026-05",
+  "title": "India · Value & Quality Picks · May 2026",
+  "market": "India (NSE)",
+  "asOf": "2026-05-15",
+  "analystVoice": "Senior value analyst · Khandelwal lens · pay-up-for-quality-but-not-for-hype",
+  "universe": "NSE 500",
+  "methodologyNote": "Five-phase funnel — universe → quantitative quality gates → valuation gates → qualitative moat check → macro overlay. Target: 8–12 names diversified across 6+ sectors with at least one clear value angle each.",
+  "filters": {
+    "quality":   ["ROE > 15% (3y avg)", "ROCE > 18% (ex-banks)", "D/E < 1.0 (ex-banks/NBFCs)", "FCF+ in 3 of last 5 yrs", "Promoter holding > 25% or Institutional > 60%", "Promoter pledging < 25%", "No audit qualifications in 3 yrs"],
+    "valuation": ["P/E < 1.3× sector median", "PEG < 1.5", "EV/EBITDA < 18× (sector-adj)", "FCF yield > 3% (where applicable)", "Available at a meaningful margin to peak multiple"],
+    "qualitative": ["Durable moat — brand/network/scale/regulatory", "Management track record > 10 yrs", "Honest annual letters", "Capital-allocation discipline (buybacks/dividends > dilution)", "Not at sector peak-cycle multiples"]
+  },
+  "macroNotes": [
+    "India broad market is fairly-to-fully valued after 2020–2024 run; mid/smallcap froth corrected in 2025 but still selective.",
+    "FII flows turned net positive in early 2026 after 2025 outflow cycle.",
+    "Best risk/reward is in (a) large-cap quality that de-rated on transient concerns and (b) PSU monopolies with deep dividend yields.",
+    "Capital-goods cycle is at peak multiples; selective avoidance even where fundamentals are good."
+  ],
+  "exclusions": [
+    { "theme": "Defense PSUs at 45–55× P/E (HAL, BEL)", "reason": "Peak-cycle order-book multiples; consensus crowded trade; mean-reversion risk severe." },
+    { "theme": "Capital goods at 60–80× (ABB India, Siemens India, CG Power)", "reason": "Pricing-in flawless execution for a decade; no margin of safety." },
+    { "theme": "New-age tech (Paytm, Nykaa, Zomato, Policybazaar)", "reason": "No durable moat at current scale; not yet value." },
+    { "theme": "Microcap manufacturing momentum (EMS, defense ancillaries < ₹10,000Cr)", "reason": "Broker-driven; quality of earnings unproven; governance risk elevated." },
+    { "theme": "Premium FMCG at 65–75× (Nestle India, Britannia)", "reason": "Quality is real, price is not. Will be on watchlist if they de-rate 25%+." },
+    { "theme": "Mid-cap IT (Persistent, Coforge) at 35–45×", "reason": "Premium to large-cap IT for incremental growth that may not sustain." }
+  ],
+  "picks": [
+    {
+      "ticker": "HDFCBANK",
+      "name": "HDFC Bank Ltd.",
+      "exchange": "NSE",
+      "sector": "Banks · Private",
+      "logoText": "H",
+      "logoFrom": "#1e3a8a",
+      "logoTo": "#06b6d4",
+      "thesis": "India's best banking franchise — best CASA, lowest credit costs, deepest distribution.",
+      "valueAngle": "Trading at ~2.5× P/B vs historical 3.5×. Post-HDFC-Ltd merger digestion is largely done; ROA normalising back to 1.9%+ over next 4–6 quarters. Re-rating play as the merger overhang clears and unsecured-retail concerns moderate.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 1
+    },
+    {
+      "ticker": "SBIN",
+      "name": "State Bank of India",
+      "exchange": "NSE",
+      "sector": "Banks · PSU",
+      "logoText": "S",
+      "logoFrom": "#1e40af",
+      "logoTo": "#0ea5e9",
+      "thesis": "India's largest bank by assets — cleaned-up balance sheet, ROA 1%+, ROE 16–18%.",
+      "valueAngle": "At ~1.4–1.6× P/B (subsidiaries-adjusted), classic PSU-bank value. Massive Tier-1 capital, India-growth proxy, dividend yield 1.7%+. Trades at a deep discount to private-bank peers despite credit-cost normalisation.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 2
+    },
+    {
+      "ticker": "TCS",
+      "name": "Tata Consultancy Services",
+      "exchange": "NSE",
+      "sector": "IT Services",
+      "logoText": "T",
+      "logoFrom": "#1c2752",
+      "logoTo": "#4338ca",
+      "thesis": "India's IT cash-flow factory — $30B+ revenue, ~50% ROE, near-100% FCF conversion, generational client relationships.",
+      "valueAngle": "Trading at ~22× earnings vs historical 28–30× as the market frets about generative-AI cannibalisation. The franchise is mispriced: AI is a deflationary tailwind that TCS captures via velocity, not pricing — long lag, but the moat remains intact. Tata Sons holds 72% — alignment is real.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 3
+    },
+    {
+      "ticker": "ITC",
+      "name": "ITC Ltd.",
+      "exchange": "NSE",
+      "sector": "FMCG · Cigarettes · Hotels (demerged)",
+      "logoText": "I",
+      "logoFrom": "#facc15",
+      "logoTo": "#f59e0b",
+      "thesis": "Cigarettes are a structurally-shrinking cash machine that funds a scaling FMCG portfolio (Aashirvaad, Sunfeast, Bingo) and a recently-demerged hotels business. ROCE 35%+.",
+      "valueAngle": "Trades at ~25× earnings with 3.5% dividend yield. Tobacco cash flow underwrites the FMCG ramp; hotels demerger crystallised value. ESG-driven sell-down is the bear case, but the cash flow doesn't care.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 4
+    },
+    {
+      "ticker": "ASIANPAINT",
+      "name": "Asian Paints Ltd.",
+      "exchange": "NSE",
+      "sector": "Decorative Paints",
+      "logoText": "A",
+      "logoFrom": "#d50032",
+      "logoTo": "#ef4444",
+      "thesis": "India's #1 decorative paints franchise (~50% share) with the most-feared dealer network in consumer India. ROE 25%+ historically.",
+      "valueAngle": "De-rated ~35–40% from peak on Birla Opus entry fears. Pricing power and dealer lock-in are intact; competitive losses will be slower and smaller than market expects. Available at ~50× earnings vs historical 65–70× — quality at a 30% discount to its own history is the trade.",
+      "marketCapBucket": "Large cap",
+      "priorityRank": 5
+    },
+    {
+      "ticker": "BAJAJ-AUTO",
+      "name": "Bajaj Auto Ltd.",
+      "exchange": "NSE",
+      "sector": "Auto · 2W/3W",
+      "logoText": "B",
+      "logoFrom": "#003478",
+      "logoTo": "#1e40af",
+      "thesis": "Two-wheeler and three-wheeler leader with the most geographically diversified franchise in Indian auto (50%+ exports to Africa, LATAM, ASEAN). Net cash ~₹15,000Cr; ROE 25%+.",
+      "valueAngle": "Available at ~22× earnings. EV transition is real — Chetak EV scaling profitably; new electric three-wheeler portfolio launching. Premium two-wheeler franchise (KTM, Triumph) under-appreciated. Dividend yield 3%+.",
+      "marketCapBucket": "Large cap",
+      "priorityRank": 6
+    },
+    {
+      "ticker": "LT",
+      "name": "Larsen & Toubro Ltd.",
+      "exchange": "NSE",
+      "sector": "Engineering · Construction · Defense",
+      "logoText": "L",
+      "logoFrom": "#00853e",
+      "logoTo": "#16a34a",
+      "thesis": "India's engineering champion — ~₹5 lakh Cr order book; dominant in transmission, urban infra, defense, hydrocarbons, Middle East EPC.",
+      "valueAngle": "Core-EPC business available at ~22× earnings if you back out IT subsidiaries (LTIM, LTTS) and financial services. Middle East orderbook re-acceleration is under-appreciated. Defense indigenisation is a 10-year tailwind that just started.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 7
+    },
+    {
+      "ticker": "SUNPHARMA",
+      "name": "Sun Pharmaceutical Industries",
+      "exchange": "NSE",
+      "sector": "Pharma · Specialty + Generics",
+      "logoText": "S",
+      "logoFrom": "#f59e0b",
+      "logoTo": "#ea580c",
+      "thesis": "India's largest pharma franchise — domestic formulations leader; US specialty (Ilumya, Cequa, Winlevi) scaling; EM presence.",
+      "valueAngle": "Available at ~28× earnings as the market under-weights specialty earnings durability. India domestic franchise alone deserves a 25× multiple; specialty is the optionality. Net cash; ROE 17–18%.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 8
+    },
+    {
+      "ticker": "COALINDIA",
+      "name": "Coal India Ltd.",
+      "exchange": "NSE",
+      "sector": "Mining · PSU · Energy",
+      "logoText": "C",
+      "logoFrom": "#1f2937",
+      "logoTo": "#374151",
+      "thesis": "Monopoly coal supplier (~80% of India's coal production) — government-owned, near-zero debt, ₹100,000Cr+ cash on books.",
+      "valueAngle": "Trades at ~7× earnings with dividend yield 7–8%. ESG-driven sell-down has gone too far: India will burn coal for another 20 years even as renewables scale. Cash is being deployed into critical minerals, renewables, and aluminium — the optionality is free at this multiple.",
+      "marketCapBucket": "Large cap",
+      "priorityRank": 9
+    },
+    {
+      "ticker": "MARUTI",
+      "name": "Maruti Suzuki India Ltd.",
+      "exchange": "NSE",
+      "sector": "Auto · Passenger Vehicles",
+      "logoText": "M",
+      "logoFrom": "#0c4da2",
+      "logoTo": "#2563eb",
+      "thesis": "Passenger-vehicle market leader (~40% share); deepest distribution and service network in India; Suzuki parent technology backbone.",
+      "valueAngle": "At ~25× earnings, market is under-weighting (a) SUV portfolio refresh now matching market mix, (b) export ramp into Africa/MEA via Suzuki global platform, (c) net cash ₹50,000Cr+. Hybrid-first strategy vs pure-EV is a feature, not a bug, for India's charging-poor reality.",
+      "marketCapBucket": "Mega cap",
+      "priorityRank": 10
+    }
+  ],
+  "notesOnConvictionRanking": "Ranks are heuristic — based on combination of (a) margin of safety, (b) quality durability, (c) catalyst visibility over 12–24 months. HDFC Bank #1 is the highest-conviction risk-adjusted; Coal India #9 is the deepest-value but most controversial. All 10 expected to be analysed using the value-analyst skill before any position is initiated.",
+  "review": {
+    "nextReviewDate": "2026-08-15",
+    "reviewTriggers": [
+      "Any pick rises > 30% (re-check valuation)",
+      "Any pick falls > 30% (re-check thesis; potential add)",
+      "Sector-level regime change (e.g., RBI policy pivot, oil shock, INR move > 5%)"
+    ]
+  }
+}

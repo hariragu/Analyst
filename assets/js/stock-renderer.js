@@ -1,4 +1,4 @@
-import { md, chip, loadJSON, getParam, badgeFromRating, tone2Class } from './util.js';
+import { md, chip, loadJSON, getParam, badgeFromRating, tone2Class, setSources } from './util.js';
 
 const ROOT = document.getElementById('app');
 
@@ -8,6 +8,65 @@ function setupCharts(palette){
 }
 
 function fmtNum(v){ return typeof v === 'number' ? v.toFixed(2).replace(/\.00$/,'') : v; }
+
+function srcTypeIcon(t){
+  const tt = (t||'').toLowerCase();
+  if(tt.includes('10-k') || tt.includes('annual')) return '📄';
+  if(tt.includes('10-q') || tt.includes('quarter')) return '📊';
+  if(tt.includes('call') || tt.includes('transcript')) return '🎙️';
+  if(tt.includes('news') || tt.includes('article')) return '📰';
+  if(tt.includes('letter')) return '✉️';
+  if(tt.includes('investor') || tt.includes('deck') || tt.includes('presentation')) return '🖥️';
+  if(tt.includes('regulator') || tt.includes('govt') || tt.includes('filing')) return '🏛️';
+  if(tt.includes('research') || tt.includes('report')) return '🔬';
+  if(tt.includes('blog') || tt.includes('substack')) return '✍️';
+  if(tt.includes('podcast') || tt.includes('interview')) return '🎧';
+  return '🔗';
+}
+
+function renderSources(s){
+  if(!s.sources || !s.sources.length) return '';
+  const groups = {};
+  s.sources.forEach((src, i) => {
+    const key = src.type || 'Reference';
+    (groups[key] = groups[key] || []).push({ ...src, n: i + 1 });
+  });
+  const groupOrder = ['10-K', '10-Q', 'Annual Report', 'Shareholder Letter', 'Earnings Call',
+                      'Investor Presentation', 'News', 'Research', 'Blog', 'Regulatory Filing',
+                      'Podcast', 'Interview', 'Reference'];
+  const groupKeys = Object.keys(groups).sort((a, b) => {
+    const ia = groupOrder.indexOf(a), ib = groupOrder.indexOf(b);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
+  return `
+  <section id="sources" class="fade-in">
+    <div class="text-cyan text-xs uppercase tracking-wider mono">Bibliography</div>
+    <h2 class="sec-title">Sources &amp; further reading</h2>
+    <p class="text-soft mt-2" style="max-width:48rem;">Every numbered citation in this analysis links here. Click the source link to read the original.</p>
+    <div class="src-groups mt-6">
+      ${groupKeys.map(g => `
+        <div class="src-group">
+          <div class="src-group-title">${srcTypeIcon(g)} ${g}</div>
+          <ol class="src-list">
+            ${groups[g].map(src => `
+              <li id="src-${src.id}" class="src-row">
+                <span class="src-num">[${src.n}]</span>
+                <div class="src-body">
+                  <a href="${src.url}" target="_blank" rel="noopener" class="src-title">${md(src.title)}</a>
+                  <div class="src-meta">
+                    ${src.publisher ? `<span class="src-pub">${md(src.publisher)}</span>` : ''}
+                    ${src.date ? `<span class="src-date">· ${src.date}</span>` : ''}
+                    ${src.pages ? `<span class="src-pages">· ${md(src.pages)}</span>` : ''}
+                    ${src.accessed ? `<span class="src-acc">· accessed ${src.accessed}</span>` : ''}
+                  </div>
+                  ${src.note ? `<div class="src-note">${md(src.note)}</div>` : ''}
+                </div>
+              </li>`).join('')}
+          </ol>
+        </div>`).join('')}
+    </div>
+  </section>`;
+}
 
 function renderHero(s){
   const v = s.verdict, snap = s.snapshot;
@@ -311,6 +370,7 @@ function renderNav(s){
     sec.questions.forEach(q => items.push(['#'+q.id, `Q${q.n} ${q.title.length > 28 ? q.title.slice(0,28)+'…' : q.title}`, true]));
   });
   items.push(['#scorecard','Scorecard']);
+  if(s.sources && s.sources.length) items.push(['#sources', `Sources (${s.sources.length})`]);
   return `
   <aside class="hidden lg:block scrollnav sticky top-24 self-start" style="width:16rem; max-height:80vh; overflow-y:auto;">
     <div class="text-xs uppercase tracking-wider text-mute mb-2" style="padding:0 .75rem;">Sections</div>
@@ -329,6 +389,7 @@ function renderShell(s){
       ${renderFinancials(s)}
       ${s.sections.map(renderSection).join('')}
       ${renderScorecard(s)}
+      ${renderSources(s)}
       <footer class="text-center text-xs text-mute" style="padding:2rem 0; border-top:1px solid var(--border);">
         Educational analysis · Not investment advice · Framework: <a class="underline" href="https://safalniveshak.com" target="_blank">Vishal Khandelwal</a> · Data as of ${s.asOf}
       </footer>
@@ -420,10 +481,12 @@ async function main(){
   const ticker = (getParam('ticker') || 'UBER').toUpperCase();
   try{
     const s = await loadJSON(`./data/stocks/${ticker}.json`);
+    setSources(s.sources || []);
     document.title = `${s.name} (${s.ticker}) — Equity Analysis`;
     ROOT.innerHTML = renderShell(s);
     bootCharts(s);
     bootScrollSpy();
+    bootCitationHighlight();
   }catch(err){
     ROOT.innerHTML = `
       <div class="container" style="padding:6rem 1.5rem;">
@@ -433,6 +496,20 @@ async function main(){
         <pre class="mt-4 text-xs text-mute">${(err && err.message) || err}</pre>
       </div>`;
   }
+}
+
+// Briefly highlight the target source row when a citation is clicked.
+function bootCitationHighlight(){
+  document.body.addEventListener('click', (e) => {
+    const a = e.target.closest('a[href^="#src-"]');
+    if(!a) return;
+    const id = a.getAttribute('href').slice(1);
+    const target = document.getElementById(id);
+    if(!target) return;
+    target.classList.remove('src-flash');
+    void target.offsetWidth;
+    target.classList.add('src-flash');
+  });
 }
 
 main();
