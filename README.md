@@ -10,10 +10,11 @@ A scalable, data-driven equity-analysis site built around Vishal Khandelwal's [1
 
 ```
 .
-├── index.html                # Landing page — stock picker (search + filter)
+├── index.html                # Landing page — published analyses only (search + filter)
+├── upcoming.html             # Deep-dive queue — screened stocks awaiting analysis
 ├── stock.html                # Generic analysis viewer (reads ?ticker=XXX)
 ├── data/
-│   ├── index.json            # Master list of covered tickers (drives the picker)
+│   ├── index.json            # Master list (drives both landing pages)
 │   ├── stocks/
 │   │   └── UBER.json         # One file per company — drives the full analysis
 │   └── screens/
@@ -22,7 +23,8 @@ A scalable, data-driven equity-analysis site built around Vishal Khandelwal's [1
 │   ├── css/styles.css        # Shared styles
 │   └── js/
 │       ├── util.js           # Markdown, citations, fetch, helpers (ES module)
-│       ├── index-renderer.js # Landing-page logic (analyzed + pending cards)
+│       ├── index-renderer.js # Home — published analyses only + upcoming banner
+│       ├── upcoming-renderer.js # Upcoming — pending cards grouped by screen
 │       └── stock-renderer.js # Analysis-page renderer + Chart.js + Sources
 ├── .claude/skills/           # Reusable analyst skills
 │   ├── value-screener/SKILL.md   # Markets → curated watchlist (5-phase funnel)
@@ -30,6 +32,15 @@ A scalable, data-driven equity-analysis site built around Vishal Khandelwal's [1
 ├── reports/                  # Long-form prose, .docx, etc. (per-company)
 └── .github/workflows/deploy.yml  # GitHub Pages deploy
 ```
+
+### Lifecycle (one source of truth)
+
+Each ticker in `data/index.json` has a `status`:
+
+- **`screened`** → appears on **`upcoming.html`** under its parent screen (e.g., "India · Value & Quality · May 2026"). Used for stocks the screener flagged but the analyst hasn't deep-dived yet.
+- **`analyzed`** → appears on **`index.html`** as a published analysis card linking to `stock.html?ticker=...`. A pending stock graduates here when its 15-question analysis ships.
+
+Both pages read from the same `data/index.json`. To move a stock from queue to published: update its entry in-place (add `rating`, `price`, `summary`, `buyBelow`/`loadBelow`/`trimAbove`, and switch `status` to `analyzed`).
 
 ---
 

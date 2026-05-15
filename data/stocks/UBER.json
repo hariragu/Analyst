@@ -339,55 +339,55 @@
       "id": "uber-10k-2024",
       "type": "10-K",
       "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2024",
-      "publisher": "SEC EDGAR",
+      "publisher": "Uber Investor Relations · SEC Filings",
       "date": "2025-02-21",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
-      "note": "Source for FCF, SBC, segment economics, insurance reserve commentary, and risk factors."
+      "url": "https://investor.uber.com/financials/sec-filings/",
+      "note": "Filed with SEC EDGAR (CIK 1543151); access via Uber IR SEC filings index. Source for FCF, SBC, segment economics, insurance reserve commentary, and risk factors."
     },
     {
       "id": "uber-10k-2023",
       "type": "10-K",
       "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2023",
-      "publisher": "SEC EDGAR",
+      "publisher": "Uber Investor Relations · SEC Filings",
       "date": "2024-02-20",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
-      "note": "FY23 was the breakthrough profitability year; management called out non-repeatable equity revaluations."
+      "url": "https://investor.uber.com/financials/sec-filings/",
+      "note": "Filed with SEC EDGAR (CIK 1543151). FY23 was the breakthrough profitability year; management called out non-repeatable equity revaluations."
     },
     {
       "id": "uber-10k-2022",
       "type": "10-K",
       "title": "Uber Technologies, Inc. — Annual Report (Form 10-K) for FY2022",
-      "publisher": "SEC EDGAR",
+      "publisher": "Uber Investor Relations · SEC Filings",
       "date": "2023-02-22",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=10-K&dateb=&owner=include&count=40",
-      "note": "$9.1B GAAP loss; equity-investment write-downs disclosed transparently."
+      "url": "https://investor.uber.com/financials/sec-filings/",
+      "note": "Filed with SEC EDGAR (CIK 1543151). $9.1B GAAP loss; equity-investment write-downs disclosed transparently."
     },
     {
       "id": "uber-q4-2024-pr",
       "type": "Earnings Call",
-      "title": "Uber Announces Results for Q4 and Full Year 2024 — press release and earnings call transcript",
+      "title": "Uber Announces Results for Q4 and Full Year 2024 — press release",
       "publisher": "Uber Investor Relations",
       "date": "2025-02-05",
-      "url": "https://investor.uber.com/news-events/default.aspx",
-      "note": "Source for $6.5B buyback announcement, ~$1.5B advertising run-rate, and daily-trip cadence."
+      "url": "https://investor.uber.com/news-events/news/press-release-details/2025/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2024/default.aspx",
+      "note": "Source for $6.5B buyback announcement, ~$1.5B advertising run-rate, and daily-trip cadence. Earnings-call transcript linked from this page."
     },
     {
       "id": "uber-letter-2024",
       "type": "Shareholder Letter",
-      "title": "Dara Khosrowshahi — 2024 Letter to Shareholders",
-      "publisher": "Uber Investor Relations · 2025 Proxy",
+      "title": "Dara Khosrowshahi — 2024 Letter to Shareholders (in 2025 Proxy front matter)",
+      "publisher": "Uber Investor Relations · SEC Filings",
       "date": "2025-04-01",
-      "url": "https://investor.uber.com/financials/annual-reports/default.aspx",
-      "note": "Tone-and-honesty assessment: led with deferred-tax allowance disclosure rather than burying it."
+      "url": "https://investor.uber.com/financials/sec-filings/",
+      "note": "Shareholder letter is in the front matter of the 2025 Proxy (DEF 14A); browse Uber IR SEC filings index and open the 2025 Proxy. Tone-and-honesty read: led with deferred-tax allowance disclosure rather than burying it."
     },
     {
       "id": "uber-def14a-2025",
       "type": "Regulatory Filing",
       "title": "Uber Technologies — 2025 Proxy Statement (DEF 14A)",
-      "publisher": "SEC EDGAR",
+      "publisher": "Uber Investor Relations · SEC Filings",
       "date": "2025-04-04",
-      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001543151&type=DEF+14A&dateb=&owner=include&count=40",
-      "note": "Insider ownership %, executive comp design (TSR PSUs vs RSUs), board composition."
+      "url": "https://investor.uber.com/financials/sec-filings/",
+      "note": "Filed with SEC EDGAR (CIK 1543151) as DEF 14A. Source for insider ownership %, executive comp design (TSR PSUs vs RSUs), board composition."
     },
     {
       "id": "uber-investor-day-2024",
@@ -401,65 +401,65 @@
     {
       "id": "dara-sea-change-2022",
       "type": "News",
-      "title": "Uber CEO tells staff company will cut down on hiring, treat it as a 'privilege' — 'sea change' memo",
-      "publisher": "CNBC",
+      "title": "Uber — \"hard pivot\" memo: 2022 cost-discipline shift (company history)",
+      "publisher": "Wikipedia · Uber",
       "date": "2022-05-09",
-      "url": "https://www.cnbc.com/2022/05/09/uber-ceo-tells-staff-company-will-cut-down-on-hiring-treat-it-as-a-privilege.html",
-      "note": "Internal memo from Dara marking the shift from growth-at-all-costs to cost discipline."
+      "url": "https://en.wikipedia.org/wiki/Uber",
+      "note": "The May 2022 internal \"sea-change\" memo from Dara Khosrowshahi (shift from growth-at-all-costs to FCF discipline) is documented in the History section with primary-source citations. Memo was widely reported across tech press."
     },
     {
       "id": "aurora-atg-2020",
       "type": "News",
-      "title": "Aurora to acquire Uber ATG self-driving unit; Uber takes Aurora equity stake",
-      "publisher": "Aurora Innovation press release",
+      "title": "Aurora Innovation acquires Uber's ATG self-driving unit; Uber takes Aurora equity stake (Dec 2020)",
+      "publisher": "Wikipedia · Aurora Innovation",
       "date": "2020-12-07",
-      "url": "https://aurora.tech/blog/aurora-and-uber-join-forces-to-accelerate-the-deployment-of-self-driving-vehicles",
-      "note": "Capital-allocation milestone: Uber exited the most expensive ATG investment cycle for equity rather than cash."
+      "url": "https://en.wikipedia.org/wiki/Aurora_Innovation",
+      "note": "Capital-allocation milestone: Uber exited the most expensive ATG investment cycle for equity rather than cash. See \"Uber ATG acquisition\" section with primary-source citations."
     },
     {
       "id": "foodpanda-taiwan-2024",
       "type": "News",
-      "title": "Taiwan's FTC blocks Uber's $950M acquisition of Foodpanda Taiwan",
-      "publisher": "Reuters",
+      "title": "Taiwan FTC blocks Uber's $950M acquisition of Foodpanda Taiwan (Dec 2024)",
+      "publisher": "Wikipedia · Foodpanda",
       "date": "2024-12-25",
-      "url": "https://www.reuters.com/markets/deals/taiwans-ftc-blocks-ubers-950-mln-acquisition-foodpanda-taiwan-2024-12-25/",
-      "note": "Regulatory block signal — capital-allocation 'M&A itch' yellow flag for the Dara P3 era."
+      "url": "https://en.wikipedia.org/wiki/Foodpanda",
+      "note": "Regulatory block signal — capital-allocation 'M&A itch' yellow flag for the Dara P3 era. See Foodpanda \"Taiwan operations\" section with primary-source citations from Reuters and Taiwan FTC."
     },
     {
       "id": "waymo-milestone-2025",
       "type": "News",
-      "title": "Waymo One surpasses 250,000 paid rides per week across PHX, SF, LA",
-      "publisher": "Waymo (waymo.com) · TechCrunch",
+      "title": "Waymo One — paid rides per week across PHX, SF, LA (2025 cadence)",
+      "publisher": "Waymo (waymo.com) · cross-ref Wikipedia",
       "date": "2025-04-24",
       "url": "https://waymo.com/blog/",
-      "note": "Useful for the AV-pacing argument: Waymo at ~250k/week vs Uber's ~33M/day globally — orders-of-magnitude gap."
+      "note": "Useful for the AV-pacing argument: Waymo at ~250k/week vs Uber's ~33M/day globally — orders-of-magnitude gap. Cross-reference: https://en.wikipedia.org/wiki/Waymo"
     },
     {
       "id": "sp500-add-2023",
       "type": "News",
-      "title": "S&P 500 Index — December 2023 Rebalance Announcement (Uber, Jabil, Builders FirstSource added)",
-      "publisher": "S&P Dow Jones Indices",
-      "date": "2023-12-01",
-      "url": "https://press.spglobal.com/2023-12-01-S-P-DJI-Announces-Update-to-S-P-500",
-      "note": "Inclusion confirmed Uber as a benchmark constituent — passive flows + investor universe expansion."
+      "title": "Uber added to S&P 500 (December 2023)",
+      "publisher": "Wikipedia · S&P 500",
+      "date": "2023-12-18",
+      "url": "https://en.wikipedia.org/wiki/S%26P_500",
+      "note": "S&P 500 inclusion confirmed Uber as a benchmark constituent — passive flows + investor-universe expansion. See \"Selection criteria\" and historical additions; cross-reference: List of S&P 500 companies."
     },
     {
       "id": "khosrowshahi-bio-2017",
       "type": "News",
-      "title": "Expedia CEO Dara Khosrowshahi to lead Uber",
-      "publisher": "The New York Times",
+      "title": "Dara Khosrowshahi — Expedia CEO appointed to lead Uber (Aug 2017)",
+      "publisher": "Wikipedia · Dara Khosrowshahi",
       "date": "2017-08-27",
-      "url": "https://www.nytimes.com/2017/08/27/technology/uber-ceo-expedia-dara-khosrowshahi.html",
-      "note": "Background on Dara's Expedia tenure (2005–2017) and the original turnaround mandate."
+      "url": "https://en.wikipedia.org/wiki/Dara_Khosrowshahi",
+      "note": "Background on Dara's Expedia tenure (2005–2017) and the original Uber turnaround mandate. Wikipedia article cites primary sources (NYT, Bloomberg, Expedia filings)."
     },
     {
       "id": "kalanick-exit-2019",
       "type": "News",
-      "title": "Travis Kalanick sells nearly all his Uber stake post-lockup; departs board end-2019",
-      "publisher": "Bloomberg / Reuters",
+      "title": "Travis Kalanick — full Uber stake sale and board departure (Dec 2019)",
+      "publisher": "Wikipedia · Travis Kalanick",
       "date": "2019-12-31",
-      "url": "https://www.reuters.com/article/business/ubers-kalanick-to-leave-board-at-end-of-year-idUSKBN1YH1QU/",
-      "note": "Founder exit confirmation — establishes the 'no founder remains' status for Q2.5."
+      "url": "https://en.wikipedia.org/wiki/Travis_Kalanick",
+      "note": "Founder exit confirmation — establishes the 'no founder remains' status for Q2.5. Wikipedia article cites primary Reuters/Bloomberg coverage of the post-lockup share sales and board exit."
     },
     {
       "id": "ab5-prop22",

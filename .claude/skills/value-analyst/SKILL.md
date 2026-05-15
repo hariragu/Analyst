@@ -134,11 +134,42 @@ For a complete deep-dive, expect **10–18 sources** spanning:
 - 3–6 tier-1 news pieces for material events (M&A, regulation, leadership changes, competitive milestones)
 - 1–2 regulatory references for any disclosed risk
 
-#### URL discipline
-- Use **canonical / stable URLs** (SEC EDGAR, company IR pages, publisher article URLs).
-- If you cannot find the exact filing URL, link to the **company's IR filings page** or the **SEC EDGAR company-search URL** so the reader can find it.
-- **Never fabricate URLs.** If unsure, use a known parent URL (e.g., `investor.uber.com/financials/`) and let `note` explain.
-- All news links: prefer the publisher's own domain over aggregators.
+#### URL discipline (STRICT — this is the rule most easily broken)
+
+> **Hard rule:** Never paste a URL you have not personally verified resolves to a page about the subject. "Looks plausible" is not verification.
+
+**Verification protocol — for every source URL before you commit:**
+1. Run a HEAD or GET with curl using a real-browser User-Agent and follow redirects:
+   ```
+   curl -s -o NUL -w "%{http_code}" -L -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36" --max-time 15 <URL>
+   ```
+   - `200` → OK to cite.
+   - `404` → URL is broken; do NOT cite. Find a working canonical alternative.
+   - `401 / 403` → likely paywall or bot-blocking. **Do not assume it works for users** unless one of these is true:
+     - It's a `sec.gov` URL (real users get through; bots get 403 — but SEC EDGAR canonical browse URLs always work in browsers).
+     - You can confirm the article exists in the **Wayback Machine** (`https://archive.org/wayback/available?url=...`) returns a non-empty `archived_snapshots`.
+   - If neither holds, the URL is likely fabricated — replace it.
+2. When you can't verify a specific news article URL, **fall back to a stable canonical landing page**, in this priority order:
+   - The company's own IR press-release page (verified 200).
+   - The relevant **Wikipedia** article (e.g., `en.wikipedia.org/wiki/<Company>`, `<CEO_Name>`, `<Regulation>`). Wikipedia is verifiable, stable, and cites primary sources itself.
+   - The regulator's official site (SEC EDGAR, CA leginfo, EU competition portal, etc.).
+   - Never substitute a fabricated "plausible-looking" article URL.
+3. The `url` field is what the user clicks. The `note` field is where you document the canonical regulatory source if the clickable URL is a mirror (e.g., `url` = Uber IR SEC Filings; `note` = "Filed with SEC EDGAR as 10-K, CIK 1543151").
+
+**Allow-list of safe-to-cite domains (verified stable):**
+- `*.sec.gov` (canonical regulatory; sometimes 403 to curl, always 200 to browsers — still acceptable to cite)
+- `investor.<company>.com` (always verify the specific URL)
+- `en.wikipedia.org/wiki/<Topic>` (use as a citation fallback when the original news article URL can't be verified — Wikipedia is the most reliable secondary source on the public internet for facts ≥ 3 months old)
+- Government domains (`*.gov`, `*.gov.in`, `leginfo.legislature.ca.gov`, etc.)
+- Major exchange/regulator sites (`bseindia.com`, `nseindia.com`, `bis.org`, `imf.org`, `worldbank.org`)
+
+**Anti-patterns — never do these:**
+- Constructing a Reuters / Bloomberg / WSJ / CNBC / NYT article URL from a guessed slug. (You will get the slug wrong and produce a 404. This has happened.)
+- Citing a `press.spglobal.com/<date>-<headline>` style URL without verifying — the original press releases are frequently moved or deleted.
+- Pasting a `aurora.tech/blog/<headline-from-2020>` URL without verifying — these slugs change.
+- Citing a competitor's blog post URL when you only know the topic, not the exact slug.
+
+**Lesson from UBER analysis (post-mortem):** 4 of 15 originally-cited URLs were fabricated (CNBC sea-change memo, Aurora ATG blog, S&P 500 add press, an `investor.uber.com/financials/annual-reports/default.aspx` page that doesn't exist). All four returned 404. All four had **zero** snapshots in the Wayback Machine — confirming they never existed. The Wikipedia + IR-landing fallback strategy is what they were eventually replaced with. **Do not repeat this.**
 
 #### Honesty check
 - If a claim has **no citable source**, either remove it or rewrite as opinion ("In my view…").

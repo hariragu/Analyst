@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Upcoming Analyses — Equity Analyst</title>
+<meta name="description" content="Companies queued for the 15-question deep-dive analysis. Curated by screen." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container flex ai-c jc-b" style="padding:.85rem 1.5rem;">
+    <div class="flex ai-c gap-3">
+      <a href="./index.html" class="text-mute text-sm" title="Back to published analyses">&larr;</a>
+      <div class="logo" style="background:linear-gradient(135deg,#7c3aed,#22d3ee);">A</div>
+      <div>
+        <div class="text-xs text-soft">Equity Analyst</div>
+        <div class="text-base font-semibold">Upcoming · Deep-dive queue</div>
+      </div>
+    </div>
+    <div class="flex ai-c gap-3 text-xs text-soft">
+      <span id="upcomingCount" class="stat-pill">— upcoming</span>
+      <a href="./index.html" class="stat-pill" title="Published analyses">Published →</a>
+    </div>
+  </div>
+</header>
+
+<section class="grid-bg" style="border-bottom:1px solid var(--border);">
+  <div class="container" style="padding:3rem 1.5rem 2rem;">
+    <div class="flex ai-c gap-2 text-xs text-soft mb-3">
+      <span class="pulse-dot"></span> Curated by the <span class="mono">value-screener</span> · Awaiting deep dive by the <span class="mono">value-analyst</span>
+    </div>
+    <h1 class="text-5xl font-extrabold tracking-tight leading-tight">
+      The <span class="gradient-text">deep-dive queue</span>
+    </h1>
+    <p class="mt-3 text-lg text-soft" style="max-width:48rem;">
+      Companies that passed the value screen but haven't had their 15-question analysis published yet.
+      Each card here will graduate to <a href="./index.html" class="text-cyan" style="border-bottom:1px dashed currentColor;">the home dashboard</a> the moment its analysis goes live.
+    </p>
+
+    <div class="grid md:cols-2 gap-3 mt-6" style="max-width:42rem;">
+      <div class="search-box">
+        <span class="text-mute">🔍</span>
+        <input id="search" type="text" placeholder="Search ticker, company, sector, thesis…" autocomplete="off" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container" style="padding:2.5rem 1.5rem 4rem;">
+  <div id="screenList"></div>
+  <div id="empty" class="text-center text-mute" style="display:none; padding:2rem;">No matches.</div>
+</main>
+
+<footer class="text-center text-xs text-mute" style="padding:2rem 0; border-top:1px solid var(--border);">
+  Educational analysis · Not investment advice · <a href="https://safalniveshak.com" target="_blank" class="underline">Vishal Khandelwal framework</a>
+</footer>
+
+<script type="module" src="./assets/js/upcoming-renderer.js"></script>
+</body>
+</html>

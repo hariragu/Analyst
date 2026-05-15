@@ -22,6 +22,7 @@
     </div>
     <div class="flex ai-c gap-3 text-xs text-soft">
       <span id="stockCount" class="stat-pill">— tickers covered</span>
+      <a href="./upcoming.html" class="stat-pill" title="Stocks queued for analysis">Upcoming →</a>
       <a href="https://github.com/hariragu/Analyst" target="_blank" class="stat-pill" title="Source on GitHub">★ GitHub</a>
     </div>
   </div>
@@ -48,14 +49,13 @@
         <button class="filter-chip" data-filter="buy">Buy</button>
         <button class="filter-chip" data-filter="hold">Hold</button>
         <button class="filter-chip" data-filter="sell">Sell / Trim</button>
-        <button class="filter-chip" data-filter="pending">Pending</button>
       </div>
     </div>
   </div>
 </section>
 
 <main class="container" style="padding:2.5rem 1.5rem 4rem;">
-  <div id="screensBanner"></div>
+  <div id="upcomingBanner"></div>
   <div id="grid" class="grid md:cols-2 lg:cols-3 gap-4"></div>
   <div id="empty" class="text-center text-mute" style="display:none; padding:2rem;">No matches.</div>
 </main>
