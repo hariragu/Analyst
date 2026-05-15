@@ -1,0 +1,399 @@
+{
+  "ticker": "COALINDIA",
+  "name": "Coal India Limited",
+  "exchange": "NSE",
+  "sector": "Coal Mining · Energy",
+  "logoText": "CI",
+  "logoFrom": "#111827",
+  "logoTo": "#f59e0b",
+  "asOf": "2026-05-14",
+  "framework": "Vishal Khandelwal · safalniveshak.com",
+  "currencySymbol": "₹",
+  "units": "Cr",
+
+  "verdict": {
+    "rating": "BUY",
+    "ratingColor": "pos",
+    "summary": "A cash-printing legal monopoly trading at 9× earnings with a 5.7% yield — earnings durable for the next 10-15 years, terminal value the real debate. Position is value + income + tail-risk-tolerant.",
+    "buyBelow": 470,
+    "loadBelow": 400,
+    "trimAbove": 650
+  },
+
+  "snapshot": {
+    "price": 462,
+    "priceChange52w": 3,
+    "marketCap": "₹2,84,998 Cr (~$34B)",
+    "ev": "~₹2,75,000 Cr",
+    "fcfTtm": "₹31,191 Cr (~$3.7B)",
+    "revTtm": "₹1,68,400 Cr (~$20B)",
+    "evFcf": "~9× (8.8× on 5y avg)",
+    "fcfYield": "10.9% reported · ~7% normalized",
+    "roic": "35.3% (ROCE)",
+    "wacc": "12.0%",
+    "fcfGrowth4y": "+34% CAGR (FY22-FY26)",
+    "analystPT": "₹510",
+    "analystUpside": "+10%",
+    "analystRating": "Buy/Hold mixed"
+  },
+
+  "executiveSummary": {
+    "pros": [
+      "Legally-protected effective monopoly: **~80% of India's coal output**, with statutory backing from the Coal Mines (Nationalisation) Act 1973.[^wiki-cil][^wiki-coal-india-industry]",
+      "Trading at **9.2× P/E, 5.7% dividend yield, 35% ROCE** — cheap on every multiple, returns multiple of cost of capital.[^screener-cil]",
+      "**₹31k Cr FCF in FY26**, balance-sheet net-cash; debt 12% of equity; 47-53% payout sustained for 5 years.[^screener-cil]",
+      "Captive customer base: **~80% of dispatches to power sector** under price-controlled Fuel Supply Agreements, protected by India's coal-fired generation share (~70% of grid).[^wiki-energy-india][^cea]",
+      "Maharatna PSU with autonomy on capital allocation up to ₹1,000 Cr per investment without Ministry approval.[^wiki-maharatna]"
+    ],
+    "cons": [
+      "**ROCE compression 107% (FY19) → 35% (FY26)** — base-effect + balance-sheet ballooning + capex spike (FY26 CFI: -₹33,955 Cr).[^screener-cil]",
+      "Climate-transition stranded-asset risk: India's net-zero-2070 target + 500 GW non-fossil by 2030 narrows the demand-runway past 2035.[^wiki-climate-india][^wiki-energy-india]",
+      "**Government of India owns 63.13%** — pricing decisions politically influenced (notified prices for power); OFS dilution risk at any time.[^screener-cil][^wiki-cil]",
+      "Op-margin volatility: **FY26 OPM 24% vs FY24 33%** — a 900bps compression in one year suggests cost-discipline pressure.[^screener-cil]",
+      "Capex creep: borrowings 34× since FY15 (₹408 Cr → ₹14,072 Cr); diversification spend (renewables, critical minerals) yet to prove ROIC."
+    ],
+    "thesisOneLiner": "**Cheap monopoly cash machine** with a clear 10-15-year runway. Buy for income + value; **size to the climate-transition tail risk**.",
+    "color": "pos"
+  },
+
+  "financials": {
+    "title": "Cash machine at a discount",
+    "intro": "Coal India operates as a regulated commodity monopoly — pricing partially controlled, volume locked-in via long-term FSAs. Despite a 5-year sales CAGR of only ~12%, FCF generation has nearly doubled. Capital return discipline (47–53% payout) is the real story here.[^screener-cil]",
+    "tables": {
+      "valuation": [
+        ["Trailing P/E", "9.2× ✓"],
+        ["P/B", "2.4×"],
+        ["EV / FCF (TTM)", "~9× ✓"],
+        ["EV / FCF (5y avg)", "~14×"],
+        ["FCF yield (reported)", "10.9% ✓"],
+        ["FCF yield (5y normalized)", "~7%"],
+        ["Dividend yield", "5.7% ✓"]
+      ],
+      "balance": [
+        ["Reserves", "₹1,12,939 Cr"],
+        ["Total borrowings", "₹14,072 Cr"],
+        ["Cash / liquid inv.", "Strong net-cash position"],
+        ["Debt / Equity", "~0.12 ✓"],
+        ["ROCE (TTM)", "35.3% ✓"],
+        ["ROE (TTM)", "28.5% ✓"],
+        ["ROCE 3y avg", "~38%"]
+      ],
+      "capitalReturn": [
+        ["Dividend payout (5y avg)", "~50% ✓"],
+        ["Dividend yield (TTM)", "5.73% ✓"],
+        ["Buybacks", "Minimal (PSU)"],
+        ["Promoter (GoI)", "63.13% (stable)"],
+        ["FII holding", "8.38%"],
+        ["DII holding", "22.76%"],
+        ["Public", "5.62%"]
+      ]
+    }
+  },
+
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Business",
+      "title": "Section 1 — Do I truly understand it?",
+      "questions": [
+        {
+          "id": "b1",
+          "n": 1,
+          "title": "What does the company actually do?",
+          "body": "Coal India digs coal out of the ground in India and sells it — mostly to state-owned power plants — at prices that are partly set by the government. It's the **world's largest coal producer by output**, accounts for **~80% of India's coal production**, and operates through eight subsidiaries (ECL, BCCL, CCL, NCL, WCL, SECL, MCL, NEC) plus a planning arm (CMPDI).[^wiki-cil][^wiki-coal-india-industry] The business model: extract from open-cast mines (most volume) and underground mines, transport to power plants via railway, sell at notified prices to power sector under long-term Fuel Supply Agreements (FSAs), and sell residual volumes to non-power sectors (steel, cement, fertilizer) at e-auction prices.",
+          "answer": "A regulated commodity monopoly — government-owned, price-controlled, demand-locked to India's coal-fired power grid."
+        },
+        {
+          "id": "b2",
+          "n": 2,
+          "title": "How do they make money, and from whom?",
+          "body": "Revenue ~₹1.68 lakh Cr (FY26, ~$20B), 80%+ from coal sales to power-sector utilities under FSAs, balance from e-auctions (premium pricing) and non-power industrial buyers.[^coal-india-fin][^coal-india-pr][^screener-cil] Two structural margin levers: (1) **notified-price differential** — FSA notified prices are well below e-auction spot, so the mix between regulated vs market sales determines margin; (2) **stripping ratio** — open-cast mines have steadily rising overburden:coal ratios, pushing extraction cost up.",
+          "answer": "Sell government-subsidized coal to government-owned power plants on multi-year FSAs (the cash cow), plus higher-margin spot/e-auction for non-power buyers."
+        },
+        {
+          "id": "b3",
+          "n": 3,
+          "title": "Am I pretending to understand it, or do I really?",
+          "body": "I understand the **economics**: revenue ≈ volume × realized price; the volume is structurally limited by railway logistics + permits; the realized price is a blend of regulated FSA and market e-auction. I understand the **demand driver**: 70% of India's electricity is still coal-fired and the absolute coal demand is still growing despite renewables additions, because base load needs coal until storage gets cheap.[^wiki-energy-india][^cea] What I'm **less confident on** is the inflection year for demand-peak (2032? 2038? 2045?) and the political will to keep notified prices at sub-market levels indefinitely.",
+          "answer": "Yes on unit economics and near-term demand. **No on terminal year** — that's where I assign a wider error band."
+        },
+        {
+          "id": "b4",
+          "n": 4,
+          "title": "Would I be happy owning this for 10 years if the market shut tomorrow?",
+          "body": "For the next 10 years (~2026-2036): high confidence. Indian coal demand for power will be **flat-to-mildly-rising** as renewables can only displace marginal supply, not base load.[^wiki-energy-india] FCF generation should sustain ₹20-30k Cr/year. Dividends sustained at ₹20-22/share. Total return = dividends (5-7% yield) + buybacks/modest re-rating = mid-teens IRR.\n\nThe 10-year compounding case is straightforward: **buy at 9× P/E with a 5.7% cash yield, get 5-7% annual cash + 2-3% growth + multiple-stability = ~10-13% total**. Better than a Bharat Bond, with optionality from diversification (solar, critical minerals).\n\nWhat would make me unhappy at year 10? If demand truly collapses 2032-2035 and management cannot deploy capital ex-coal — both real but not base-case.",
+          "answer": "**Yes for income**; tolerable for total return; not for capital appreciation alone."
+        },
+        {
+          "id": "b5",
+          "n": 5,
+          "title": "What could kill this business?",
+          "body": "Three real threats, in order of credibility:\n\n1. **Climate transition acceleration** — if India's renewables capex ramp continues at 35-40 GW/year and battery storage drops to ₹2-3/kWh stored, coal-fired plant load factor falls below 50% by 2032, FSA off-take volumes contract.[^wiki-climate-india]\n2. **Notified-price politicization** — if state governments squeeze CIL on power-sector prices to subsidize discoms, OPM contracts toward 15-18%.[^wiki-moc][^moc]\n3. **Private-mine disruption** — the 2020 commercial coal mining auctions opened the door to private players (Adani, JSW, Vedanta).[^wiki-coal-india-industry] Currently they're <5% of output, but the cap is gone. By 2032 they could be 20-25%.\n\nNone are extinction-level. All are margin/multiple-compression risks. The business is **kill-resistant for ~15 years; kill-vulnerable past 2040**.",
+          "answer": "Climate transition + commercial-mining competition + price politicization. None acute; all real over a 15-year window."
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "Management",
+      "title": "Section 2 — Can I trust these people with my capital?",
+      "questions": [
+        {
+          "id": "m1",
+          "n": 1,
+          "title": "Would I trust them with my family's money?",
+          "body": "Chairman & MD is appointed by the Government of India through the Public Enterprises Selection Board (PESB), not by the board.[^coal-india-board][^wiki-cil] This is the central issue: **the people running CIL are competent technocrats with no skin in the game and limited tenure** (typically 3-5 years before retirement age). Capital allocation is bounded by Ministry approvals.\n\nTrustworthiness on the *operational* side: high — CIL's mine-operation track record is solid, safety statistics steady, production hit ~774 MT in FY24 and is on the **1 BT (1 billion tonne) trajectory for FY26-27**.\n\nTrustworthiness on the *strategic* side: limited — the company has historically deployed cash sub-optimally (large dividends 95-146% in FY15-18 wiped reserves; FY26 capex of ₹33,955 Cr shows shift to investment but ROIC TBD).[^screener-cil]",
+          "answer": "Operationally yes; strategically **decisions are not theirs to make** — they execute against Ministry policy."
+        },
+        {
+          "id": "m2",
+          "n": 2,
+          "title": "How do they treat minority shareholders when no one is watching?",
+          "body": "**Decent, by PSU standards.** Dividend payout 42-53% for FY22-FY26 is consistent and predictable. **No dilutive equity issuance** — share count flat at 616 Cr shares since FY19. **Buybacks limited** (no major program announced in last 3 years), but special dividends used to return excess cash.[^screener-cil]\n\nMinority red flags: (1) GoI did **OFS at ₹225 in 2021** when the price was near 10-year lows — not abusive but suboptimal for minority shareholders; (2) FSA notified prices favor government discoms over CIL margin; (3) corporate governance disclosures are SEBI-compliant but minimal voluntary disclosure on segment economics.\n\nThe **2020 special interim dividend of ₹7.50** during the COVID demand crash was conspicuous — government extracting cash when minorities needed reinvestment most.",
+          "answer": "OK but not exemplary. Treat as a **utility-style coupon stock**, not a partner."
+        },
+        {
+          "id": "m3",
+          "n": 3,
+          "title": "Capital allocation track record?",
+          "body": "Mixed. Three eras:\n- **2010-2018 (Cash-hoarding era):** Dividend payouts 95-146% of earnings (sometimes paying out more than profit, draining reserves from ₹34k Cr → ₹14k Cr).[^screener-cil] Government extracting cash from CIL to subsidize state utilities. Capex inadequate.\n- **2019-2023 (Re-investment era):** Capex picked up (CWIP rose ₹9k → ₹17k Cr), production grew 8-10%/yr, OPM expanded 22% → 33%. Disciplined.\n- **2024-2026 (Diversification + scaling era):** Massive Cash-from-Investing outflows (-₹33,955 Cr in FY26), entry into solar (CIL Solar JV with NLC), critical minerals (lithium, copper) exploration. Returns TBD.\n\nThe **right read**: management's job is to execute the Ministry's policy. When the Ministry asks for cash, they pay it. When it asks for production, they ramp. The capital-allocation skill resides at MoC, not CIL.",
+          "answer": "Capital allocation is **Ministry-dictated, not management-driven**. Recent diversification capex is large; ROIC outcome is the test."
+        },
+        {
+          "id": "m4",
+          "n": 4,
+          "title": "How honest are they in disclosure?",
+          "body": "**Honest where SEBI requires; minimal where voluntary.** Annual reports are detailed on production tonnage, mine-wise output, FSA volumes, and reserves estimates.[^coal-india-ar] Disclosure of operational metrics (offtake, dispatch, stripping ratios) is industry-standard. Ratings published by COAL India's investor presentations are consistent with audited figures.\n\nWhat's **less transparent**: (1) **e-auction realization mix** disclosed in aggregate, not by region; (2) **renewables JV economics** for CIL Solar are not segment-reported; (3) **employee welfare costs** (which are very high — ~80% of expenses) are not broken out by subsidiary in segment notes.\n\nNo restatements, no auditor concerns in the latest annual report.",
+          "answer": "Compliant + clean — but lacks the granularity that lets you reverse-engineer the segment economics."
+        },
+        {
+          "id": "m5",
+          "n": 5,
+          "title": "Skin in the game?",
+          "body": "**Effectively zero.** The Chairman + senior executives hold negligible personal stakes (vesting structure heavily PSU-payscale, not equity).[^coal-india-board] The Government of India holds 63.13% but the **government is not a long-term shareholder** in the traditional sense — it's a parent that periodically extracts dividends and may dilute via OFS.\n\nThe ESOP/RSU culture absent in PSUs is a structural minus for alignment, but it's a **double-edged sword**: no management isn't motivated to chase EPS, also not motivated to chase value-destructive M&A or empire-build.",
+          "answer": "Zero individual alignment; majority alignment is government-as-parent. Treat as **utility, not founder-led growth.**"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "Price",
+      "title": "Section 3 — What am I paying, and why now?",
+      "questions": [
+        {
+          "id": "p1",
+          "n": 1,
+          "title": "What am I paying for the business today?",
+          "body": "**At ₹462 (May 2026), market cap is ₹2,84,998 Cr (~$34B).**[^screener-cil][^bse-cil][^mc-cil] No material debt — borrowings ₹14,072 Cr offset by treasury investments; effective EV ≈ ₹2.75 lakh Cr.\n\nMultiples:\n- **P/E (TTM):** 9.17×\n- **EV/FCF (TTM):** ~9× (reported); **8.8× on 5y average FCF**\n- **P/B:** 2.4× (book ₹193)\n- **Dividend yield:** 5.73%\n- **FCF yield:** 10.9% (TTM), **~7% normalized (5y average)**\n\nFor a business doing 28-38% ROE, 35-78% ROCE over a decade, with a captive customer base and statutory protection, this is **cheap on every multiple**.[^screener-cil] The market discount reflects climate-transition tail risk + governance discount, not operational concerns.",
+          "answer": "9× earnings, 7% normalized FCF yield, 5.7% cash dividend yield. **Cheap by every value lens.**"
+        },
+        {
+          "id": "p2",
+          "n": 2,
+          "title": "What's the business worth conservatively?",
+          "body": "Three-scenario DCF (₹ per share):\n\n| Scenario | Assumption | FCF growth | Terminal | NAV |\n|---|---|---|---|---|\n| **Base** | Stranded by 2045; 10-yr FCF flat, then 5% decline; 10% discount | 0% nominal | Limited | **₹520-580** |\n| **Bull** | Demand peaks 2040, gentle decline; diversification covers 30% of EBITDA by 2035 | +3% nominal | Moderate | **₹680-750** |\n| **Bear** | Faster transition; demand peaks 2032, declines 4%/yr; OPM compresses to 18% | -1% nominal | Sharp | **₹360-420** |\n\nWeighted (40/30/30): **fair value ~₹530-560**. **Buy below ₹470, load below ₹400, trim above ₹650.**\n\nCross-check: **a 6% perpetuity** of ₹19,628 Cr (5y avg FCF) = ₹3.27 lakh Cr / 616 Cr shares ≈ **₹530/share**. Validates the DCF.",
+          "answer": "Fair value **~₹530-560**. Current ₹462 = **~13-17% margin of safety**. Not deep value, but compelling for a yield-plus-growth name."
+        },
+        {
+          "id": "p3",
+          "n": 3,
+          "title": "What would I pay for the whole business?",
+          "answer": "Roughly **today's quote** — a 7% required return on 5-yr-average FCF lands EV near ₹2.5-2.8 lakh Cr. To pay materially below, **wait for ₹400-420**.",
+          "body": "A rational private buyer (sovereign wealth, infra fund) would pay for the **5y average FCF of ₹19,628 Cr at a 7-8% required return**, yielding an EV of **₹2.45-2.80 lakh Cr** — close to today's quote.\n\nWhat I'd pay personally: **a touch below today's price**, recognizing:\n- + ROCE 35% on incremental capital\n- + 5.7% cash dividend covered 2× by FCF\n- + Net cash balance sheet\n- + Captive demand for ≥ 10 years\n- − Climate transition tail (probability-weighted: 30%)\n- − GoI overhang on pricing + OFS\n- − No skin-in-game alignment",
+          "chip": "~₹460-480",
+          "chipTone": "warn",
+          "tiles": [
+            {"label": "Normalized FCF (5y avg)", "value": "₹19,628 Cr"},
+            {"label": "Implied EV @ 7% req return", "value": "₹2.80 lakh Cr"},
+            {"label": "Equity value / share", "value": "~₹460-480"}
+          ],
+          "footnote": "Today's quote ≈ what a rational private buyer with a 10-year horizon would pay. Add a **MOS for the stranded-asset tail** by waiting for ₹400-420 to back up the truck."
+        },
+        {
+          "id": "p4",
+          "n": 4,
+          "title": "At what price would I sell?",
+          "answer": "**Trim 50% above ₹650**, exit 75% on fundamental break (3 quarters of FSA-volume decline or OPM < 18%), full exit on capital-allocation foul-up.",
+          "body": "Decided before buying.",
+          "chip": "Trim > ₹650",
+          "chipTone": "neg",
+          "triggers": [
+            {"title": "Price trigger", "tone": "neg", "body": "> **₹650** (~13× P/E, ~5× normalized FCF yield drops below 3%). Trim 50%."},
+            {"title": "Fundamental trigger", "tone": "neg", "body": "Three consecutive quarters of FSA volume decline OR OPM falls below 18% → demand-peak is here → exit 75%."},
+            {"title": "Capital allocation trigger", "tone": "neg", "body": "M&A above ₹15k Cr in non-core (anything outside coal, solar, critical minerals) OR dividend cut > 30% with no buyback offset → exit."},
+            {"title": "Regulatory trigger", "tone": "neg", "body": "Punitive change to notified pricing (-10% in real terms) OR > 30% production share opened to private competition → trim 50%."}
+          ]
+        },
+        {
+          "id": "p5",
+          "n": 5,
+          "title": "If it drops 40% next month — buy or panic?",
+          "answer": "**Buy.** At ₹277, EV/FCF compresses to ~5.5× and yield to 9.5% — an archetypal asymmetric setup unless one of four red flags triggers (notified-price cut, OFS overhang, RE cost inflection, or board exodus).",
+          "chip": "Buy, with checks",
+          "chipTone": "pos",
+          "body": "₹277 ≈ market cap ₹1.71 lakh Cr, EV/FCF ~5.5× on TTM, ~8.7× on 5y avg, dividend yield 9.5%. **Pre-commitment: buy aggressively** unless one of:",
+          "ordered": [
+            "Coal Ministry mandates a > 15% real cut to notified prices (margin permanently compressed)",
+            "GoI announces a > 10% OFS or strategic sale below ₹300 (supply overhang)",
+            "Renewable + storage cost curve inflects (RE LCOE < ₹2/kWh with 6-hour storage at < ₹1.5/kWh)",
+            "CMD or two of three senior independent directors resign together"
+          ],
+          "footnote": "**Buy at ₹400, load at ₹350, back-up-the-truck at ₹280.** A cyclical commodity monopoly trading at a single-digit FCF yield is the **value-investor's archetypal asymmetric setup** — provided the long-term thesis holds."
+        }
+      ]
+    }
+  ],
+
+  "scorecard": {
+    "dimensions": [
+      {"label": "Business quality",                  "score": 3.5},
+      {"label": "Business durability (10y)",         "score": 4.0},
+      {"label": "Business durability (20y)",         "score": 2.0},
+      {"label": "Management quality",                "score": 3.0},
+      {"label": "Skin in game",                      "score": 1.0},
+      {"label": "Capital allocation track record",   "score": 2.5},
+      {"label": "Price today",                       "score": 4.0},
+      {"label": "Price if -40%",                     "score": 5.0},
+      {"label": "Upside / downside asymmetry",       "score": 4.0}
+    ],
+    "summary": "Position sizing: **3-4% at today's quote**, scale to **6-7% on ₹400 sell-off**. Conviction: High on near-term cash; Medium on management strategic decisions; Low on terminal value past 2040. **Value + income + tail-risk tolerance** required."
+  },
+
+  "sources": [
+    {
+      "id": "coal-india-ar",
+      "type": "Annual Report",
+      "title": "Coal India Limited — Annual Reports landing page",
+      "publisher": "Coal India Investor Relations",
+      "date": "2026-05-14",
+      "url": "https://www.coalindia.in/performance/annual-reports/",
+      "note": "Source for production tonnage, FSA volumes, mine-wise output, reserves estimates, and audited segment data. Most recent: FY25 annual report; FY26 results scheduled for May-June 2026."
+    },
+    {
+      "id": "coal-india-fin",
+      "type": "Regulatory Filing",
+      "title": "Coal India Limited — Quarterly & Annual Financial Statements",
+      "publisher": "Coal India Investor Relations",
+      "date": "2026-05-14",
+      "url": "https://www.coalindia.in/performance/financial-statements/",
+      "note": "Source for quarterly P&L, cash flow, balance sheet. Q4 FY26 (Mar 2026) results filed and audited."
+    },
+    {
+      "id": "coal-india-pr",
+      "type": "Earnings Call",
+      "title": "Coal India Limited — Press Releases & Earnings Announcements",
+      "publisher": "Coal India Investor Relations",
+      "date": "2026-05-14",
+      "url": "https://www.coalindia.in/news-media/press-releases/",
+      "note": "Source for production updates, dividend declarations, FSA renewals, capex announcements, and renewable JV news."
+    },
+    {
+      "id": "coal-india-board",
+      "type": "Regulatory Filing",
+      "title": "Coal India Limited — Board of Directors",
+      "publisher": "Coal India Investor Relations",
+      "date": "2026-05-14",
+      "url": "https://www.coalindia.in/boards/",
+      "note": "Current Chairman & MD, functional directors, independent directors, government nominees. CMD is appointed by Public Enterprises Selection Board (PESB)."
+    },
+    {
+      "id": "wiki-cil",
+      "type": "Reference",
+      "title": "Coal India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Coal_India",
+      "note": "Corporate history, ownership structure (GoI 63.13%), subsidiary list (ECL, BCCL, CCL, NCL, WCL, SECL, MCL, NEC, CMPDI), Maharatna status. Primary sources cited in Wikipedia article."
+    },
+    {
+      "id": "wiki-coal-india-industry",
+      "type": "Reference",
+      "title": "Coal mining in India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Coal_mining_in_India",
+      "note": "Industry context — CIL's ~80% share, 2020 commercial-mining liberalization, private-sector entrants (Adani, JSW, Vedanta), national production trajectory toward 1.5 BT by FY30."
+    },
+    {
+      "id": "wiki-moc",
+      "type": "Regulatory Filing",
+      "title": "Ministry of Coal, Government of India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Ministry_of_Coal",
+      "note": "Parent ministry; sets notified prices for power-sector FSA coal. CIL CMD is appointed by PESB under this ministry's purview."
+    },
+    {
+      "id": "moc",
+      "type": "Regulatory Filing",
+      "title": "Ministry of Coal — official Government of India site",
+      "publisher": "Government of India · Ministry of Coal",
+      "date": "2026-05-14",
+      "url": "https://coal.nic.in",
+      "note": "Authoritative source for pricing notifications, FSA frameworks, commercial mining auctions, and policy circulars affecting CIL."
+    },
+    {
+      "id": "bse-cil",
+      "type": "Regulatory Filing",
+      "title": "Coal India Ltd — BSE listing (533278)",
+      "publisher": "Bombay Stock Exchange",
+      "date": "2026-05-14",
+      "url": "https://www.bseindia.com/stock-share-price/coal-india-ltd/coalindia/533278/",
+      "note": "Authoritative price + corporate-action history. CIL is dual-listed on BSE (533278) and NSE (COALINDIA)."
+    },
+    {
+      "id": "screener-cil",
+      "type": "Research",
+      "title": "Coal India — Consolidated financials & ratios",
+      "publisher": "Screener.in",
+      "date": "2026-05-14",
+      "url": "https://www.screener.in/company/COALINDIA/consolidated/",
+      "note": "Source for 12-year P&L, balance sheet, cash flow data; quarterly trends; shareholding pattern; ROCE/ROE history. Cross-references audited annual reports."
+    },
+    {
+      "id": "mc-cil",
+      "type": "Research",
+      "title": "Coal India Ltd — Moneycontrol quote and filings",
+      "publisher": "Moneycontrol",
+      "date": "2026-05-14",
+      "url": "https://www.moneycontrol.com/india/stockpricequote/mining-minerals/coalindia/CI11",
+      "note": "Real-time price, 52-week range (₹369-491 as of May 2026), sell-side consensus, and broker target prices."
+    },
+    {
+      "id": "wiki-maharatna",
+      "type": "Reference",
+      "title": "Maharatna status — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Maharatna",
+      "note": "Maharatna PSUs (highest CPSE category) enjoy investment autonomy up to ₹1,000 Cr per project without Ministry approval, and 15% of net worth as cumulative cap."
+    },
+    {
+      "id": "wiki-climate-india",
+      "type": "Reference",
+      "title": "Climate change in India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Climate_change_in_India",
+      "note": "Context for net-zero-2070 target, 500 GW non-fossil 2030 commitment, and the demand-runway implications for thermal coal."
+    },
+    {
+      "id": "wiki-energy-india",
+      "type": "Reference",
+      "title": "Energy policy of India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Energy_policy_of_India",
+      "note": "Generation mix (coal ~70% of electricity supply), national electricity plan trajectory, and the structural demand floor for CIL's volume."
+    },
+    {
+      "id": "cea",
+      "type": "Regulatory Filing",
+      "title": "Central Electricity Authority — Dashboard & monthly fuel reports",
+      "publisher": "CEA · Ministry of Power, Government of India",
+      "date": "2026-05-14",
+      "url": "https://www.cea.nic.in/dashboard/",
+      "note": "Authoritative monthly data on coal-fired generation share, plant load factors, and fuel stock at thermal stations. Validates the FSA volume durability thesis."
+    }
+  ]
+}
