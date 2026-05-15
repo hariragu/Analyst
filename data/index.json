@@ -12,6 +12,13 @@
       "market": "India (NSE)",
       "asOf": "2026-05-15",
       "pickCount": 10
+    },
+    {
+      "id": "india-smallcap-2026-05",
+      "title": "India · Small-Cap · Value & Quality · May 2026",
+      "market": "India (NSE) · Mkt cap < ₹20,000 Cr",
+      "asOf": "2026-05-15",
+      "pickCount": 7
     }
   ],
   "stocks": [
@@ -184,6 +191,104 @@
       "priorityRank": 10,
       "thesis": "PV leader (~40% share); deepest distribution; Suzuki tech parent.",
       "valueAngle": "~25× earnings; SUV refresh + export ramp under-appreciated; net cash ₹50,000Cr+."
+    },
+    {
+      "ticker": "CAMS",
+      "name": "Computer Age Management Services Ltd.",
+      "exchange": "NSE",
+      "sector": "Capital-market Infra · RTA",
+      "logoText": "C",
+      "logoFrom": "#0c4a6e",
+      "logoTo": "#06b6d4",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 1,
+      "thesis": "MF RTA duopoly (~70% share) — services 10 of top 15 AMCs; AUM-linked revenue at 40%+ ROCE.",
+      "valueAngle": "~45× P/E supported by structural 60-70% EBITDA margins; equity-market mix-shift is mid-teens revenue tailwind."
+    },
+    {
+      "ticker": "VINATIORGA",
+      "name": "Vinati Organics Ltd.",
+      "exchange": "NSE",
+      "sector": "Specialty Chemicals",
+      "logoText": "V",
+      "logoFrom": "#065f46",
+      "logoTo": "#14b8a6",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 2,
+      "thesis": "Global #1 in ATBS (~65% share) + IBB — process-IP moat, debt-free, founder-led (Vinati Saraf Mutreja).",
+      "valueAngle": "~32× P/E vs 10y avg 38×; downstream butyl-phenol & antioxidant capacity ramping FY27."
+    },
+    {
+      "ticker": "CAPLIPOINT",
+      "name": "Caplin Point Laboratories Ltd.",
+      "exchange": "NSE",
+      "sector": "Pharma · Niche Exports",
+      "logoText": "C",
+      "logoFrom": "#9a3412",
+      "logoTo": "#ef4444",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 3,
+      "thesis": "LATAM-focused generics with first-mover share in Central/South America; US injectables ramp via Caplin Steriles.",
+      "valueAngle": "~22× P/E + 25%+ ROCE + debt-free + decade of unbroken FCF; US ramp is free optionality."
+    },
+    {
+      "ticker": "AFFLE",
+      "name": "Affle (India) Ltd.",
+      "exchange": "NSE",
+      "sector": "Ad-tech · Mobile",
+      "logoText": "A",
+      "logoFrom": "#581c87",
+      "logoTo": "#ec4899",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 4,
+      "thesis": "Mobile-first ad-tech with proprietary intent data; CPC pricing insulates from CPM compression.",
+      "valueAngle": "~50× P/E rich but 4y revenue CAGR 30%+ at 25% EBITDA margin, net-cash; MENA & US monetisation early."
+    },
+    {
+      "ticker": "SUPRAJIT",
+      "name": "Suprajit Engineering Ltd.",
+      "exchange": "NSE",
+      "sector": "Auto Ancillary · Control Cables",
+      "logoText": "S",
+      "logoFrom": "#1e293b",
+      "logoTo": "#3b82f6",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 5,
+      "thesis": "World's largest auto control-cable maker — supplies Honda, Yamaha, Bajaj globally; EV-agnostic product.",
+      "valueAngle": "~24× P/E + 18% ROCE; Sundaram cable-biz acquisition expands SAM; hidden champion in a boring niche."
+    },
+    {
+      "ticker": "ECLERX",
+      "name": "eClerx Services Ltd.",
+      "exchange": "NSE",
+      "sector": "KPO · Digital Operations",
+      "logoText": "E",
+      "logoFrom": "#312e81",
+      "logoTo": "#8b5cf6",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 6,
+      "thesis": "Sticky digital-ops to enterprise BFSI / cable / hi-tech; founder-promoted (Mundhra, Malik); aggressive buybacks.",
+      "valueAngle": "~18× P/E — cheapest among listed BPM/KPO peers; net-cash; 20%+ EBITDA margins through wage cycle."
+    },
+    {
+      "ticker": "MOLDTKPAC",
+      "name": "Mold-Tek Packaging Ltd.",
+      "exchange": "NSE",
+      "sector": "Packaging · Rigid Plastic",
+      "logoText": "M",
+      "logoFrom": "#92400e",
+      "logoTo": "#f59e0b",
+      "status": "screened",
+      "screenId": "india-smallcap-2026-05",
+      "priorityRank": 7,
+      "thesis": "IML plastic-packaging leader for India paints, lubes, ghee, ice-cream — tool-mould switching cost is real.",
+      "valueAngle": "~22× P/E + 20%+ ROCE + net-cash; 30%+ F&B mix (margin-rich); Birla Opus paint launch is a tailwind, not headwind."
     }
   ]
 }
