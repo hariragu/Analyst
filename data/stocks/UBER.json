@@ -52,6 +52,164 @@
     ]
   },
 
+  "industry": {
+    "title": "Industry primer — global on-demand mobility & delivery",
+    "intro": "Uber sits across three industries that share one substrate (a marketplace matching independent operators with consumer demand) but have very different economics, competitors, and growth curves. Understand the shape of each before scoring the stock.",
+
+    "sizeAndShape": {
+      "title": "1. How big are these markets today?",
+      "tiles": [
+        {"label": "Global ride-hail GMV (2024)", "value": "~$140B", "sub": "8-10% CAGR; US ~$70B"},
+        {"label": "Global online food delivery GMV", "value": "~$200B", "sub": "5-7% CAGR post-COVID normalised"},
+        {"label": "US freight brokerage market", "value": "~$110B", "sub": "Cyclical; 2023-25 freight recession"},
+        {"label": "Uber Mobility GMV FY24", "value": "$83B", "sub": "Largest single ride-hail player globally"},
+        {"label": "Uber Delivery GMV FY24", "value": "$74B", "sub": "#1 outside US in many markets"},
+        {"label": "Waymo paid rides per week", "value": "~250k", "sub": "Mid-2024 milestone — AV pacing benchmark"}
+      ],
+      "body": "**Ride-hail** is a ~$140B global GMV market[^wiki-ridesharing] dominated by ~6 regional champions; **online food delivery** is a larger but lower-margin ~$200B market with more fragmented leadership[^wiki-online-food]. Both are mature in developed markets (high-single-digit growth), still scaling in emerging markets. **Freight brokerage** is a separate, much more cyclical ~$110B North-American market that Uber entered via Uber Freight (2017). **Autonomous vehicles** is the wild card — small today (~250k rides/week at Waymo) but doubling year-on-year and the central reason Uber's multiple is compressed."
+    },
+
+    "segmentation": {
+      "title": "2. How the industry segments",
+      "intro": "Four orthogonal axes — confusion on any one causes mispricing of mobility platforms.",
+      "segments": [
+        {
+          "axis": "By service line",
+          "title": "Mobility · Delivery · Freight · Adjacent (AV, Ads, Grocery)",
+          "body": "**Mobility (~57% of Uber rev, $83B GMV)** — ride-hail, taxi-dispatch, scheduled/Reserve, premium tiers, scooters/bikes. Highest take-rate (~28-30%), best-margin business. Network-effects strongest here.\n\n**Delivery (~37% of Uber rev, $74B GMV)** — restaurant + grocery + retail courier. Lower take-rate (~18-20%), thinner margins, more competitive. Regional leadership matters more than global.\n\n**Freight (~6% of Uber rev)** — digital brokerage, B2B not B2C. Margin-thin (~10-12% take), commoditised, deeply cyclical. Uber Freight is sub-scale vs C.H. Robinson, J.B. Hunt, RXO.\n\n**Adjacent layers** — high-margin **advertising** (~$1.5B run-rate, growing 60%+), **Uber One** subscription, **Uber for Business**, **Uber Health**, **autonomous-vehicle network orchestration** (Waymo PHX partnership). These are the mix-shift story.",
+          "shareLabels": ["Mobility", "Delivery", "Freight"],
+          "shareValues": [57, 37, 6],
+          "implications": "**Mobility is the cash engine.** Delivery is a growth + defense moat (cross-sell, frequency). Freight is sub-scale and may not stay strategic. Advertising is the **non-obvious tailwind** — high-margin, lightly cyclical, and the only meaningful new earnings driver inside the existing footprint."
+        },
+        {
+          "axis": "By geography · ownership posture",
+          "title": "Where Uber operates directly vs holds equity in a regional champion",
+          "body": "**Direct operations (~70+ countries)** — US, Canada, Mexico, most of LatAm, UK, EU, Australia, NZ, Japan, India, MENA (via Careem 2019 acquisition), most of Africa.[^wiki-uber]\n\n**Equity stakes in regional rivals (where Uber sold and exited)** — **DiDi (~12% stake)** for China (sold 2016 for ~$7B GAAP value), **Grab (~14%)** for SEA (sold 2018), **Yandex Taxi** Russia/CIS (merged 2018, divested 2022).[^wiki-didi][^wiki-grab]\n\n**Pure competition (Uber operates and a credible local rival also exists)** — Lyft (US, ~25% share), Bolt (EU/Africa), Ola (India), 99 (Brazil, owned by DiDi), Free Now (EU, Daimler/BMW JV).",
+          "shareLabels": ["US/CA + Mexico", "EMEA + ANZ + JP", "LatAm (ex-MX)", "India + MENA"],
+          "shareValues": [55, 25, 12, 8],
+          "implications": "**Uber is a US-anchored global operator with passive exposure to China + SEA via equity stakes.** The pure-competition markets (US, EU, India) are where price wars happen and margins flex. Equity-stake markets contribute **non-cash mark-to-market**, not operating cash flow."
+        },
+        {
+          "axis": "By worker model",
+          "title": "Marketplace independent contractor vs employed driver",
+          "body": "**Independent contractor / marketplace model (~95%+ of global driver supply)** — drivers set their own hours, use their own vehicles, are paid per trip. Lighter cost, no benefits, no unemployment insurance. This is Uber's default model and the **single biggest cost-structure advantage**.\n\n**Employed / EOR model** — required in select markets after legal challenges: France (Cour de Cassation 2020 ruling on a specific case), Spain (2021 'Rider Law'), UK (Supreme Court 2021 — workers, not employees, intermediate status). Operating in these markets is materially more expensive — ~25-35% higher labour cost per trip.[^ab5-prop22]\n\n**Hybrid / regulated** — California's Prop 22 (2020, upheld 2024) carved out a third category for app-based drivers — independent + minimum wage floor + healthcare stipend. **The political contest is whether Prop 22 spreads or AB5 spreads.**",
+          "shareLabels": ["Pure independent contractor", "Hybrid (Prop 22-style)", "Worker / EOR (UK, ES, FR)"],
+          "shareValues": [78, 15, 7],
+          "implications": "**A Federal PRO Act-style reclassification is the single largest non-AV downside.** It would compress US Mobility margin by 600-1,000 bps and is impossible to fully model — but is currently low-probability under the present US administration."
+        },
+        {
+          "axis": "By demand-stack layer",
+          "title": "AV provider vs demand aggregator vs consumer brand — the central debate",
+          "body": "Today, Uber is the **consumer brand + demand aggregator + driver marketplace** — a vertically integrated platform between rider and supply. Three plausible futures:\n\n1. **Status quo (Uber wins)** — AV providers (Waymo, Aurora, etc.) have **no consumer brand and no scaled demand**. They sell capacity wholesale to Uber, which keeps the consumer relationship. Uber's PHX deal with Waymo (2024) is the proof point.\n\n2. **Disintermediation (Uber loses demand layer)** — Tesla, with 100M+ installed FSD-eligible vehicles, launches a Tesla Network bypassing Uber. Or Waymo scales direct-to-consumer in major metros. Uber retains long-tail markets but loses dense urban demand.[^waymo-milestone-2025]\n\n3. **Hybrid (most likely)** — Uber loses ~30-40% of dense urban share over 5-10 years to direct-to-consumer AV apps; retains long-tail + suburban + multi-modal + delivery. EBITDA flat in absolute terms but multiple compresses on growth-rate fears.",
+          "shareLabels": ["Demand aggregator", "Driver marketplace", "Consumer brand"],
+          "shareValues": [40, 35, 25],
+          "implications": "**This axis IS the Uber thesis.** Bull case: Uber's demand-aggregation scale is the moat (CAC for AV providers to reach consumers is high). Bear case: Tesla bypasses entirely. **Genuine unknown** — size position accordingly."
+        }
+      ]
+    },
+
+    "competitive": {
+      "title": "3. Who else is in the market?",
+      "intro": "**Uber is the global leader in mobility GMV** (when you exclude China and SEA, where it sold and holds equity). In delivery it's #1 outside the US and #2 inside. In freight it's a sub-scale entrant. AVs is a parallel race entirely.",
+      "leader": {
+        "name": "Uber Technologies (mobility + delivery + freight)",
+        "type": "Public · NYSE: UBER",
+        "share": "~28% global mobility GMV · #1 ex-China/SEA",
+        "tone": "pos",
+        "body": "**$162B GMV FY24 across all segments.** ~75% US ridehail share[^wiki-ridesharing], #1 ride-hail in 70+ countries (UK, FR, DE, AU, NZ, JP, MX, BR, AR, ZA, MENA via Careem). #2 US food delivery (~25% share). Holds equity stakes in DiDi (~12%) and Grab (~14%) covering China + SEA — non-operating mark-to-market."
+      },
+      "followers": [
+        {
+          "name": "Lyft (US ride-hail)",
+          "type": "Public · NASDAQ: LYFT",
+          "share": "~25% US ridehail",
+          "tone": "warn",
+          "listed": "~$5-6B mkt cap",
+          "body": "**Single-country US-only operator.** Smaller scale → higher driver supply cost per trip → structurally worse take-rate. Regularly tries price wars; loses each cycle. Surfaced bid speculation periodically (DoorDash, others). Not a viable disruptor at scale.[^wiki-lyft]"
+        },
+        {
+          "name": "DoorDash (US delivery #1)",
+          "type": "Public · NYSE: DASH",
+          "share": "~65% US food delivery",
+          "tone": "neg",
+          "listed": "~$70B mkt cap",
+          "body": "**The clear US delivery winner.** Restaurant supply density + courier density advantages compound; Uber Eats has structurally lost US share since 2020 and is a clear #2 (~25%). DoorDash has been expanding internationally (Wolt acquisition 2022 in EMEA) — a long-term concern in Uber Delivery's #1-ex-US fortress.[^wiki-doordash]"
+        },
+        {
+          "name": "DiDi Global (China)",
+          "type": "Private (delisted 2022)",
+          "share": "~90% China ridehail",
+          "tone": "warn",
+          "listed": "Uber holds ~12% equity",
+          "body": "**Owns China outright** after Uber sold its China ops in 2016 for an equity stake. Also dominates Brazil via 99. Regulatory shadow from 2021 China cybersecurity probe limits expansion outside core. Uber's stake is mark-to-market in 'Other income'.[^wiki-didi]"
+        },
+        {
+          "name": "Grab (SEA), Bolt (EU/Africa), Ola (India)",
+          "type": "Mixed · public + private",
+          "share": "Regional dominance",
+          "tone": "warn",
+          "listed": "Grab: NASDAQ:GRAB",
+          "body": "**Grab** — SEA's super-app, owns SEA ride-hail + delivery. Uber sold to them 2018, holds ~14%.[^wiki-grab] **Bolt** — Estonian rival, EU + Africa, hyper-aggressive on take-rate. **Ola** — India rival, currently weaker than Uber India after 2023 layoffs."
+        },
+        {
+          "name": "Just Eat Takeaway, Delivery Hero, Meituan, Zomato/Swiggy (intl delivery)",
+          "type": "Various — listed in EU, DE, China, India",
+          "share": "Regional",
+          "tone": "warn",
+          "listed": "Public",
+          "body": "**Just Eat Takeaway** (UK/EU; sold Grubhub 2024 to Wonder), **Delivery Hero** (Foodpanda + global brands; Taiwan deal blocked 2024[^foodpanda-taiwan-2024]), **Meituan** (China dominant), **Zomato + Swiggy** (India duopoly). Uber Eats competes head-to-head with these region-by-region; wins in MEA and parts of LATAM, loses in CN and IN."
+        },
+        {
+          "name": "Waymo (Alphabet) — AV ride-hail",
+          "type": "Subsidiary of GOOGL",
+          "share": "Small but growing fastest",
+          "tone": "neg",
+          "listed": "Within Alphabet",
+          "body": "**~250k paid rides/week mid-2024**, doubling year-on-year. Operating in PHX, SF, LA. Uber **partners** with Waymo in Phoenix (Uber app dispatches Waymo cars). The partnership is the bull case — Waymo provides supply, Uber provides demand. The bear case: Waymo eventually bypasses Uber in dense urban markets.[^waymo-milestone-2025]"
+        },
+        {
+          "name": "Tesla, Cruise (paused), Pony.ai, Aurora, Mobileye — other AV",
+          "type": "Mixed",
+          "share": "Pre-revenue or paused",
+          "tone": "warn",
+          "listed": "Various",
+          "body": "**Tesla** — FSD beta + announced 'Cybercab'; the largest existential bear case for Uber if it launches a Tesla Network at scale. **Cruise (GM)** — paused after Oct 2023 SF incident. **Aurora** — partner with Uber on freight AVs.[^aurora-atg-2020] **Pony.ai, WeRide** — China AV leaders. **Mobileye** — chips + sensor stack supplier."
+        }
+      ],
+      "share_chart": {
+        "title": "US ride-hail market share · 2024 estimate",
+        "labels": ["Uber", "Lyft", "Other (taxi-dispatch + niche)"],
+        "values": [75, 22, 3]
+      }
+    },
+
+    "growth": {
+      "title": "4. How is the industry growing?",
+      "tiles": [
+        {"label": "Global ride-hail GMV CAGR 2020-25", "value": "+12-15%", "sub": "Recovery + emerging-market growth"},
+        {"label": "Forward ride-hail growth", "value": "+8-10%", "sub": "Mature markets normalising; AVs additive"},
+        {"label": "Global food-delivery CAGR post-COVID", "value": "+5-7%", "sub": "Down from +25% during 2020-21"},
+        {"label": "Uber Mobility trips growth", "value": "+15-20%/yr", "sub": "Outpacing market — share gains"},
+        {"label": "Uber Advertising growth", "value": "+60%/yr", "sub": "$1.5B run-rate — fastest mix-shift"},
+        {"label": "Waymo rides growth", "value": "~2× YoY", "sub": "Small base; trajectory matters"}
+      ],
+      "body": "**Ride-hail is in a healthy mid-cycle.** Vehicle-ownership decline among Gen Z + urban density + tourism rebound + hybrid-work commute patterns drive **8-10% volume growth** in developed markets, **15-20%** in emerging.[^wiki-ridesharing] Take rates have stabilised after the 2018-21 driver-incentive wars.\n\n**Food delivery is normalising.** Post-COVID growth fell from +25% (2020-21) to **+5-7%** as restaurants reopened. Industry is consolidating (Just Eat sold Grubhub; Wolt acquired by DoorDash; Foodpanda-Taiwan blocked) — fewer subsidies, better unit economics for survivors.[^wiki-online-food]\n\n**Freight is cyclical-down.** US freight rates collapsed 2022-24, cleared the weak hands (Convoy closed Oct 2023). 2025-26 should see a recovery cycle.\n\n**AVs is the generational unknown.** Best-case scenario: AVs **expand the mobility TAM 3-5×** by lowering per-mile cost and unlocking new use cases (kids, elderly, no-license riders). Worst-case: AVs **disintermediate** the demand aggregator. The truth is probably in between — but the market is currently pricing the bear case at a 30-40% probability, which is what compresses Uber's multiple.[^waymo-milestone-2025]",
+      "drivers": [
+        {"label": "Vehicle-ownership decline", "tone": "pos", "body": "Gen Z licence-holding lowest in 30 yrs; urban density rising"},
+        {"label": "Mix-shift to ads + subscription", "tone": "pos", "body": "Uber Ads $1.5B run-rate, Uber One ~25M subs — high-margin extensions"},
+        {"label": "Emerging-market expansion", "tone": "pos", "body": "India, MENA (Careem), LATAM still in single-digit penetration"},
+        {"label": "Worker-classification regulation", "tone": "warn", "body": "EU PWD enforcement variable; PRO Act dormant under current admin"},
+        {"label": "Insurance cost cycle", "tone": "warn", "body": "CA verdicts can swing margin 200bps; long-tail accruals lumpy"},
+        {"label": "Tesla / Waymo direct-to-consumer", "tone": "neg", "body": "Existential question; current data inconclusive but the central debate"}
+      ]
+    },
+
+    "implications": {
+      "title": "What this means for Uber",
+      "body": "Uber is **the global leader in mobility, the #1-ex-US leader in delivery, and a sub-scale entrant in freight** — but its multiple isn't pricing leadership; it's pricing the **AV disintermediation tail risk**.\n\nPractical implication for sizing: this is a **'good business at a fair price'** rather than a great business at a great price. Position 2-3% at today's quote. **Scale to 5-6% on AV-fear sell-offs** that drop the price below $65. The asymmetry is real but conditional — own it for the cash flow + buyback yield, hedge the AV outcome by buying lower not bigger."
+    }
+  },
+
   "financials": {
     "years": ["FY21", "FY22", "FY23", "FY24", "FY25", "TTM"],
     "revenueB": [17.46, 31.88, 37.28, 43.98, 52.02, 53.69],
@@ -469,6 +627,69 @@
       "date": "2020-11-04",
       "url": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=201920200AB5",
       "note": "Statutory and ballot-initiative basis for the U.S. driver-reclassification risk; Prop 22 upheld by CA Supreme Court (2024)."
+    },
+    {
+      "id": "wiki-uber",
+      "type": "Reference",
+      "title": "Uber — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Uber",
+      "note": "Country-by-country operating footprint, M&A history (Careem MENA 2019, Postmates 2020, Drizly 2021, Foodpanda Taiwan blocked 2024), equity stakes (DiDi China 2016, Grab SEA 2018, Yandex Taxi divested 2022)."
+    },
+    {
+      "id": "wiki-ridesharing",
+      "type": "Reference",
+      "title": "Ridesharing company — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Ridesharing_company",
+      "note": "Industry overview — global ride-hail market sizing (~$140B GMV), regional leadership map (Uber, DiDi, Grab, Bolt, Ola, Yandex), historical waves of consolidation."
+    },
+    {
+      "id": "wiki-online-food",
+      "type": "Reference",
+      "title": "Online food ordering — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Online_food_ordering",
+      "note": "Industry overview — global online food-delivery market (~$200B GMV), post-COVID growth normalisation, regional leaders (DoorDash, Uber Eats, Just Eat Takeaway, Delivery Hero, Meituan, Zomato/Swiggy)."
+    },
+    {
+      "id": "wiki-doordash",
+      "type": "Reference",
+      "title": "DoorDash — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/DoorDash",
+      "note": "US food-delivery #1 (~65% share). Wolt acquisition 2022 expanded EMEA footprint. Direct competitor to Uber Eats in US; emerging competitor outside US."
+    },
+    {
+      "id": "wiki-lyft",
+      "type": "Reference",
+      "title": "Lyft — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Lyft",
+      "note": "US-only ride-hail #2 (~22-25% share). Single-market scale disadvantage vs Uber's global supply density."
+    },
+    {
+      "id": "wiki-didi",
+      "type": "Reference",
+      "title": "DiDi Global — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/DiDi",
+      "note": "China ride-hail dominant (~90% share). Acquired Uber's China ops 2016 (Uber holds ~12% equity stake). Owns 99 in Brazil. Delisted from NYSE 2022 after China cybersecurity probe."
+    },
+    {
+      "id": "wiki-grab",
+      "type": "Reference",
+      "title": "Grab — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Grab_(company)",
+      "note": "SEA super-app (ride-hail + delivery + payments). Acquired Uber's SEA ops 2018 (Uber holds ~14% equity stake). Listed NASDAQ 2021 via SPAC."
     }
   ]
 }

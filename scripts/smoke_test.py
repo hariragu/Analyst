@@ -69,6 +69,23 @@ def main():
             print(f"UBER page has '$74.69': {'$74.69' in body_u}")
             print(f"UBER page has 'HOLD': {'HOLD' in body_u}")
 
+            page.goto(f"{base}/stock.html?ticker=CAMS")
+            page.wait_for_function("document.body.innerText.includes('CAMS') || document.body.innerText.includes('Computer Age')", timeout=10_000)
+            time.sleep(0.5)
+            body_c = page.locator("body").inner_text()
+            print(f"CAMS page has '\u20b9784': {'\u20b9784' in body_c}")
+            print(f"CAMS page has 'HOLD': {'HOLD' in body_c}")
+            print(f"CAMS page has 'duopoly': {'duopoly' in body_c.lower()}")
+
+            # Home page should now show 3 analyzed cards (UBER + COALINDIA + CAMS) and exclude watchlist
+            page.goto(f"{base}/index.html")
+            page.wait_for_function("document.querySelector('#grid')?.children.length > 0", timeout=10_000)
+            time.sleep(0.5)
+            home_cards = page.locator("#grid .stock-card").count()
+            home_count_label = page.locator("#stockCount").inner_text()
+            print(f"Home page cards: {home_cards}")
+            print(f"Home page counter: {home_count_label}")
+
             browser.close()
 
             crit = [e for e in errors if e[0].startswith("pageerror") or e[0] == "console-error"]

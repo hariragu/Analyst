@@ -56,8 +56,8 @@ function emptyState(pendingCount){
 }
 
 function render(){
-  const pendingCount = state.all.filter(s => s.status === 'screened').length;
-  const analyzedOnly = state.all.filter(s => s.status !== 'screened');
+  const pendingCount = state.all.filter(s => s.status === 'screened' || s.status === 'watchlist').length;
+  const analyzedOnly = state.all.filter(s => s.status === 'analyzed');
 
   const q = state.query.toLowerCase().trim();
   const filtered = analyzedOnly.filter(s => {
@@ -109,8 +109,8 @@ async function main(){
     document.getElementById('siteTitle').textContent = idx.site.title;
     document.getElementById('siteTagline').textContent = idx.site.tagline;
     document.getElementById('siteFramework').textContent = idx.site.framework;
-    const analyzed = idx.stocks.filter(s => s.status !== 'screened').length;
-    const pending = idx.stocks.filter(s => s.status === 'screened').length;
+    const analyzed = idx.stocks.filter(s => s.status === 'analyzed').length;
+    const pending = idx.stocks.filter(s => s.status === 'screened' || s.status === 'watchlist').length;
     document.getElementById('stockCount').textContent =
       `${analyzed} ${analyzed === 1 ? 'analysis' : 'analyses'} published · ${pending} upcoming`;
     state.all = idx.stocks;

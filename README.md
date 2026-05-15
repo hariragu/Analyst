@@ -91,10 +91,75 @@ Top level:
 | `verdict` | object | `{ rating, ratingColor, summary, buyBelow, loadBelow, trimAbove }` |
 | `snapshot` | object | KPI strip: price, marketCap, ev, fcfTtm, revTtm, evFcf, fcfYield, roic, wacc, fcfGrowth4y, analystPT, analystUpside, analystRating |
 | `executiveSummary` | object | `{ pros: [string], cons: [string] }` — supports `**bold**`, `_italic_`, and `[^source-id]` citations |
+| `industry` | object | **Industry primer** — see below. Renders between Executive Summary and Financials. |
 | `financials` | object | See below |
 | `sections` | array | 3 sections of 5 questions — see below |
 | `scorecard` | object | `{ dimensions: [{label, score}], summary }` |
 | `sources` | array | **Bibliography.** Citation registry for all `[^id]` markers in the document. See below. |
+
+### `industry` — Industry primer
+
+Five sub-blocks rendered as a single section between Executive Summary and Financials:
+
+```json
+{
+  "title": "Industry primer — <industry name>",
+  "intro": "<1-2 sentence framing>",
+
+  "sizeAndShape": {
+    "title": "1. How big is the industry today?",
+    "tiles": [
+      {"label":"...", "value":"...", "sub":"..."}
+    ],
+    "body": "<paragraph with [^citations]>"
+  },
+
+  "segmentation": {
+    "title": "2. How the market segments",
+    "intro": "<1-line framing>",
+    "segments": [
+      {
+        "axis": "By <dimension>",
+        "title": "<segment names>",
+        "body": "<paragraph with [^citations]>",
+        "shareLabels": ["A","B","C"],
+        "shareValues": [60, 30, 10],
+        "implications": "<one-line what-this-means>"
+      }
+    ]
+  },
+
+  "competitive": {
+    "title": "3. Who else is in the market?",
+    "intro": "<1-line framing>",
+    "leader": {"name":"...", "type":"...", "share":"...", "tone":"pos", "body":"..."},
+    "followers": [
+      {"name":"...", "type":"...", "share":"...", "tone":"warn", "listed":"...", "body":"..."}
+    ],
+    "share_chart": {
+      "title": "<market share view>",
+      "labels": ["...","...","..."],
+      "values": [60, 25, 15]
+    }
+  },
+
+  "growth": {
+    "title": "4. How is the industry growing?",
+    "tiles": [{"label":"...", "value":"...", "sub":"..."}],
+    "body": "<paragraph with [^citations]>",
+    "drivers": [
+      {"label":"...", "tone":"pos|warn|neg", "body":"..."}
+    ]
+  },
+
+  "implications": {
+    "title": "What this means for <Company>",
+    "body": "<1-2 paragraphs bridging industry view → position sizing>"
+  }
+}
+```
+
+See `data/stocks/COALINDIA.json` and `data/stocks/UBER.json` for full reference implementations.
 
 ### `financials`
 

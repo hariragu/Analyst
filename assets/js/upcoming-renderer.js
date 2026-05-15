@@ -56,6 +56,9 @@ function renderScreenSection(screen, picks){
   const methBadge = screen.methodologyType
     ? `<span class="method-badge" title="${screen.methodologyType}">${screen.methodologyType.startsWith('Systematic') ? '⚙️ Systematic' : '✍️ Analyst-pick'}</span>`
     : '';
+  const totalPicks = (typeof screen.pickCount === 'number' && screen.pickCount >= picks.length) ? screen.pickCount : picks.length;
+  const publishedCount = totalPicks - picks.length;
+  const progressPct = totalPicks > 0 ? Math.round((publishedCount / totalPicks) * 100) : 0;
   return `
   <section class="screen-section">
     <header class="screen-header">
@@ -70,8 +73,8 @@ function renderScreenSection(screen, picks){
         <p class="screen-count">${picks.length} ${picks.length === 1 ? 'company' : 'companies'} in the queue</p>
       </div>
       <div class="screen-progress">
-        <div class="screen-progress-bar"><span style="width:0%"></span></div>
-        <div class="text-xs text-mute mt-1">0 of ${picks.length} analyses published</div>
+        <div class="screen-progress-bar"><span style="width:${progressPct}%"></span></div>
+        <div class="text-xs text-mute mt-1">${publishedCount} of ${totalPicks} analyses published</div>
       </div>
     </header>
     <div class="grid md:cols-2 lg:cols-3 gap-4 mt-6">

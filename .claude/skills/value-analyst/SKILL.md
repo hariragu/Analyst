@@ -1,6 +1,6 @@
 ---
 name: value-analyst
-description: Performs a deep equity analysis on a single ticker using Vishal Khandelwal's 15-question framework (Business · Management · Price). Use when the user asks to "analyze [TICKER]", "deep-dive on [stock]", "run the 15 questions on [stock]", "do a value analysis of [company]", "is [TICKER] worth owning?", or "add [ticker] to the analyst site". Outputs a complete JSON to data/stocks/<TICKER>.json, updates data/index.json with full snapshot fields, optionally generates Markdown + DOCX reports, commits and pushes.
+description: Performs a deep equity analysis on a single ticker using Vishal Khandelwal's 15-question framework (Business · Management · Price), preceded by a 4-part industry primer (size & shape · segmentation · competitive map · growth). Use when the user asks to "analyze [TICKER]", "deep-dive on [stock]", "run the 15 questions on [stock]", "do a value analysis of [company]", "is [TICKER] worth owning?", or "add [ticker] to the analyst site". Outputs a complete JSON to data/stocks/<TICKER>.json (with mandatory `industry` block), updates data/index.json with full snapshot fields, optionally generates Markdown + DOCX reports, commits and pushes.
 ---
 
 # Value Analyst — Senior Analyst Playbook
@@ -15,6 +15,20 @@ Trigger phrases:
 - "is [TICKER] worth owning?"
 - "add [TICKER] to the analyst site"
 - "value analysis of [company]"
+
+## What every analysis must contain (output schema)
+
+A complete `data/stocks/<TICKER>.json` has these top-level blocks, in this rendering order:
+
+1. **Header / verdict / snapshot** — ticker, name, rating, action zones, KPI snapshot.
+2. **`executiveSummary`** — pros / cons in 60 seconds.
+3. **`industry`** — *Industry primer* (REQUIRED — see §"Industry primer" below).
+4. **`financials`** — multi-year financials chart + valuation/balance/capital-return tables.
+5. **`sections`** — the three 15-question sections (Business · Management · Price).
+6. **`scorecard`** — 8-9 dimension scorecard + final verdict.
+7. **`sources`** — bibliography (10-18 sources).
+
+**An analysis without the `industry` block is incomplete.** It is the context that grounds every claim in the 15 questions — the reader cannot evaluate the moat without seeing the industry shape.
 
 ## The 15 questions
 
@@ -60,6 +74,17 @@ Trigger phrases:
 - For Q3.4: pre-commit price + fundamental + capital-allocation sell triggers.
 - For Q3.5: pre-commit "buy or panic if -40%" conditions.
 
+### Step 2b — Build the industry primer (do this BEFORE writing the 15 questions)
+
+Researching the industry first sharpens the 15 answers. For each axis you'd put in the `industry.segmentation` block, ask:
+- **Market shape** — total GMV / production / revenue, growth rate, the company's share, regional structure.
+- **Segmentation axes** — which 3-4 orthogonal dimensions matter for valuation? Always include one tied to the **central debate** for this stock.
+- **Competitive landscape** — who's #1, who's #2-N, where the company sits, where each competitor is concentrated, recent share shifts. Use Wikipedia + IR sources for verifiable numbers.
+- **Growth drivers** — 3 push, 2 mixed, 1-2 drag. Tone-code them honestly.
+- **Implications** — 1-2 paragraphs bridging the industry view to the position-sizing recommendation.
+
+Then materialise this as the `industry` block in Step 4a (schema below).
+
 ### Step 3 — Synthesize
 - 8-dimension scorecard (1–5): Business quality · Durability (10y) · Mgmt quality · Skin in game · Capital allocation · Price today · Price if -40% · Asymmetry.
 - One-line verdict.
@@ -68,6 +93,95 @@ Trigger phrases:
 
 ### Step 4 — Write JSON
 Produce a complete `data/stocks/<TICKER>.json` matching the schema in the repo `README.md`. Use Markdown (`**bold**`, `_italic_`) in any string field — the renderer handles it.
+
+### Step 4a — Industry primer (MANDATORY)
+
+**Before the 15 questions, the reader must understand the industry.** Add an `industry` block to the JSON, sitting between `executiveSummary` and `financials`. The renderer will display it as a first-class section between "Executive summary" and "Financials".
+
+Five sub-blocks, in this order:
+
+1. **`sizeAndShape`** — *"How big is the industry today?"* — 6 KPI tiles + a paragraph. Include market size (GMV / revenue / production / TAM), the company's share, growth rate, regional structure, key constraints (logistics, regulation, supply).
+
+2. **`segmentation`** — *"How the market segments"* — **3-4 orthogonal axes** that matter for valuation. For each segment include:
+   - `axis` — the dimension (e.g., "By coal type · end-use", "By service line", "By worker model").
+   - `title` — the segment names (e.g., "Thermal vs metallurgical vs lignite").
+   - `body` — a paragraph or two explaining each segment, with citations.
+   - `shareLabels` + `shareValues` — labels and percentages for an inline stacked bar (numbers should sum to ~100). Optional but strongly recommended — visual hooks make it scannable.
+   - `implications` — one-line "what this means for the company we're analysing".
+
+3. **`competitive`** — *"Who else is in the market?"* — leader + followers, each as a card:
+   - `leader` — `{name, type, share, tone:"pos", body}`.
+   - `followers` — array of `{name, type, share, tone, listed, body}`.
+   - `share_chart` — `{title, labels[], values[]}` for a doughnut chart of market shares (renders next to the player cards). Pick the **most relevant** market for the chart (often the company's home/dominant market, not a forced global view).
+
+4. **`growth`** — *"How is the industry growing?"* — 6 KPI tiles + a paragraph + `drivers` array. Drivers are tone-coded mini-cards:
+   - `[{label, tone:"pos|warn|neg", body}, ...]`
+   - Aim for 3 push (`pos`) + 2 mixed (`warn`) + 1-2 drag (`neg`) drivers — gives a balanced demand thesis.
+
+5. **`implications`** — *"What this means for [Company]"* — 1-2 paragraphs that **bridge the industry view to the position-sizing recommendation**. This is the connective tissue between industry analysis and the 15 questions that follow.
+
+#### Industry-block schema (compact reference)
+
+```json
+"industry": {
+  "title": "Industry primer — <industry name>",
+  "intro": "<1-2 sentence framing>",
+  "sizeAndShape": {
+    "title": "1. How big is the industry today?",
+    "tiles": [{"label": "...", "value": "...", "sub": "..."}],
+    "body": "<paragraph with [^citations]>"
+  },
+  "segmentation": {
+    "title": "2. How the market segments",
+    "intro": "<1-line framing>",
+    "segments": [
+      {
+        "axis": "By <dimension> · <sub-dimension>",
+        "title": "<segment names>",
+        "body": "<paragraph with [^citations]>",
+        "shareLabels": ["A", "B", "C"],
+        "shareValues": [60, 30, 10],
+        "implications": "<one-line what-this-means>"
+      }
+    ]
+  },
+  "competitive": {
+    "title": "3. Who else is in the market?",
+    "intro": "<1-line framing>",
+    "leader": {"name": "...", "type": "...", "share": "...", "tone": "pos", "body": "..."},
+    "followers": [
+      {"name": "...", "type": "...", "share": "...", "tone": "warn", "listed": "...", "body": "..."}
+    ],
+    "share_chart": {
+      "title": "<market share view title>",
+      "labels": ["...", "...", "..."],
+      "values": [60, 25, 15]
+    }
+  },
+  "growth": {
+    "title": "4. How is the industry growing?",
+    "tiles": [{"label": "...", "value": "...", "sub": "..."}],
+    "body": "<paragraph with [^citations]>",
+    "drivers": [
+      {"label": "...", "tone": "pos", "body": "..."},
+      {"label": "...", "tone": "warn", "body": "..."},
+      {"label": "...", "tone": "neg", "body": "..."}
+    ]
+  },
+  "implications": {
+    "title": "What this means for <Company>",
+    "body": "<1-2 paragraphs bridging industry view → position sizing>"
+  }
+}
+```
+
+#### Industry-block honesty principles
+
+- **Get the segmentation axes right before anything else.** Wrong axis = wrong narrative. Always include one axis tied to the central debate (e.g., AV stack-layer for Uber, climate transition for Coal India, AI cannibalisation for IT-services, EV adoption for auto).
+- **Cite competitor data.** Market shares, GMV, production volumes — every number must trace to a Wikipedia page, regulator filing, IR release, or tier-1 industry report. Use the same citation discipline as Step 4b.
+- **Distinguish leader from share-leader from cash-leader.** A company can be #1 by volume but #3 by EBITDA. Surface this when relevant.
+- **Pick a defensible share_chart view.** If the company's home market and global market tell different stories, pick the one most relevant to the valuation debate (usually home market for cash flows; global for terminal value).
+- **Examples to copy from:** `data/stocks/COALINDIA.json` (commodity / regulated PSU), `data/stocks/UBER.json` (multi-segment platform / global vs regional). Use these as templates.
 
 ### Step 4b — Cite every non-obvious claim (MANDATORY)
 
@@ -237,10 +351,14 @@ GitHub Pages auto-deploys.
 - ❌ Overstating moat strength; understating regulation/AV/disruption risk.
 - ❌ **Stating specific numbers without citing the filing / press release they came from.**
 - ❌ **Fabricating URLs** to make a source look real. Use the canonical IR/EDGAR/parent URL with a note instead.
+- ❌ **Skipping the `industry` block** — the 15 questions are unmoored without it. Industry context grounds every claim about moat, durability, pricing power, and terminal value.
+- ❌ **Inventing market shares or competitor data** for the industry block. Wikipedia + IR releases + regulator filings are the floor of credibility.
+- ❌ **Generic segmentation axes** ("by product / by geography") that don't tie to the central debate. Always include at least one axis that captures the **bear case mechanism** (AV stack-layer for Uber, climate transition for Coal India, AI for IT-services, EV adoption for auto, GLP-1 for restaurants).
 
 ## Quality bar for output
 
 A finished analysis should let a reader, in 5 minutes, answer:
+- **What industry is this and how is it structured?** (The `industry` primer should answer this in <60 seconds of scanning.)
 - What does the company do, and how does it earn?
 - What is the central debate?
 - What is the price right now, and is it fair?
@@ -251,5 +369,6 @@ A finished analysis should let a reader, in 5 minutes, answer:
 If any of those is not crisp, rewrite that section.
 
 ## Output examples
-- Reference implementation: `data/stocks/UBER.json` and `reports/UBER_Analysis.md` in this repo.
+- Reference implementations: `data/stocks/COALINDIA.json` (commodity / regulated PSU industry primer) and `data/stocks/UBER.json` (multi-segment platform / global vs regional industry primer). Use these as templates.
+- Long-form prose: `reports/UBER_Analysis.md`.
 - Khandelwal source: https://safalniveshak.com
