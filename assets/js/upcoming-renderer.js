@@ -8,8 +8,14 @@ const upcomingCount = document.getElementById('upcomingCount');
 let state = { all: [], screens: [], query: '' };
 
 function pendingCard(stock){
+  const isWatchlist = stock.status === 'watchlist';
+  const pillClass = isWatchlist ? 'badge-watchlist' : 'badge-pending';
+  const pillText = isWatchlist ? 'Watchlist' : 'Pending';
+  const footer = isWatchlist
+    ? `<div class="mt-4 text-xs text-cyan italic">⏳ ${stock.watchlistEntryTrigger || 'Awaiting entry trigger'}</div>`
+    : `<div class="mt-4 text-xs text-mute italic">↻ Awaiting 15-question deep dive</div>`;
   return `
-  <div class="stock-card pending" style="--logo-from:${stock.logoFrom};" title="Awaiting deep dive — coming soon">
+  <div class="stock-card pending${isWatchlist ? ' watchlist' : ''}" style="--logo-from:${stock.logoFrom};" title="${isWatchlist ? 'On watchlist — waiting for entry trigger' : 'Awaiting deep dive — coming soon'}">
     <div class="flex ai-c jc-b">
       <div class="flex ai-c gap-3">
         <div class="logo" style="background:linear-gradient(135deg, ${stock.logoFrom}, ${stock.logoTo});">${stock.logoText}</div>
@@ -18,12 +24,12 @@ function pendingCard(stock){
           <div class="text-xs text-soft">${stock.name}</div>
         </div>
       </div>
-      <span class="verdict-pill badge-pending">Pending</span>
+      <span class="verdict-pill ${pillClass}">${pillText}</span>
     </div>
     <div class="text-xs text-mute mt-3">${stock.exchange} · ${stock.sector}</div>
     <div class="mt-4 text-sm text-soft leading-relaxed">${md(stock.thesis || '')}</div>
     ${stock.valueAngle ? `<div class="mt-3 value-angle"><span class="va-label">Value angle</span> ${md(stock.valueAngle)}</div>` : ''}
-    <div class="mt-4 text-xs text-mute italic">↻ Awaiting 15-question deep dive</div>
+    ${footer}
   </div>`;
 }
 
@@ -95,7 +101,7 @@ function renderUngrouped(picks){
 
 function render(){
   const q = state.query.toLowerCase().trim();
-  const pending = state.all.filter(s => s.status === 'screened');
+  const pending = state.all.filter(s => s.status === 'screened' || s.status === 'watchlist');
   const filtered = pending.filter(s => {
     if(!q) return true;
     const blob = `${s.ticker} ${s.name} ${s.sector} ${s.exchange} ${s.thesis||''} ${s.valueAngle||''}`.toLowerCase();
@@ -153,7 +159,7 @@ async function main(){
     const idx = await loadJSON('./data/index.json');
     state.all = idx.stocks || [];
     state.screens = idx.screens || [];
-    const pending = state.all.filter(s => s.status === 'screened').length;
+    const pending = state.all.filter(s => s.status === 'screened' || s.status === 'watchlist').length;
     upcomingCount.textContent = `${pending} upcoming`;
     render();
   }catch(err){

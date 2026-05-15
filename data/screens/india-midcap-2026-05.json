@@ -26,10 +26,46 @@
     "qualitative": [
       "Industry is BORING: not on prime-time TV (LNG terminals, RTA, AMC back-office, diagnostics, specialty chem, mature IT)",
       "Distribution / switching cost / regulatory licence is the moat — not brand-buzz",
-      "Non-PSU: promoter family OR MNC parent (avoids the Coal India governance problem)",
+      "Governance: family-promoter OR MNC parent OR PSU that passes the explicit PSU framework below (NOT a blanket no-PSU rule — see psuFramework)",
       "Industry diversification: max 2 names per sector to avoid concentration"
     ]
   },
+  "psuFramework": {
+    "rationale": "PSUs are NOT auto-rejected. Some (Coal India — already in our BUY list — NMDC at the right price, well-run defense PSUs) deserve consideration. The framework below decides per-PSU.",
+    "investableWhen": [
+      "Cost-curve advantage that survives cycles (Coal India coal monopoly, NALCO bauxite, NMDC iron-ore)",
+      "Disciplined dividend payout >30% sustained for 5+ years",
+      "Govt holding 51-70% (above 75% creates constant OFS overhang on free float)",
+      "No history of value-destructive govt-mandated transactions (forced cross-subsidy, capital infusion at lows, PSU-to-PSU bailouts)",
+      "Stable management — CMD continuity > 3 years OR organisational depth (BEL-style culture)",
+      "Sector is not in structural decline (avoid BSNL/MTNL/Air-India failure modes)",
+      "Margin of safety on **normalised earnings** — not peak-cycle EPS at low headline P/E"
+    ],
+    "rejectWhen": [
+      "Earnings near multi-year peak with cyclical sector (commodity at top of cycle)",
+      "Govt holding > 75% (constant disinvestment overhang)",
+      "Loss-making by mandate (subsidy-burdened, regulated negative)",
+      "Capped regulated returns (NTPC, POWERGRID — fine for income, not for compounding)",
+      "Frequent CMD vacancies / turnover (BHEL-style decision paralysis)"
+    ],
+    "appliedExamples": [
+      { "ticker": "COALINDIA", "verdict": "INVESTABLE — already published as BUY @ ₹462. Coal monopoly, ~50% payout, 51% govt holding, normalised earnings (not peak-cycle), Energy-transition risk priced in." },
+      { "ticker": "NATIONALUM", "verdict": "WATCHLIST — passes most criteria (Panchpatmali bauxite cost-curve advantage, low debt 0.28, ROE 29%, 51% govt) BUT aluminum at cycle peak. On normalised LME aluminum (~$1,800/ton vs current ~$2,500), EPS would be ~40% lower → P/E becomes ~20× → not screamingly cheap. Add at ~25% lower price OR after aluminum cycle correction." },
+      { "ticker": "BEL", "verdict": "AVOID at price — well-managed defense PSU but P/E 52× pricing in a decade of flawless growth. Late re-rate." },
+      { "ticker": "BHEL", "verdict": "AVOID — ROE 6%, weak balance sheet, P/E 87× on depressed earnings. Classic value-trap." }
+    ]
+  },
+  "watchlist": [
+    {
+      "ticker": "NATIONALUM",
+      "name": "National Aluminium Company Ltd. (NALCO)",
+      "sector": "Aluminum · PSU",
+      "stockData": { "mktCapCr": 74126.5, "pe": 12.1, "roePct": 29.4, "deRatio": 0.28, "divYieldPct": 1.92, "opMarginPct": 49.5 },
+      "thesis": "Best-in-cohort PSU on numbers — vertically integrated (Panchpatmali bauxite, captive power, smelter), low debt, dividend payer.",
+      "whyWatchlist": "Aluminum at cycle peak (LME ~$2,500/ton). Op margin 49.5% is partially cycle-juiced. On normalised earnings, P/E becomes 18-22× — fair, not value.",
+      "entryTrigger": "Buy below ₹150 (~25-30% lower) OR after LME aluminum correction to <$2,000/ton OR if op margin compresses to 30-35% range (mid-cycle)."
+    }
+  ],
   "auditTrail": {
     "universeSize": 504,
     "universeSource": "NIFTY 500 list from niftyindices.com (2026-05-15)",
@@ -38,7 +74,7 @@
     "passedAllGatesNames": ["CAMS", "ABBOTINDIA", "NAM-INDIA", "NATIONALUM", "PERSISTENT", "AJANTPHARM", "ABSLAMC", "LALPATHLAB", "TATAELXSI", "NAVINFLUOR", "KPITTECH", "EMCURE", "LTTS", "COFORGE", "PETRONET", "MPHASIS"],
     "passedAllButOne": 15,
     "qualitativeRejects": [
-      { "ticker": "NATIONALUM", "reason": "Passed all quant gates (P/E 12, ROE 29%, OPM 49%) but PSU majority-owned — fails the 'no Coal India governance trap' rule. Aluminum cyclical also at cycle high." },
+      { "ticker": "NATIONALUM", "reason": "Moved to WATCHLIST (see psuFramework + watchlist sections). Passes PSU investability framework on most criteria but cyclical-commodity-at-peak is the binding constraint, not PSU governance per se. Buy on aluminum cycle correction." },
       { "ticker": "PERSISTENT", "reason": "Quant strong but IT-services AI cannibalisation overhang (see glossary). Multiple is rich at 39× and we already have MPHASIS + COFORGE as IT exposure." },
       { "ticker": "TATAELXSI", "reason": "Design-services for autos — quant passes but the auto-OEM ER&D capex cycle showing signs of slowing. 40× P/E vs decelerating growth — not asymmetric." },
       { "ticker": "KPITTECH", "reason": "Auto-software (ADAS / SDV) — hot story, 30× P/E. Same AI/EV cycle bet as TATAELXSI; better to wait for re-rating." },
@@ -76,8 +112,8 @@
       "meaning": "Commodities (steel, chems, paper, cement) move in cycles tied to capacity additions vs demand. Buying when capacity utilisation is at peak + product prices at peak + EBITDA margins at peak = setting up for **50% drawdown** in the next downcycle. The classic 'good business at the wrong time' trap. Wait for capex digestion + price normalisation."
     },
     {
-      "term": "PSU governance trap",
-      "meaning": "Public-sector undertakings (Coal India, NTPC, NALCO, ONGC) often look statistically cheap with high ROE + low P/E + fat dividend. But government-as-majority-owner introduces non-economic capital allocation: forced cross-holdings, OFS at unfavourable timing, social-objective pricing (Coal India fuel-supply agreements), and CEO turnover on bureaucratic schedules. Long-term IRR persistently lags private-sector peers despite the optical cheapness."
+      "term": "PSU governance discount (NOT blanket reject)",
+      "meaning": "Public-sector undertakings (Coal India, NTPC, NALCO, ONGC) often look statistically cheap with high ROE + low P/E + fat dividend. Government-as-majority-owner introduces real frictions: forced cross-holdings, OFS at unfavourable timing, social-objective pricing (Coal India fuel-supply agreements), and CMD turnover on bureaucratic schedules. Result: PSUs trade at a structural P/E discount to private peers. **But this does NOT mean auto-reject** — see psuFramework above. Coal India clears the framework and sits in our BUY list. The right test is per-PSU on cost-curve advantage, dividend discipline, govt-holding %, and normalised earnings — not a blanket rule."
     }
   ],
   "picks": [

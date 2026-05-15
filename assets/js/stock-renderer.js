@@ -143,6 +143,145 @@ function renderSummary(s){
   </section>`;
 }
 
+function indTile(t){
+  return `
+  <div class="glass p-4">
+    <div class="text-xs text-mute">${md(t.label)}</div>
+    <div class="text-xl font-semibold mt-1 mono">${md(t.value)}</div>
+    ${t.sub ? `<div class="text-xs text-soft mt-1">${md(t.sub)}</div>` : ''}
+  </div>`;
+}
+
+function indSegBar(labels, values){
+  if(!Array.isArray(values) || !values.length) return '';
+  const total = values.reduce((a,b)=>a+(+b||0),0) || 1;
+  const colors = ['#a78bfa','#22d3ee','#fcd34d','#34d399','#fca5a5','#60a5fa'];
+  const segs = values.map((v,i) => {
+    const pct = ((v/total)*100).toFixed(1);
+    return `<span title="${md(labels[i]||'')}: ${pct}%" style="display:inline-block; height:100%; width:${pct}%; background:${colors[i%colors.length]};"></span>`;
+  }).join('');
+  const legend = labels.map((l,i) => `
+    <span class="chip" style="border-color:rgba(255,255,255,.06);">
+      <span style="width:9px;height:9px;border-radius:2px;background:${colors[i%colors.length]};display:inline-block;"></span>
+      ${md(l)} <span class="mono text-mute" style="margin-left:.25rem;">${(((+values[i]||0)/total)*100).toFixed(0)}%</span>
+    </span>`).join('');
+  return `
+    <div style="height:14px; border-radius:6px; overflow:hidden; background:#1c2030; display:flex; margin-top:.75rem;">${segs}</div>
+    <div class="flex" style="flex-wrap:wrap; gap:.4rem; margin-top:.6rem;">${legend}</div>`;
+}
+
+function indSegmentCard(seg){
+  return `
+  <div class="glass p-6" style="border-left:3px solid var(--accent-2);">
+    <div class="text-cyan text-xs uppercase tracking-wider mono">${md(seg.axis)}</div>
+    <div class="q-title mt-1">${md(seg.title)}</div>
+    ${seg.body ? `<div class="leading-relaxed mt-3" style="font-size:.92rem;">${md(seg.body)}</div>` : ''}
+    ${indSegBar(seg.shareLabels, seg.shareValues)}
+    ${seg.implications ? `<div class="q-answer mt-4"><span class="q-answer-label">Implication</span><span class="q-answer-text">${md(seg.implications)}</span></div>` : ''}
+  </div>`;
+}
+
+function indPlayerCard(p, isLeader){
+  const accent = isLeader ? 'var(--pos)' : 'var(--accent-2)';
+  return `
+  <div class="glass p-5" style="border-left:3px solid ${accent};">
+    <div class="flex jc-b ai-c gap-3" style="flex-wrap:wrap;">
+      <div>
+        <div class="text-base font-semibold">${md(p.name)}</div>
+        <div class="text-xs text-soft mt-1">${md(p.type)}${p.listed ? ` · <span class="mono">${md(p.listed)}</span>` : ''}</div>
+      </div>
+      <span class="chip ${p.tone || 'warn'}">Share ${md(p.share)}</span>
+    </div>
+    ${p.body ? `<p class="text-sm text-soft leading-relaxed mt-3">${md(p.body)}</p>` : ''}
+  </div>`;
+}
+
+function renderIndustry(s){
+  const ind = s.industry;
+  if(!ind) return '';
+  const sas = ind.sizeAndShape, seg = ind.segmentation, comp = ind.competitive, gr = ind.growth, imp = ind.implications;
+  const hasShareChart = comp && comp.share_chart && Array.isArray(comp.share_chart.values);
+
+  return `
+  <section id="industry" class="fade-in">
+    <div class="text-cyan text-xs uppercase tracking-wider mono">Industry context</div>
+    <h2 class="sec-title">${md(ind.title || 'Industry primer')}</h2>
+    ${ind.intro ? `<p class="text-soft mt-2" style="max-width:48rem;">${md(ind.intro)}</p>` : ''}
+
+    ${sas ? `
+    <div id="industry-size" class="mt-10">
+      <div class="text-sm font-semibold text-soft uppercase tracking-wider mb-3">${md(sas.title)}</div>
+      <div class="grid cols-2 md:cols-3 gap-3">
+        ${(sas.tiles||[]).map(indTile).join('')}
+      </div>
+      ${sas.body ? `<p class="leading-relaxed mt-4" style="max-width:52rem;">${md(sas.body)}</p>` : ''}
+    </div>` : ''}
+
+    ${seg ? `
+    <div id="industry-segments" class="mt-12">
+      <div class="text-sm font-semibold text-soft uppercase tracking-wider mb-2">${md(seg.title)}</div>
+      ${seg.intro ? `<p class="text-soft" style="max-width:48rem;">${md(seg.intro)}</p>` : ''}
+      <div class="grid md:cols-2 gap-5 mt-5">
+        ${(seg.segments||[]).map(indSegmentCard).join('')}
+      </div>
+    </div>` : ''}
+
+    ${comp ? `
+    <div id="industry-competitive" class="mt-12">
+      <div class="text-sm font-semibold text-soft uppercase tracking-wider mb-2">${md(comp.title)}</div>
+      ${comp.intro ? `<p class="text-soft" style="max-width:48rem;">${md(comp.intro)}</p>` : ''}
+      <div class="grid lg:cols-2 gap-6 mt-5">
+        <div>
+          ${comp.leader ? `
+          <div class="text-xs uppercase tracking-wider text-pos mb-2">Leader</div>
+          ${indPlayerCard(comp.leader, true)}` : ''}
+          ${(comp.followers && comp.followers.length) ? `
+          <div class="text-xs uppercase tracking-wider text-warn mt-5 mb-2">Followers & challengers</div>
+          <div style="display:flex; flex-direction:column; gap:.85rem;">
+            ${comp.followers.map(p => indPlayerCard(p, false)).join('')}
+          </div>` : ''}
+        </div>
+        ${hasShareChart ? `
+        <div class="glass p-5" style="align-self:flex-start; position:sticky; top:5rem;">
+          <div class="text-sm font-semibold mb-1">${md(comp.share_chart.title || 'Market share')}</div>
+          <div class="text-xs text-soft mb-3">Share of national coal production (%)</div>
+          <canvas id="industryShareChart" height="220"></canvas>
+        </div>` : ''}
+      </div>
+    </div>` : ''}
+
+    ${gr ? `
+    <div id="industry-growth" class="mt-12">
+      <div class="text-sm font-semibold text-soft uppercase tracking-wider mb-3">${md(gr.title)}</div>
+      ${(gr.tiles && gr.tiles.length) ? `
+      <div class="grid cols-2 md:cols-3 gap-3">
+        ${gr.tiles.map(indTile).join('')}
+      </div>` : ''}
+      ${gr.body ? `<p class="leading-relaxed mt-4" style="max-width:52rem;">${md(gr.body)}</p>` : ''}
+      ${(gr.drivers && gr.drivers.length) ? `
+      <div class="mt-6">
+        <div class="text-xs uppercase tracking-wider text-mute mb-2">Demand drivers — push (▲) vs drag (▼)</div>
+        <div class="grid md:cols-3 gap-3">
+          ${gr.drivers.map(d => `
+            <div class="rounded border p-4">
+              <div class="flex ai-c gap-2 ${tone2Class(d.tone)} text-xs uppercase tracking-wider">
+                <span>${d.tone === 'pos' ? '▲' : d.tone === 'neg' ? '▼' : '◆'}</span>
+                <span>${md(d.label)}</span>
+              </div>
+              <p class="text-sm text-soft mt-2 leading-relaxed">${md(d.body)}</p>
+            </div>`).join('')}
+        </div>
+      </div>` : ''}
+    </div>` : ''}
+
+    ${imp ? `
+    <div id="industry-implications" class="glass p-6 mt-12" style="border-left:3px solid var(--accent);">
+      <div class="text-cyan text-xs uppercase tracking-wider mono">${md(imp.title || 'Implications')}</div>
+      <p class="leading-relaxed mt-3">${md(imp.body)}</p>
+    </div>` : ''}
+  </section>`;
+}
+
 function renderFinancials(s){
   const f = s.financials;
   if(!f) return '';
@@ -386,8 +525,15 @@ function renderHeader(s){
 function renderNav(s){
   const items = [
     ['#summary','Executive summary'],
-    ['#financials','Financials'],
   ];
+  if(s.industry){
+    items.push(['#industry','Industry primer']);
+    items.push(['#industry-size','Size & shape', true]);
+    items.push(['#industry-segments','Segmentation', true]);
+    items.push(['#industry-competitive','Competitive map', true]);
+    items.push(['#industry-growth','Growth', true]);
+  }
+  items.push(['#financials','Financials']);
   s.sections.forEach((sec,i) => {
     items.push(['#'+sec.id, `${i+1} · ${sec.title.split('·')[0].trim()}`]);
     sec.questions.forEach(q => items.push(['#'+q.id, `Q${q.n} ${q.title.length > 28 ? q.title.slice(0,28)+'…' : q.title}`, true]));
@@ -409,6 +555,7 @@ function renderShell(s){
     ${renderNav(s)}
     <main class="flex-1" style="display:flex; flex-direction:column; gap:5rem;">
       ${renderSummary(s)}
+      ${renderIndustry(s)}
       ${renderFinancials(s)}
       ${s.sections.map(renderSection).join('')}
       ${renderScorecard(s)}

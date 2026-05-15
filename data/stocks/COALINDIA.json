@@ -56,6 +56,146 @@
     "color": "pos"
   },
 
+  "industry": {
+    "title": "Industry primer — the Indian coal market",
+    "intro": "Coal India doesn't exist in a vacuum. Before scoring it, understand the industry it sits inside — how big it is, how it's segmented, who else competes, and where demand is going.",
+
+    "sizeAndShape": {
+      "title": "1. How big is the industry today?",
+      "tiles": [
+        {"label": "India coal production FY25", "value": "~1.04 BT", "sub": "World #2 after China"},
+        {"label": "Coal share of electricity", "value": "~70%", "sub": "~55% of primary energy"},
+        {"label": "Production target FY30", "value": "1.5 BT", "sub": "+50% vs FY25 (MoC roadmap)"},
+        {"label": "Power-sector coal demand", "value": "~750 MT", "sub": "~75% of national consumption"},
+        {"label": "Coking coal imports FY25", "value": "~58 MT", "sub": "~85% import dependence ($10-12B)"},
+        {"label": "Industry workforce", "value": "~5 L formal", "sub": "+ ~10 L contract & transport"}
+      ],
+      "body": "India is the **world's second-largest coal producer and consumer**, behind only China.[^iea-india-coal][^wiki-coal-india-industry] Coal underpins ~70% of electricity generation, ~55% of primary energy, and is the single largest input to India's industrial base — steel, cement, sponge iron, aluminum. The Ministry of Coal targets **1.5 billion tonnes of domestic production by FY30**[^moc] to eliminate non-coking coal imports and meet power demand expected to grow ~5-6%/year through the early 2030s.[^cea]"
+    },
+
+    "segmentation": {
+      "title": "2. How the market segments",
+      "intro": "Four orthogonal axes — confusion on any one causes mispricing of coal-sector stocks.",
+      "segments": [
+        {
+          "axis": "By coal type · end-use",
+          "title": "Thermal (non-coking) vs metallurgical (coking) vs lignite",
+          "body": "**Thermal / non-coking coal** (~82% of Indian production) — low-rank bituminous and sub-bituminous grades; **burned for steam → electricity** in pulverised-coal boilers. CIL produces almost exclusively this grade. India is **self-sufficient** here and racing toward zero imports by FY30.\n\n**Coking / metallurgical coal** (~13% of production) — low-ash, low-sulphur bituminous coal that **cakes** when heated; used as coke in blast-furnace steelmaking. India has **very limited domestic coking reserves** — concentrated in Jharia coalfield (CIL subsidiary BCCL) and a few private captives (Tata Steel's West Bokaro). **~85% imported** from Australia, USA, Mozambique, Russia. Hard coking coal (premium grade) is essentially 100% imported.[^wiki-coal-india-industry]\n\n**Lignite** (~5%, brown coal) — separate sub-industry; mined by **NLC India** (Neyveli, Barsingsar) and **GMDC** in Tamil Nadu, Rajasthan, Gujarat; burned at mine-mouth power plants.[^wiki-nlc]",
+          "shareLabels": ["Thermal / non-coking", "Coking / metallurgical", "Lignite"],
+          "shareValues": [82, 13, 5],
+          "implications": "**CIL = pure thermal play.** Coking-coal economics belong to **Tata Steel / JSW** (importers) and **BCCL** (small domestic producer). Lignite is a parallel ecosystem (NLC, GMDC) tied to specific state grids — do not lump them into a single 'India coal' bucket."
+        },
+        {
+          "axis": "By contract · pricing mechanism",
+          "title": "FSA (notified) vs E-auction (market) vs Captive vs Commercial",
+          "body": "**Fuel Supply Agreements (FSA)** — long-term contracts at **notified prices set by CIL / Ministry of Coal**, not by the market. Buyers are almost entirely **power-sector utilities** (NTPC, state discoms). Volume guaranteed, price suppressed. **~80% of CIL volume but only ~55-60% of revenue.**[^coal-india-pr]\n\n**E-auction** — open-market clearing prices, typically a **30-100% premium** over notified. Buyers are non-power: steel, cement, sponge iron, captive power, merchant power. **~15-18% of CIL volume — but disproportionate share of margin.**\n\n**Captive mines** — companies like Tata Steel, JSW Steel, NTPC, JSPL, Hindalco self-mine for **own consumption**; pre-2020 they could not sell to anyone else.\n\n**Commercial mines** — the **2020 Mineral Laws Amendment**[^wiki-cmsp] opened auctions where any private player can mine and **sell to anyone at any price**. Adani Enterprises, Vedanta, JSW Group, GMR are the biggest entrants.",
+          "shareLabels": ["FSA (CIL → power)", "E-auction (CIL → non-power)", "Captive (own-use)", "Commercial (private merchant)"],
+          "shareValues": [60, 16, 18, 6],
+          "implications": "**CIL's pricing power is bifurcated.** Notified prices barely cover costs; e-auction is where the margin lives. Commercial-mining auctions are slowly stealing the **high-margin e-auction segment** — the most under-priced long-term risk to CIL's earnings power."
+        },
+        {
+          "axis": "By mining method",
+          "title": "Open-cast vs underground",
+          "body": "**Open-cast / surface mining** (~93% of Indian output) — lower extraction cost, faster ramp-up, but **stripping ratios** (overburden:coal) rise across mine life, pushing cash cost up year after year. Vulnerable to land-acquisition and forest-clearance delays. Workforce-light per tonne.\n\n**Underground** (~7%, declining) — higher cost, lower volume per mine, **environmentally lighter** (no surface scarring), but India's underground mines are old, depleted, or in difficult geology (Jharia coalfield fires, methane). Workforce-heavy — most of CIL's ~239k employees sit here for **employment-policy reasons**, not economics.[^coal-india-ar]",
+          "shareLabels": ["Open-cast", "Underground"],
+          "shareValues": [93, 7],
+          "implications": "CIL's volume growth has come **entirely from open-cast expansion** (NCL, SECL, MCL). Underground is a structural cost drag the Ministry tolerates for employment + safety + politics — don't model it as discretionary."
+        },
+        {
+          "axis": "By geography · coalfields",
+          "title": "Five state clusters; rail is the gate",
+          "body": "India's coal is concentrated in **five eastern / central states**: **Jharkhand** (Jharia, Raniganj — coking + thermal; CIL subsidiaries ECL, BCCL, CCL), **Chhattisgarh** (Korba, Mand-Raigarh — high-quality thermal; SECL — India's largest coalfield), **Odisha** (Talcher, IB Valley — thermal; MCL), **Madhya Pradesh** (Singrauli, Sohagpur; NCL, WCL), **Telangana / Andhra** (Godavari Valley; SCCL).[^wiki-coal-india-industry]\n\n**Logistics is the binding constraint.** Coal is heavy and low-value-per-tonne; **rail-evacuation capacity** (the Eastern and Western Dedicated Freight Corridors plus the ECoR / SECR coal corridors) is the gate. ~60% of CIL despatches go by rail, ~25% rail-cum-road, ~15% MGR (Merry-Go-Round to pit-head power plants).",
+          "implications": "**Mine quality varies wildly by basin.** SECL (Chhattisgarh) is CIL's lowest-cost producer; ECL (West Bengal / Jharkhand) is the highest. CIL's consolidated numbers hide a wide subsidiary-level dispersion — investors should look through to **basin-level economics** when modelling."
+        }
+      ]
+    },
+
+    "competitive": {
+      "title": "3. Who else is in the market?",
+      "intro": "India's coal industry is a **government-dominated oligopoly tilting toward private competition** at the margin — slowly, but in the most profitable segments first.",
+      "leader": {
+        "name": "Coal India Limited (CIL)",
+        "type": "Maharatna PSU (GoI 63%)",
+        "share": "~80%",
+        "tone": "pos",
+        "body": "**774 MT in FY24; targeting 1 BT by FY27.** Eight production subsidiaries (ECL, BCCL, CCL, NCL, WCL, SECL, MCL, NEC) + CMPDI (planning). Statutorily protected since the **Coal Mines (Nationalisation) Act 1973**; effectively the **only large thermal-coal seller** in India until 2020.[^wiki-cil] ROCE 35%+, net-cash balance sheet, 5.7% dividend yield."
+      },
+      "followers": [
+        {
+          "name": "Singareni Collieries (SCCL)",
+          "type": "PSU · Telangana 51% + GoI 49%",
+          "share": "~7%",
+          "tone": "warn",
+          "listed": "Unlisted",
+          "body": "**~67-70 MT in FY24**, all from Godavari Valley in Telangana / Andhra. Same FSA model as CIL but operates within one state — primary buyers are Telangana state discoms + APGENCO. Not listed, but financially significant. Bottlenecked by single-state demand.[^wiki-sccl]"
+        },
+        {
+          "name": "NLC India (Neyveli Lignite)",
+          "type": "Maharatna PSU · GoI 79%",
+          "share": "~4% (lignite + thermal)",
+          "tone": "warn",
+          "listed": "NSE: NLCINDIA · ~₹35,000 Cr",
+          "body": "**~45 MT lignite production** plus ~10 MT thermal coal from the Talabira block. **The only PSU vertically integrated coal-to-power** in India — Neyveli, Barsingsar mine-mouth plants supply Tamil Nadu, Rajasthan, Gujarat grids. Aggressive renewables capex; multi-decade demand visibility for lignite power.[^wiki-nlc]"
+        },
+        {
+          "name": "Adani Enterprises (commercial coal)",
+          "type": "Private",
+          "share": "~3-4% and rising fastest",
+          "tone": "warn",
+          "listed": "NSE: ADANIENT",
+          "body": "**Largest private commercial-coal player.** Won ~10 commercial blocks in 2020-22 auctions (Bicharpur, Talabira-I, Suliyari, etc.). Aims for **100 MT by FY30** (would be ~7% of national output). Also operates Carmichael in Australia for coking-coal imports.[^wiki-adani-enterprises]"
+        },
+        {
+          "name": "Captive miners — NTPC, Tata Steel, JSW, JSPL, Hindalco",
+          "type": "PSU + private captives",
+          "share": "~5%",
+          "tone": "warn",
+          "listed": "Various",
+          "body": "**Self-consume — do not compete with CIL for buyers, but reduce CIL's addressable market.** NTPC's captive coal mines (Pakri-Barwadih, Talaipalli, Dulanga) target ~50 MT for its own thermal plants — **quietly the largest captive miner in India**. Tata Steel (West Bokaro, Jharia), JSW Steel, JSPL, Hindalco are smaller but high-quality."
+        },
+        {
+          "name": "Vedanta, JSW Group, GMR, other commercial",
+          "type": "Private commercial",
+          "share": "~1-2%",
+          "tone": "warn",
+          "listed": "Various",
+          "body": "Vedanta (Radhikapur West, Jamkhani), JSW (Banai-Bhalumuda), GMR (Talabira-II / III) won blocks in 2020-22 commercial auctions. Production ramping slowly. **Structural threat** to CIL because they target the same high-margin non-power buyers that fill CIL's e-auction window.[^wiki-cmsp]"
+        }
+      ],
+      "share_chart": {
+        "title": "Indian coal production · FY25 estimate",
+        "labels": ["Coal India (CIL)", "Singareni (SCCL)", "NLC (lignite)", "Captive (NTPC, Tata, JSW…)", "Commercial private (Adani, Vedanta, GMR)"],
+        "values": [80, 7, 4, 5, 4]
+      }
+    },
+
+    "growth": {
+      "title": "4. How is the industry growing?",
+      "tiles": [
+        {"label": "Production CAGR FY15-FY25", "value": "+5.4%", "sub": "~639 MT → ~1,040 MT"},
+        {"label": "Power-coal demand CAGR FY20-FY25", "value": "+5.8%", "sub": "Tracking electricity demand"},
+        {"label": "New coal-fired capacity FY25-32", "value": "~80 GW", "sub": "On top of ~210 GW installed"},
+        {"label": "Projected demand peak", "value": "2032-2035", "sub": "IEA + CEA scenarios"},
+        {"label": "Non-coking imports FY25", "value": "~120 MT", "sub": "Targeted to zero by FY30"},
+        {"label": "Net-zero target", "value": "2070", "sub": "Glide-path declines post-2035"}
+      ],
+      "body": "**The next 7-10 years are demand-positive.** India's electricity demand is growing **5-6%/year**, driven by AC penetration, EV adoption, data centres, and PLI-led manufacturing.[^cea] Renewables capacity (target **500 GW non-fossil by 2030**[^wiki-energy-india]) supplies *incremental* MWh, but coal-fired plants are still being commissioned (~80 GW of new coal in the CEA pipeline FY25-32) to meet **base-load + peak demand**. Storage costs remain too high (~₹6-8/kWh delivered with 4-hour LFP storage) for renewables to displace coal-fired base load before ~2032-2035.[^iea-india-coal]\n\n**The 10-20 year picture is harder.** Multiple independent forecasts (IEA, BNEF, CEA) converge on **Indian coal demand peaking around 2032-2035**, plateauing through ~2040, then declining as storage + nuclear/hydro/RE-firming substitute. India's **net-zero-2070** commitment[^wiki-climate-india] makes the post-peak glide-path directional, not optional.\n\n**For CIL specifically:** 10-15 years of demand visibility, **terminal value is the real debate**. That tension is what compresses the multiple to ~9× — and what the dividend yield gets you paid to wait through.",
+      "drivers": [
+        {"label": "Electricity demand growth", "tone": "pos", "body": "5-6%/yr; ~25-30 GW base-load needed annually"},
+        {"label": "Coal-fired pipeline", "tone": "pos", "body": "~80 GW of new coal plants in CEA pipeline FY25-32"},
+        {"label": "Import substitution", "tone": "pos", "body": "MoC: zero non-coking imports by FY30 → +120 MT domestic demand"},
+        {"label": "Renewables ramp", "tone": "warn", "body": "500 GW non-fossil by 2030 — incremental today, substitutive post-2032"},
+        {"label": "Storage cost curve", "tone": "warn", "body": "Inflection ~₹2/kWh delivered storage = coal-fired PLF starts falling"},
+        {"label": "Net-zero 2070", "tone": "neg", "body": "Demand peak ~2035, gradual decline through 2050+ — terminal value risk"}
+      ]
+    },
+
+    "implications": {
+      "title": "What this means for Coal India",
+      "body": "CIL sits at the intersection of two opposing forces:\n\n**Near-term (5-15 yr) tailwinds.** Captive demand from power utilities is locked in by FSA contracts; India's grid is structurally coal-dependent until storage matures; import-substitution (~120 MT of non-coking imports phased out by FY30) **adds** demand at CIL's doorstep.\n\n**Long-term (15-30 yr) headwinds.** Climate transition + RE/storage cost curves + private commercial-mining auctions all erode **terminal value** — not near-term cash flows.\n\nPractical implication for sizing: **own CIL for the dividend + buyback yield + 10-15 yr cash-flow duration**, not for terminal-value optionality. Position size should reflect the climate-transition tail risk — **3-5% portfolio weight**, scale into ₹400 sell-offs, trim above ₹650."
+    }
+  },
+
   "financials": {
     "title": "Cash machine at a discount",
     "intro": "Coal India operates as a regulated commodity monopoly — pricing partially controlled, volume locked-in via long-term FSAs. Despite a 5-year sales CAGR of only ~12%, FCF generation has nearly doubled. Capital return discipline (47–53% payout) is the real story here.[^screener-cil]",
@@ -394,6 +534,51 @@
       "date": "2026-05-14",
       "url": "https://www.cea.nic.in/dashboard/",
       "note": "Authoritative monthly data on coal-fired generation share, plant load factors, and fuel stock at thermal stations. Validates the FSA volume durability thesis."
+    },
+    {
+      "id": "iea-india-coal",
+      "type": "Research",
+      "title": "Coal 2024 — Analysis and forecast to 2027",
+      "publisher": "International Energy Agency",
+      "date": "2026-05-14",
+      "url": "https://www.iea.org/reports/coal-2024",
+      "note": "IEA's annual coal market report — production, consumption, and trade forecasts for India and China through 2027. Source for the projected demand-peak window (~2032-2035) and trade balance trajectory."
+    },
+    {
+      "id": "wiki-sccl",
+      "type": "Reference",
+      "title": "Singareni Collieries Company — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Singareni_Collieries_Company",
+      "note": "India's #2 coal producer (~7% share, ~70 MT). PSU jointly owned by Govt of Telangana (51%) and Govt of India (49%). Single-state demand profile."
+    },
+    {
+      "id": "wiki-nlc",
+      "type": "Reference",
+      "title": "NLC India Limited — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/NLC_India_Limited",
+      "note": "Lignite producer + integrated mine-mouth power generator. ~45 MT lignite + ~10 MT thermal coal (Talabira). Maharatna PSU, listed on NSE/BSE."
+    },
+    {
+      "id": "wiki-adani-enterprises",
+      "type": "Reference",
+      "title": "Adani Enterprises — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Adani_Enterprises",
+      "note": "Largest private commercial-coal player in India. ~10 commercial blocks won post-2020 auctions. Aims for 100 MT by FY30. Also operates Carmichael (Australia)."
+    },
+    {
+      "id": "wiki-cmsp",
+      "type": "Regulatory Filing",
+      "title": "Coal Mines (Special Provisions) Act, 2015 & Mineral Laws Amendment 2020 — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-14",
+      "url": "https://en.wikipedia.org/wiki/Coal_Mines_(Special_Provisions)_Act,_2015",
+      "note": "The 2015 Act enabled captive auctions; the 2020 amendment opened commercial mining to any private bidder — the legal foundation for Adani, Vedanta, JSW, and GMR's entry into thermal-coal markets."
     }
   ]
 }

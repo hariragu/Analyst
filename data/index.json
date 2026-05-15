@@ -423,6 +423,21 @@
       "priorityRank": 10,
       "thesis": "Mid-tier IT niche-vertical specialist (travel/transport/insurance); Baring PE ~40%. Cidara acquisition (2024) adds US presence.",
       "valueAngle": "P/E 29× · ROE 18.6% · Op margin 16.6%; watch FY27 margin recovery."
+    },
+    {
+      "ticker": "NATIONALUM",
+      "name": "National Aluminium Co. Ltd.",
+      "exchange": "NSE",
+      "sector": "Aluminum · PSU",
+      "logoText": "N",
+      "logoFrom": "#475569",
+      "logoTo": "#94a3b8",
+      "status": "watchlist",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 11,
+      "thesis": "Best-in-cohort PSU on numbers (ROE 29%, D/E 0.28, Op margin 49%). Vertically integrated — Panchpatmali bauxite is among world's lowest-cost mines.",
+      "valueAngle": "P/E 12 looks cheap but on PEAK earnings (LME aluminum ~$2,500/ton). Normalised P/E ~20×. Watchlist — buy < ₹150 OR after aluminum cycle correction.",
+      "watchlistEntryTrigger": "LME Al < $2,000/ton OR price < ₹150 OR op margin < 35%"
     }
   ]
 }

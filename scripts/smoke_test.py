@@ -39,12 +39,16 @@ def main():
 
             sections = page.locator(".screen-section").count()
             cards = page.locator(".stock-card.pending").count()
+            watchlist_cards = page.locator(".stock-card.watchlist").count()
             badges = page.locator(".method-badge").count()
+            wl_pills = page.locator(".badge-watchlist").count()
             counter = page.locator("#upcomingCount").inner_text()
             titles = [page.locator(".screen-title").nth(i).inner_text() for i in range(sections)]
 
             print(f"Sections: {sections}")
             print(f"Cards (pending): {cards}")
+            print(f"Watchlist cards: {watchlist_cards}")
+            print(f"Watchlist pills: {wl_pills}")
             print(f"Method badges: {badges}")
             print(f"Counter: {counter}")
             for t in titles:

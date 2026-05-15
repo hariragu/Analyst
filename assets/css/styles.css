@@ -168,6 +168,19 @@ table.kv td:first-child{ color:var(--ink-soft); }
   background: repeating-linear-gradient(45deg, rgba(124,58,237,0.15), rgba(124,58,237,0.15) 6px, rgba(34,211,238,0.12) 6px, rgba(34,211,238,0.12) 12px);
   color:#c4b5fd; border:1px dashed rgba(167,139,250,.4);
 }
+.badge-watchlist{
+  background: rgba(245, 158, 11, 0.12);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+.stock-card.watchlist{
+  border-color: rgba(245, 158, 11, 0.35);
+  background: linear-gradient(180deg, rgba(245,158,11,0.04), rgba(245,158,11,0.01));
+}
+.stock-card.watchlist:hover{
+  border-color: rgba(245, 158, 11, 0.6);
+  box-shadow: 0 6px 24px rgba(245, 158, 11, 0.18);
+}
 .rank-badge{
   display:inline-block; margin-left:.4rem; padding:.05rem .4rem; border-radius:6px;
   font-family:'JetBrains Mono', monospace; font-size:.65rem; font-weight:600;
