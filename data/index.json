@@ -18,7 +18,15 @@
       "title": "India · Small-Cap · Value & Quality · May 2026",
       "market": "India (NSE) · Mkt cap < ₹20,000 Cr",
       "asOf": "2026-05-15",
-      "pickCount": 7
+      "pickCount": 6
+    },
+    {
+      "id": "india-midcap-2026-05",
+      "title": "India · Mid-Cap · Boring Cash Machines · May 2026",
+      "market": "India (NSE) · Mkt cap ₹15,000 – ₹75,000 Cr",
+      "asOf": "2026-05-15",
+      "pickCount": 10,
+      "methodologyType": "Systematic (NSE 500 → quant gates → qualitative overlay)"
     }
   ],
   "stocks": [
@@ -193,20 +201,6 @@
       "valueAngle": "~25× earnings; SUV refresh + export ramp under-appreciated; net cash ₹50,000Cr+."
     },
     {
-      "ticker": "CAMS",
-      "name": "Computer Age Management Services Ltd.",
-      "exchange": "NSE",
-      "sector": "Capital-market Infra · RTA",
-      "logoText": "C",
-      "logoFrom": "#0c4a6e",
-      "logoTo": "#06b6d4",
-      "status": "screened",
-      "screenId": "india-smallcap-2026-05",
-      "priorityRank": 1,
-      "thesis": "MF RTA duopoly (~70% share) — services 10 of top 15 AMCs; AUM-linked revenue at 40%+ ROCE.",
-      "valueAngle": "~45× P/E supported by structural 60-70% EBITDA margins; equity-market mix-shift is mid-teens revenue tailwind."
-    },
-    {
       "ticker": "VINATIORGA",
       "name": "Vinati Organics Ltd.",
       "exchange": "NSE",
@@ -216,7 +210,7 @@
       "logoTo": "#14b8a6",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 2,
+      "priorityRank": 1,
       "thesis": "Global #1 in ATBS (~65% share) + IBB — process-IP moat, debt-free, founder-led (Vinati Saraf Mutreja).",
       "valueAngle": "~32× P/E vs 10y avg 38×; downstream butyl-phenol & antioxidant capacity ramping FY27."
     },
@@ -230,7 +224,7 @@
       "logoTo": "#ef4444",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 3,
+      "priorityRank": 2,
       "thesis": "LATAM-focused generics with first-mover share in Central/South America; US injectables ramp via Caplin Steriles.",
       "valueAngle": "~22× P/E + 25%+ ROCE + debt-free + decade of unbroken FCF; US ramp is free optionality."
     },
@@ -244,7 +238,7 @@
       "logoTo": "#ec4899",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 4,
+      "priorityRank": 3,
       "thesis": "Mobile-first ad-tech with proprietary intent data; CPC pricing insulates from CPM compression.",
       "valueAngle": "~50× P/E rich but 4y revenue CAGR 30%+ at 25% EBITDA margin, net-cash; MENA & US monetisation early."
     },
@@ -258,7 +252,7 @@
       "logoTo": "#3b82f6",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 5,
+      "priorityRank": 4,
       "thesis": "World's largest auto control-cable maker — supplies Honda, Yamaha, Bajaj globally; EV-agnostic product.",
       "valueAngle": "~24× P/E + 18% ROCE; Sundaram cable-biz acquisition expands SAM; hidden champion in a boring niche."
     },
@@ -272,7 +266,7 @@
       "logoTo": "#8b5cf6",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 6,
+      "priorityRank": 5,
       "thesis": "Sticky digital-ops to enterprise BFSI / cable / hi-tech; founder-promoted (Mundhra, Malik); aggressive buybacks.",
       "valueAngle": "~18× P/E — cheapest among listed BPM/KPO peers; net-cash; 20%+ EBITDA margins through wage cycle."
     },
@@ -286,9 +280,149 @@
       "logoTo": "#f59e0b",
       "status": "screened",
       "screenId": "india-smallcap-2026-05",
-      "priorityRank": 7,
+      "priorityRank": 6,
       "thesis": "IML plastic-packaging leader for India paints, lubes, ghee, ice-cream — tool-mould switching cost is real.",
       "valueAngle": "~22× P/E + 20%+ ROCE + net-cash; 30%+ F&B mix (margin-rich); Birla Opus paint launch is a tailwind, not headwind."
+    },
+    {
+      "ticker": "PETRONET",
+      "name": "Petronet LNG Ltd.",
+      "exchange": "NSE",
+      "sector": "Energy · LNG Regas",
+      "logoText": "P",
+      "logoFrom": "#1d4ed8",
+      "logoTo": "#60a5fa",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 1,
+      "thesis": "India's largest LNG regas operator (Dahej + Kochi terminals, ~75% national capacity). Take-or-pay tolling model = recurring earnings.",
+      "valueAngle": "P/E 10.1× · Div yield 3.7% · ROE 18.6% · D/E 0.11 — cheapest in pass-list."
+    },
+    {
+      "ticker": "CAMS",
+      "name": "Computer Age Management Services",
+      "exchange": "NSE",
+      "sector": "Mutual Fund Infrastructure",
+      "logoText": "C",
+      "logoFrom": "#0e7490",
+      "logoTo": "#22d3ee",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 2,
+      "thesis": "MF RTA duopoly with KFin (~70% AUM share). Asset-light fee-per-folio model scales with AUM growth.",
+      "valueAngle": "P/E 41× rich but ROE 38.7% + 40% op margins justify quality premium. Buy on pull-back."
+    },
+    {
+      "ticker": "ABBOTINDIA",
+      "name": "Abbott India Ltd.",
+      "exchange": "NSE",
+      "sector": "Pharma MNC",
+      "logoText": "A",
+      "logoFrom": "#0c4a6e",
+      "logoTo": "#0ea5e9",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 3,
+      "thesis": "Abbott (USA) 75% — top-tier MNC governance. Branded portfolio (Digene, Thyronorm, Cremaffin); India domestic INR revenues.",
+      "valueAngle": "P/E 38× full but net cash + ROE 34.5% + 30% op margins. Branded-Rx moat real."
+    },
+    {
+      "ticker": "NAM-INDIA",
+      "name": "Nippon Life India AMC",
+      "exchange": "NSE",
+      "sector": "Asset Management",
+      "logoText": "N",
+      "logoFrom": "#7e22ce",
+      "logoTo": "#c084fc",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 4,
+      "thesis": "5th-largest AMC (~₹6L Cr AUM); Nippon Life Japan 73%. SIP-led inflow franchise.",
+      "valueAngle": "P/E 47× rich but op margin 65% + ROE 34.5%. Buy on 25%+ correction."
+    },
+    {
+      "ticker": "ABSLAMC",
+      "name": "Aditya Birla Sun Life AMC",
+      "exchange": "NSE",
+      "sector": "Asset Management",
+      "logoText": "A",
+      "logoFrom": "#a16207",
+      "logoTo": "#facc15",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 5,
+      "thesis": "7th-largest AMC; ABG + Sun Life JV. Cheaper-quality cousin to NAM-INDIA / HDFCAMC.",
+      "valueAngle": "P/E 30.6× · ROE 25% · Op margin 52% · Div yield 2.3% — best value/quality in the AMC tier."
+    },
+    {
+      "ticker": "AJANTPHARM",
+      "name": "Ajanta Pharma Ltd.",
+      "exchange": "NSE",
+      "sector": "Pharma · Branded Generics",
+      "logoText": "A",
+      "logoFrom": "#15803d",
+      "logoTo": "#84cc16",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 6,
+      "thesis": "Family-promoter (Agrawal, 70%) pharma — emerging-markets branded generics + India derma/cardio.",
+      "valueAngle": "P/E 38× full but ROE 25%; 70% promoter alignment + EM-export mix."
+    },
+    {
+      "ticker": "LALPATHLAB",
+      "name": "Dr Lal PathLabs Ltd.",
+      "exchange": "NSE",
+      "sector": "Diagnostics",
+      "logoText": "L",
+      "logoFrom": "#0f766e",
+      "logoTo": "#5eead4",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 7,
+      "thesis": "#1 quality diagnostic chain in India. Asset-light hub-and-spoke; Dr Lal family + WestBridge backed.",
+      "valueAngle": "P/E 50× rich but stock 40%+ off 2022 highs; aggregator margin pressure stabilising."
+    },
+    {
+      "ticker": "NAVINFLUOR",
+      "name": "Navin Fluorine International",
+      "exchange": "NSE",
+      "sector": "Specialty Chem",
+      "logoText": "N",
+      "logoFrom": "#1e40af",
+      "logoTo": "#3b82f6",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 8,
+      "thesis": "Fluorine specialty chemistry niche (refrigerants, AHF, pharma + agrochem intermediates). Mafatlal-promoted, 60+y tenure.",
+      "valueAngle": "P/E 54× rich; stock ~50% off 2022 highs. Wait for chem-cycle turn confirmation."
+    },
+    {
+      "ticker": "MPHASIS",
+      "name": "Mphasis Ltd.",
+      "exchange": "NSE",
+      "sector": "IT Services · BFSI",
+      "logoText": "M",
+      "logoFrom": "#dc2626",
+      "logoTo": "#f87171",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 9,
+      "thesis": "BFSI-focused IT services; Blackstone owns 56% — top-tier PE governance.",
+      "valueAngle": "Cheapest of IT pass-list: P/E 22× · Div yield 2.9% · ROE 18% — pessimism already priced."
+    },
+    {
+      "ticker": "COFORGE",
+      "name": "Coforge Ltd.",
+      "exchange": "NSE",
+      "sector": "IT Services · Travel + Insurance",
+      "logoText": "C",
+      "logoFrom": "#7c2d12",
+      "logoTo": "#fb923c",
+      "status": "screened",
+      "screenId": "india-midcap-2026-05",
+      "priorityRank": 10,
+      "thesis": "Mid-tier IT niche-vertical specialist (travel/transport/insurance); Baring PE ~40%. Cidara acquisition (2024) adds US presence.",
+      "valueAngle": "P/E 29× · ROE 18.6% · Op margin 16.6%; watch FY27 margin recovery."
     }
   ]
 }

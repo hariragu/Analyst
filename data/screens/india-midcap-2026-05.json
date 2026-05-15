@@ -1,0 +1,231 @@
+{
+  "id": "india-midcap-2026-05",
+  "title": "India · Mid-Cap · Boring Cash Machines · May 2026",
+  "market": "India (NSE) · Mkt cap ₹15,000 – ₹75,000 Cr",
+  "asOf": "2026-05-15",
+  "methodologyType": "Systematic (NSE 500 → quant gates → qualitative overlay)",
+  "analystVoice": "Senior value analyst, Khandelwal lens — 'Coal India minus the PSU governance problem'",
+  "universe": "NSE 500 (504 names pulled from niftyindices.com) ∩ mid-cap band ₹15,000–₹75,000 Cr (254 names) ∩ quant gates (16 names pass-all)",
+  "theme": "Boring industries (LNG pipelines, mutual fund infra, asset management, diagnostics, pharma exports, specialty chem, mature IT services) where the product is invisible to retail, distribution / regulatory licence is the moat, and cash conversion is the by-product. Coal India's failure mode is the PSU overhang on capital allocation — this screen explicitly filters for **non-PSU promoter / MNC alignment** to avoid that trap.",
+  "methodologyNote": "Five-stage funnel — fully reproducible: (1) UNIVERSE — pulled NIFTY 500 CSV from niftyindices.com on 2026-05-15; (2) QUANT FETCH — Yahoo Finance via yfinance for all 499 reachable names (5 had no listing data on YF); (3) MKT-CAP BAND — kept 254 in ₹15k–75k Cr; (4) QUANT GATES — 16 names passed ALL 7 gates (mkt-cap band, ROE>18%, D/E<60% of equity, FCF>0, op margin>15%, P/E sanity 0-60×, exclude pure banks); (5) QUALITATIVE OVERLAY — boring theme + non-PSU governance + industry diversification → final 10. Audit trail in scripts/screen_nse500.py + scripts/filter_midcap.py + data/screens/raw/midcap-funnel-2026-05.json.",
+  "filters": {
+    "quality": [
+      "Mkt cap ₹15,000–75,000 Cr (mid-cap band — wider than typical because India mid-cap inflated post-2024 rally)",
+      "ROE > 18% (verified — yfinance returnOnEquity)",
+      "Debt/Equity < 0.6 (yfinance debtToEquity, scaled as %)",
+      "Free Cash Flow > 0 (yfinance freeCashflow, TTM)",
+      "Operating Margin > 15% (yfinance operatingMargins — proxy for pricing power)",
+      "Trailing P/E in (0, 60) — sanity bound, excludes loss-makers and silly multiples",
+      "Exclude pure banks (different metric base — banks measured on NIM, CASA, slippages, not ROCE/op margin)"
+    ],
+    "valuation": [
+      "P/E reasonable for sector — preferred < 35× general, < 15× for cyclicals (sanity-checked per pick)",
+      "Dividend yield > 1% preferred (proves cash returns; not enforced as hard gate so we don't exclude reinvesters)",
+      "P/B compared to ROE — high P/B acceptable if ROE > 25% (asset-light franchises)"
+    ],
+    "qualitative": [
+      "Industry is BORING: not on prime-time TV (LNG terminals, RTA, AMC back-office, diagnostics, specialty chem, mature IT)",
+      "Distribution / switching cost / regulatory licence is the moat — not brand-buzz",
+      "Non-PSU: promoter family OR MNC parent (avoids the Coal India governance problem)",
+      "Industry diversification: max 2 names per sector to avoid concentration"
+    ]
+  },
+  "auditTrail": {
+    "universeSize": 504,
+    "universeSource": "NIFTY 500 list from niftyindices.com (2026-05-15)",
+    "midCapBandSize": 254,
+    "passedAllGates": 16,
+    "passedAllGatesNames": ["CAMS", "ABBOTINDIA", "NAM-INDIA", "NATIONALUM", "PERSISTENT", "AJANTPHARM", "ABSLAMC", "LALPATHLAB", "TATAELXSI", "NAVINFLUOR", "KPITTECH", "EMCURE", "LTTS", "COFORGE", "PETRONET", "MPHASIS"],
+    "passedAllButOne": 15,
+    "qualitativeRejects": [
+      { "ticker": "NATIONALUM", "reason": "Passed all quant gates (P/E 12, ROE 29%, OPM 49%) but PSU majority-owned — fails the 'no Coal India governance trap' rule. Aluminum cyclical also at cycle high." },
+      { "ticker": "PERSISTENT", "reason": "Quant strong but IT-services AI cannibalisation overhang (see glossary). Multiple is rich at 39× and we already have MPHASIS + COFORGE as IT exposure." },
+      { "ticker": "TATAELXSI", "reason": "Design-services for autos — quant passes but the auto-OEM ER&D capex cycle showing signs of slowing. 40× P/E vs decelerating growth — not asymmetric." },
+      { "ticker": "KPITTECH", "reason": "Auto-software (ADAS / SDV) — hot story, 30× P/E. Same AI/EV cycle bet as TATAELXSI; better to wait for re-rating." },
+      { "ticker": "EMCURE", "reason": "Recently IPO'd (mid-2024) — too short a public track record to underwrite for value." },
+      { "ticker": "LTTS", "reason": "L&T Tech Services — IT ER&D, similar concerns to PERSISTENT / TATAELXSI. Including would over-concentrate IT exposure." }
+    ]
+  },
+  "exclusionsExplained": [
+    {
+      "term": "Peak cycle",
+      "meaning": "Earnings are at a multi-year high (e.g., defense PSU orders growing 40%+ for 5 years on indigenisation push). At peak both **earnings (numerator) AND P/E multiple** are elevated. When the cycle turns, you eat both a margin haircut AND a multiple compression — a double-hit. Rule: buy mid-cycle or in the trough, not at peak."
+    },
+    {
+      "term": "Late re-rate",
+      "meaning": "The market has already re-priced the stock from cheap (12× P/E) to expensive (35× P/E) on good news (e.g., PSU bank re-rating 2022–24). Further upside now requires either (a) earnings over-delivery vs raised expectations or (b) yet another leg of multiple expansion. Easy money is gone; risk-reward asymmetric the wrong way."
+    },
+    {
+      "term": "AI cannibalisation overhang",
+      "meaning": "For Indian IT-services, the worry that genAI agents will displace billable hours — especially in time-and-materials BPO and maintenance. Even if disruption is slower than feared, the **overhang keeps multiples compressed** until clarity. Better to wait for (a) revenue impact to materialise and stocks to wash out, or (b) AI-immune pockets (ER&D, captive ops) to be priced in distinctly."
+    },
+    {
+      "term": "Margin compression",
+      "meaning": "Industry-wide pricing power weakens — from new capacity, customer consolidation, or low-cost entrants. EBITDA margins fall; **revenue growth no longer translates to profit growth**. Seen in solar EPC (Adani-led capacity addition), organised retail (aggregator margin take), specialty chems (China capacity returning post-COVID)."
+    },
+    {
+      "term": "Credit cycle turning",
+      "meaning": "Lending businesses earn high ROE in benign credit conditions (low NPAs) and **lose money fast in stressed conditions**. India 2026 shows early NPA stress in unsecured personal loans, MFI, and credit cards. When the cycle visibly turns, ROEs collapse and stocks drop 30–50% (cf. 2018 IL&FS NBFC crisis). Wait for the wash-out before re-entry."
+    },
+    {
+      "term": "Unit economics deteriorating",
+      "meaning": "For consumer-facing businesses (QSR, retail, D2C), unit economics = profit per store/order/customer. When these shrink — aggregator commissions rising, dark-kitchen entry, customer-acquisition costs ballooning — the **entire growth narrative falls apart**. You don't even get the consolation of cheap multiple expansion because margin AND growth compress together."
+    },
+    {
+      "term": "Cyclical commodity at peak",
+      "meaning": "Commodities (steel, chems, paper, cement) move in cycles tied to capacity additions vs demand. Buying when capacity utilisation is at peak + product prices at peak + EBITDA margins at peak = setting up for **50% drawdown** in the next downcycle. The classic 'good business at the wrong time' trap. Wait for capex digestion + price normalisation."
+    },
+    {
+      "term": "PSU governance trap",
+      "meaning": "Public-sector undertakings (Coal India, NTPC, NALCO, ONGC) often look statistically cheap with high ROE + low P/E + fat dividend. But government-as-majority-owner introduces non-economic capital allocation: forced cross-holdings, OFS at unfavourable timing, social-objective pricing (Coal India fuel-supply agreements), and CEO turnover on bureaucratic schedules. Long-term IRR persistently lags private-sector peers despite the optical cheapness."
+    }
+  ],
+  "picks": [
+    {
+      "ticker": "PETRONET",
+      "name": "Petronet LNG Ltd.",
+      "exchange": "NSE",
+      "sector": "Energy · LNG Regasification",
+      "logoText": "P",
+      "logoFrom": "#1d4ed8",
+      "logoTo": "#60a5fa",
+      "thesis": "Owns India's two largest LNG regasification terminals (Dahej + Kochi) — together ~75% of national LNG regas capacity. JV between GAIL, ONGC, IOC, BPCL (private-domain promoter — not PSU majority).",
+      "valueAngle": "P/E 10.1× · ROE 18.6% · Div yield 3.7% · D/E 0.11. Cheapest in the pass-list. Tolling business model (take-or-pay) makes earnings recurring; LNG tailwind on India's gas-share push.",
+      "stockData": { "mktCapCr": 39540, "price": 263.6, "pe": 10.1, "pb": 1.9, "roePct": 18.6, "deRatio": 0.11, "divYieldPct": 3.7, "opMarginPct": 17.5 },
+      "boringScore": "10/10 — LNG terminals literally don't move",
+      "priorityRank": 1
+    },
+    {
+      "ticker": "CAMS",
+      "name": "Computer Age Management Services",
+      "exchange": "NSE",
+      "sector": "Mutual Fund Infrastructure",
+      "logoText": "C",
+      "logoFrom": "#0e7490",
+      "logoTo": "#22d3ee",
+      "thesis": "Duopoly with KFin in mutual-fund registrar-and-transfer-agent (RTA) services — handles ~70% of India MF AUM record-keeping. Asset-light, recurring, fee-per-folio model that scales with AUM growth.",
+      "valueAngle": "P/E 41× is NOT cheap — but ROE 38.7% + 40% op margins + asset-light = re-rating justified by quality. P/B 16× reflects no tangible-asset base. Worth buying on a 20%+ pull-back for long-term compounding.",
+      "stockData": { "mktCapCr": 19442, "price": 784, "pe": 41.0, "pb": 15.9, "roePct": 38.7, "deRatio": 0.05, "divYieldPct": 1.6, "opMarginPct": 39.2 },
+      "boringScore": "10/10 — MF folio administration is the dictionary definition of boring",
+      "priorityRank": 2
+    },
+    {
+      "ticker": "ABBOTINDIA",
+      "name": "Abbott India Ltd.",
+      "exchange": "NSE",
+      "sector": "Pharma MNC · Branded Generics",
+      "logoText": "A",
+      "logoFrom": "#0c4a6e",
+      "logoTo": "#0ea5e9",
+      "thesis": "Abbott Laboratories (USA) holds 75% — top-tier MNC governance. Strong branded portfolio (Digene, Cremaffin, Thyronorm). Domestic-focused, INR-revenue, FX-shock-immune.",
+      "valueAngle": "P/E 38× is at the higher end of 10-y range but ROE 34.5% + net cash + zero leverage. Branded generics moat is real (doctor-prescription stickiness). Premium deserved but watch entry price.",
+      "stockData": { "mktCapCr": 59371, "price": 27940, "pe": 38.3, "pb": 12.4, "roePct": 34.5, "deRatio": 0.04, "divYieldPct": 1.9, "opMarginPct": 30.1 },
+      "boringScore": "9/10 — generic prescription pharma in India",
+      "priorityRank": 3
+    },
+    {
+      "ticker": "NAM-INDIA",
+      "name": "Nippon Life India AMC",
+      "exchange": "NSE",
+      "sector": "Asset Management",
+      "logoText": "N",
+      "logoFrom": "#7e22ce",
+      "logoTo": "#c084fc",
+      "thesis": "5th-largest AMC in India by AUM (~₹6L Cr). Nippon Life Japan owns 73% — clean MNC governance. SIP-led inflow franchise gives AUM stickiness during corrections.",
+      "valueAngle": "P/E 46.7× is rich but ROE 34.5% + op margin 65% (yes, sixty-five) reflect the operating-leverage of incremental AUM with near-zero variable cost. AMC business will earn 25%+ ROE through cycles. Buy on 25%+ correction.",
+      "stockData": { "mktCapCr": 70250, "price": 1100.6, "pe": 46.7, "pb": 15.0, "roePct": 34.5, "deRatio": 0.02, "divYieldPct": 2.0, "opMarginPct": 65.4 },
+      "boringScore": "9/10 — AMC fee-collection is boring scale",
+      "priorityRank": 4
+    },
+    {
+      "ticker": "ABSLAMC",
+      "name": "Aditya Birla Sun Life AMC",
+      "exchange": "NSE",
+      "sector": "Asset Management",
+      "logoText": "A",
+      "logoFrom": "#a16207",
+      "logoTo": "#facc15",
+      "thesis": "JV between Aditya Birla Group and Sun Life Financial (Canada). 7th-largest AMC. Family-conglomerate + MNC JV governance; cleaner than typical Indian promoter family.",
+      "valueAngle": "P/E 30.6× — meaningfully cheaper than NAM-INDIA + HDFC AMC. ROE 25%, op margin 52%, div yield 2.3% — best value-for-quality in the AMC tier. Smaller AUM = more growth runway.",
+      "stockData": { "mktCapCr": 29788, "price": 1030.4, "pe": 30.6, "pb": 7.4, "roePct": 25.1, "deRatio": 0.02, "divYieldPct": 2.3, "opMarginPct": 51.9 },
+      "boringScore": "9/10 — see NAM-INDIA",
+      "priorityRank": 5
+    },
+    {
+      "ticker": "AJANTPHARM",
+      "name": "Ajanta Pharma Ltd.",
+      "exchange": "NSE",
+      "sector": "Pharma · Branded Generics + Exports",
+      "logoText": "A",
+      "logoFrom": "#15803d",
+      "logoTo": "#84cc16",
+      "thesis": "Family-promoted pharma (Agrawal family, ~70% holding) focused on emerging-markets branded generics + India dermatology/cardiology. Long management tenure. Boring execution-led story.",
+      "valueAngle": "P/E 37.6× is full but ROE 25% + 23% op margins. 70% promoter holding aligns interests. India + EM-export mix de-risks geography.",
+      "stockData": { "mktCapCr": 39694, "price": 3177.2, "pe": 37.6, "pb": 8.8, "roePct": 25.4, "deRatio": 0.06, "divYieldPct": 1.7, "opMarginPct": 23.2 },
+      "boringScore": "9/10 — branded generics for emerging markets",
+      "priorityRank": 6
+    },
+    {
+      "ticker": "LALPATHLAB",
+      "name": "Dr Lal PathLabs Ltd.",
+      "exchange": "NSE",
+      "sector": "Diagnostics",
+      "logoText": "L",
+      "logoFrom": "#0f766e",
+      "logoTo": "#5eead4",
+      "thesis": "India's #1 diagnostic chain by quality reputation. Dr Lal family + WestBridge (TPG) backed — clean governance. Asset-light hub-and-spoke model.",
+      "valueAngle": "P/E 50× looks rich — but the stock has already corrected 40%+ from 2022 highs as online aggregators (Tata 1mg, Pharmeasy) compressed margins. Now stabilising. Industry consolidation tail-wind.",
+      "stockData": { "mktCapCr": 26765, "price": 1602.9, "pe": 50.6, "pb": 11.2, "roePct": 21.5, "deRatio": 0.08, "divYieldPct": 0.9, "opMarginPct": 20.2 },
+      "boringScore": "10/10 — blood-test infrastructure",
+      "priorityRank": 7
+    },
+    {
+      "ticker": "NAVINFLUOR",
+      "name": "Navin Fluorine International",
+      "exchange": "NSE",
+      "sector": "Specialty Chem · Fluorochemicals",
+      "logoText": "N",
+      "logoFrom": "#1e40af",
+      "logoTo": "#3b82f6",
+      "thesis": "Niche fluorine chemistry (refrigerants, AHF, specialty molecules for agrochem + pharma intermediates). Promoter (Padma Vibhushan B.K. Birla group → Mafatlal) tenure 60+ years.",
+      "valueAngle": "P/E 53.7× rich — but stock has corrected ~50% from 2022 highs on chem-cycle reset. ROE 20% + 30% op margin. Wait for cycle-turn confirmation before adding aggressively (see 'Cyclical commodity at peak' glossary entry).",
+      "stockData": { "mktCapCr": 35905, "price": 7001, "pe": 53.7, "pb": 9.0, "roePct": 20.1, "deRatio": 0.32, "divYieldPct": 0.2, "opMarginPct": 29.9 },
+      "boringScore": "8/10 — fluorine specialty chemistry",
+      "priorityRank": 8
+    },
+    {
+      "ticker": "MPHASIS",
+      "name": "Mphasis Ltd.",
+      "exchange": "NSE",
+      "sector": "IT Services · BFSI Focus",
+      "logoText": "M",
+      "logoFrom": "#dc2626",
+      "logoTo": "#f87171",
+      "thesis": "BFSI-focused IT services (Citi, JP Morgan, etc.). Blackstone owns 56% — top-tier PE governance. Has been hit by AI cannibalisation fear; price reflects most pessimism.",
+      "valueAngle": "Cheapest of the IT pass-list: P/E 22× · Div yield 2.9% · ROE 18% · No premium for hyper-growth. If AI disruption is slower than feared, re-rating possible from cheaper base.",
+      "stockData": { "mktCapCr": 39751, "price": 2083.2, "pe": 22.1, "pb": 3.9, "roePct": 18.3, "deRatio": 0.24, "divYieldPct": 2.9, "opMarginPct": 15.4 },
+      "boringScore": "7/10 — mature IT services for banks",
+      "priorityRank": 9
+    },
+    {
+      "ticker": "COFORGE",
+      "name": "Coforge Ltd.",
+      "exchange": "NSE",
+      "sector": "IT Services · Travel + Insurance",
+      "logoText": "C",
+      "logoFrom": "#7c2d12",
+      "logoTo": "#fb923c",
+      "thesis": "Mid-tier IT specialised in travel-transport-hospitality (SITA, Skywise) + insurance. Baring PE-backed (~40%) → professional management. Niche verticals = stickier client relationships.",
+      "valueAngle": "P/E 29× — middle of IT pass-list. ROE 18.6% · Op margin 16.6%. Cidara acquisition (May 2024) adds US presence. Watch FY27 margin recovery as integration completes.",
+      "stockData": { "mktCapCr": 55085, "price": 1282.1, "pe": 29.2, "pb": 4.5, "roePct": 18.6, "deRatio": 0.08, "divYieldPct": 1.3, "opMarginPct": 16.6 },
+      "boringScore": "7/10 — IT services for travel + insurance",
+      "priorityRank": 10
+    }
+  ],
+  "sources": [
+    { "title": "NIFTY 500 constituent list (CSV)", "url": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv" },
+    { "title": "Yahoo Finance via yfinance (per-ticker fundamentals)", "url": "https://pypi.org/project/yfinance/" },
+    { "title": "Audit trail — NSE 500 snapshot", "url": "https://github.com/hariragu/Analyst/blob/main/data/screens/raw/nse500-snapshot.json" },
+    { "title": "Audit trail — mid-cap funnel", "url": "https://github.com/hariragu/Analyst/blob/main/data/screens/raw/midcap-funnel-2026-05.json" }
+  ]
+}

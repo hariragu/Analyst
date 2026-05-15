@@ -340,6 +340,19 @@ sup.cite-missing{
   display:inline-flex; align-items:center; gap:.5rem;
   font-size:.72rem; text-transform: uppercase; letter-spacing:.08em;
   margin-bottom:.5rem;
+  flex-wrap: wrap;
+}
+.method-badge{
+  display: inline-flex; align-items: center; gap: .25rem;
+  padding: .15rem .55rem;
+  border-radius: 99px;
+  font-size: .65rem;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  background: rgba(34, 211, 238, 0.10);
+  color: #67e8f9;
+  border: 1px solid rgba(34, 211, 238, 0.25);
 }
 .screen-title{
   font-size:1.5rem; font-weight:700; color:#fff; line-height:1.2;

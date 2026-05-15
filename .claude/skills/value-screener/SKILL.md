@@ -62,13 +62,30 @@ Produce one JSON file at `data/screens/<screen-id>.json` and update `data/index.
 ## Process steps
 
 1. **Define market + as-of date.**
-2. **Pull a snapshot** of universe metrics (from `stockanalysis.com`, `screener.in`, etc.) — or rely on encoded analyst knowledge if data fetch is slow.
-3. **Apply Phases 2–3** to shortlist ~30–60 names.
-4. **Apply Phase 4** (qualitative) to narrow to ~15–25.
+2. **Systematic data pull** (preferred, reproducible): use the tooling at `scripts/screen_nse500.py` (India) and `scripts/filter_midcap.py` (template for filter stages) to pull a verified snapshot of universe metrics from Yahoo Finance. Inputs in `data/screens/raw/`; outputs in `data/screens/raw/nse500-snapshot.json` and `<theme>-funnel-<YYYY-MM>.json`. **Use yfinance via the python script — do NOT rely on memory-based metrics.**
+3. **Apply Phases 2–3** to shortlist ~30–60 names with PASS/FAIL annotated per gate.
+4. **Apply Phase 4** (qualitative) to narrow to ~15–25 — record rejection reasons in the audit file.
 5. **Apply Phase 5** (macro) to pick the final 8–15 with sector balance.
-6. **Write the screen JSON** following the schema below.
+6. **Write the screen JSON** following the schema below. Include a `methodologyType` of `"Systematic (NSE 500 → quant gates → qualitative overlay)"` plus an `auditTrail` block referencing the raw snapshot.
 7. **Update `data/index.json`** — for each pick, append a minimal entry with `status: "screened"`.
-8. **Document deliberate exclusions** (what hot themes you skipped and why). This is the analyst's tell of honesty.
+8. **Document deliberate exclusions** (what hot themes you skipped and why) — both quant rejects (failed gates) and qualitative rejects (passed quant but the analyst overrode for theme/governance/cycle reasons). This is the analyst's tell of honesty.
+
+## Reproducible pipeline (India)
+
+```powershell
+# 1. Fetch fresh NIFTY 500 list (if needed)
+curl -o data/screens/raw/nifty500-list-2026-05.csv https://niftyindices.com/IndexConstituent/ind_nifty500list.csv
+
+# 2. Fetch fundamentals for all 500 (~6 seconds via yfinance)
+python scripts/screen_nse500.py
+# -> data/screens/raw/nse500-snapshot.json
+
+# 3. Filter for a theme (mid-cap, small-cap, etc.) — copy & customise
+python scripts/filter_midcap.py
+# -> data/screens/raw/<theme>-funnel-<YYYY-MM>.json
+
+# 4. Apply qualitative overlay, write the screen JSON manually using audit trail.
+```
 
 ## Schema — `data/screens/<id>.json`
 

@@ -33,27 +33,36 @@
     ]
   },
   "exclusions": [
-    { "theme": "Defense small-caps at 60-80× P/E (BEL, HAL adjacencies, MTAR, Paras Defense)", "reason": "Peak-cycle multiples; order-book tailwind already extrapolated to 2030" },
-    { "theme": "Railway / capital goods small-caps (Titagarh, RVNL adjacencies)", "reason": "PSU re-rating cycle late; mean reversion risk" },
-    { "theme": "Smallcap IT services (Tata Elxsi, Persistent peers below ₹20k Cr)", "reason": "AI cannibalisation overhang — wait for valuation reset to play out" },
-    { "theme": "Renewables / solar EPC (Sterling & Wilson, Inox Wind)", "reason": "Margin compression cycle; balance-sheet stress in peers" },
-    { "theme": "Microfinance / unsecured lending NBFCs", "reason": "Credit-cycle turn underway; better to wait for the wash-out" },
-    { "theme": "QSR small caps (Westlife, Jubilant Foodworks small-cap peers)", "reason": "Unit economics deteriorating; private competition compressing margins" },
-    { "theme": "Specialty chem cyclical names (Aarti, Navin Fluorine if at peak)", "reason": "Cyclical price compression already visible; wait for capex digestion" }
+    {
+      "theme": "Defense small-caps at 60-80× P/E (BEL, HAL adjacencies, MTAR, Paras Defense)",
+      "reason": "Peak-cycle multiples; order-book tailwind already extrapolated to 2030"
+    },
+    {
+      "theme": "Railway / capital goods small-caps (Titagarh, RVNL adjacencies)",
+      "reason": "PSU re-rating cycle late; mean reversion risk"
+    },
+    {
+      "theme": "Smallcap IT services (Tata Elxsi, Persistent peers below ₹20k Cr)",
+      "reason": "AI cannibalisation overhang — wait for valuation reset to play out"
+    },
+    {
+      "theme": "Renewables / solar EPC (Sterling & Wilson, Inox Wind)",
+      "reason": "Margin compression cycle; balance-sheet stress in peers"
+    },
+    {
+      "theme": "Microfinance / unsecured lending NBFCs",
+      "reason": "Credit-cycle turn underway; better to wait for the wash-out"
+    },
+    {
+      "theme": "QSR small caps (Westlife, Jubilant Foodworks small-cap peers)",
+      "reason": "Unit economics deteriorating; private competition compressing margins"
+    },
+    {
+      "theme": "Specialty chem cyclical names (Aarti, Navin Fluorine if at peak)",
+      "reason": "Cyclical price compression already visible; wait for capex digestion"
+    }
   ],
   "picks": [
-    {
-      "ticker": "CAMS",
-      "name": "Computer Age Management Services Ltd.",
-      "exchange": "NSE",
-      "sector": "Capital-market Infra · RTA",
-      "logoText": "C",
-      "logoFrom": "#0c4a6e",
-      "logoTo": "#06b6d4",
-      "thesis": "Mutual-fund RTA duopoly with KFin Tech — ~70% market share, services 10 of top 15 AMCs, AUM-linked revenue with high incremental margins.",
-      "valueAngle": "Trades at ~45× P/E vs the duopoly's structurally 60-70% EBITDA margin and 40%+ ROCE; equity-market mix-shift compounds revenue mid-teens with negligible incremental capex.",
-      "priorityRank": 1
-    },
     {
       "ticker": "VINATIORGA",
       "name": "Vinati Organics Ltd.",
@@ -64,7 +73,7 @@
       "logoTo": "#14b8a6",
       "thesis": "Global #1 in ATBS (~65% share) and IBB — niche specialty chem with hard-to-replicate process IP and a debt-free balance sheet.",
       "valueAngle": "P/E ~32× vs 10y avg 38×; founder-led (Vinati Saraf Mutreja); butyl phenol & antioxidant downstream capacity ramping into FY27.",
-      "priorityRank": 2
+      "priorityRank": 1
     },
     {
       "ticker": "CAPLIPOINT",
@@ -76,7 +85,7 @@
       "logoTo": "#ef4444",
       "thesis": "LATAM-focused generics exporter with first-mover positions in Central/South America; recently scaling US injectables via Caplin Steriles.",
       "valueAngle": "P/E ~22× with 25%+ ROCE, debt-free, FCF positive every year for a decade; US ramp is optional upside not priced in.",
-      "priorityRank": 3
+      "priorityRank": 2
     },
     {
       "ticker": "AFFLE",
@@ -88,7 +97,7 @@
       "logoTo": "#ec4899",
       "thesis": "Mobile-first ad-tech platform with proprietary consumer-intent data set; CPC pricing model insulates from CPM compression in display.",
       "valueAngle": "P/E ~50× looks rich but 4-yr revenue CAGR 30%+ at 25% EBITDA margin and net-cash balance sheet; international expansion (US, MENA) under-monetised.",
-      "priorityRank": 4
+      "priorityRank": 3
     },
     {
       "ticker": "SUPRAJIT",
@@ -100,7 +109,7 @@
       "logoTo": "#3b82f6",
       "thesis": "World's largest manufacturer of automotive control cables — supplies global 2W OEMs (Honda, Yamaha) plus Phoenix Lamps adjacency; hidden champion in a boring niche.",
       "valueAngle": "P/E ~24× with 18% ROCE; EV-agnostic product (cables needed regardless of powertrain); recent Sundaram Industries cable-biz acquisition expands SAM.",
-      "priorityRank": 5
+      "priorityRank": 4
     },
     {
       "ticker": "ECLERX",
@@ -112,7 +121,7 @@
       "logoTo": "#8b5cf6",
       "thesis": "Sticky digital-operations services to enterprise BFSI / cable / hi-tech clients; founder-promoted (Mundhra, Malik); aggressive buybacks reduce share count.",
       "valueAngle": "P/E ~18× — cheapest of the listed Indian BPM/KPO peers; net-cash balance sheet; consistent 20%+ EBITDA margins despite India-IT wage inflation.",
-      "priorityRank": 6
+      "priorityRank": 5
     },
     {
       "ticker": "MOLDTKPAC",
@@ -124,7 +133,7 @@
       "logoTo": "#f59e0b",
       "thesis": "In-Mold Labelling (IML) plastic packaging leader for India's paints, lubes, ghee, and ice-cream B2B customers — switching cost is real (tool moulds amortise over multi-year contracts).",
       "valueAngle": "P/E ~22× with 20%+ ROCE, net-cash, 30%+ revenue from F&B (margin-rich); Birla Opus paint launch is a positive (not negative) for paint-packaging vendors.",
-      "priorityRank": 7
+      "priorityRank": 6
     }
   ],
   "thingsToWatch": [

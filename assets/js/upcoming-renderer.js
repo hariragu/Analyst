@@ -47,6 +47,9 @@ function unscreenedCard(stock){
 }
 
 function renderScreenSection(screen, picks){
+  const methBadge = screen.methodologyType
+    ? `<span class="method-badge" title="${screen.methodologyType}">${screen.methodologyType.startsWith('Systematic') ? '⚙️ Systematic' : '✍️ Analyst-pick'}</span>`
+    : '';
   return `
   <section class="screen-section">
     <header class="screen-header">
@@ -55,6 +58,7 @@ function renderScreenSection(screen, picks){
           <span class="screen-dot"></span>
           <span class="mono text-mute">${screen.market}</span>
           <span class="text-mute">· as of ${screen.asOf}</span>
+          ${methBadge}
         </div>
         <h2 class="screen-title">${screen.title}</h2>
         <p class="screen-count">${picks.length} ${picks.length === 1 ? 'company' : 'companies'} in the queue</p>
