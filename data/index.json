@@ -1,0 +1,31 @@
+{
+  "site": {
+    "title": "Equity Analyst",
+    "tagline": "15-question equity reviews · Be honest, not clever.",
+    "framework": "Vishal Khandelwal · safalniveshak.com",
+    "owner": "hariragu"
+  },
+  "stocks": [
+    {
+      "ticker": "UBER",
+      "name": "Uber Technologies, Inc.",
+      "exchange": "NYSE",
+      "sector": "Mobility · Platforms",
+      "logoText": "U",
+      "logoFrom": "#7c3aed",
+      "logoTo": "#22d3ee",
+      "rating": "HOLD",
+      "ratingColor": "warn",
+      "price": 74.69,
+      "priceChange52w": -18.6,
+      "marketCap": "$152B",
+      "fcfTtm": "$9.8B",
+      "evFcf": "15.8×",
+      "asOf": "2026-05-14",
+      "summary": "A good business at a fair price — not a great business at a great price.",
+      "buyBelow": 65,
+      "loadBelow": 55,
+      "trimAbove": 120
+    }
+  ]
+}

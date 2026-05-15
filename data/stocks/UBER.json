@@ -1,0 +1,336 @@
+{
+  "ticker": "UBER",
+  "name": "Uber Technologies, Inc.",
+  "exchange": "NYSE",
+  "sector": "Mobility · Platforms",
+  "logoText": "U",
+  "logoFrom": "#7c3aed",
+  "logoTo": "#22d3ee",
+  "asOf": "2026-05-14",
+  "framework": "Vishal Khandelwal · safalniveshak.com",
+
+  "verdict": {
+    "rating": "HOLD",
+    "ratingColor": "warn",
+    "summary": "A good business at a fair price — not a great business at a great price. Starter position only at today's quote; back up the truck on AV-fear sell-offs.",
+    "buyBelow": 65,
+    "loadBelow": 55,
+    "trimAbove": 120
+  },
+
+  "snapshot": {
+    "price": 74.69,
+    "priceChange52w": -18.6,
+    "marketCap": "$152B",
+    "ev": "$154.5B",
+    "fcfTtm": "$9.8B",
+    "revTtm": "$53.7B",
+    "evFcf": "15.8×",
+    "fcfYield": "6.45%",
+    "roic": "19.3%",
+    "wacc": "10.0%",
+    "fcfGrowth4y": "~25% CAGR",
+    "analystPT": "$107.79",
+    "analystUpside": "+44%",
+    "analystRating": "Strong Buy (34)"
+  },
+
+  "executiveSummary": {
+    "pros": [
+      "Asset-light marketplace converting **$10B+ FCF** on $54B revenue (18.8% FCF margin).",
+      "Network-effect moat: 2–3× Lyft share in US, #1/2 in most of 70+ countries.",
+      "Embedded high-margin **advertising business** (~$1.5B run-rate) compounding fastest.",
+      "Capital return inflection: **$6.5B buyback in 2025** after first-ever in 2024.",
+      "ROIC 19% vs WACC 10% — real economic profit."
+    ],
+    "cons": [
+      "**Autonomous vehicles** — Tesla/Waymo could bypass the demand layer. Genuine unknown.",
+      "**Driver classification** regulation risk (PRO Act, EU PWD enforcement).",
+      "SBC of **$1.86B/yr** dilutes real shareholder yield from 5% to ~3%.",
+      "Insiders own only **0.17%**; no founder remains on the cap table.",
+      "Insurance accruals are actuarial and lumpy — CA verdicts can swing margin 200bp."
+    ]
+  },
+
+  "financials": {
+    "years": ["FY21", "FY22", "FY23", "FY24", "FY25", "TTM"],
+    "revenueB": [17.46, 31.88, 37.28, 43.98, 52.02, 53.69],
+    "fcfB": [-0.74, 0.39, 3.36, 6.90, 9.76, 9.80],
+    "opMargin": [-21.97, -5.75, 2.98, 6.36, 10.70, 11.66],
+    "mix": {
+      "labels": ["Mobility", "Delivery", "Freight"],
+      "values": [57, 37, 6]
+    },
+    "valuation": [
+      {"label": "Trailing P/E", "value": 18.5, "tone": "neutral"},
+      {"label": "Fwd P/E 26",   "value": 21.7, "tone": "neutral"},
+      {"label": "P/E 27",       "value": 16.9, "tone": "pos"},
+      {"label": "EV/EBITDA",    "value": 22.0, "tone": "neutral"},
+      {"label": "EV/FCF",       "value": 15.8, "tone": "pos"},
+      {"label": "PEG",          "value": 0.64, "tone": "pos"}
+    ],
+    "tables": {
+      "valuation": [
+        ["Trailing P/E", "18.5×"],
+        ["Fwd P/E (2026)", "21.7×"],
+        ["2027 P/E", "16.9× ✓"],
+        ["EV / EBITDA", "22.0×"],
+        ["EV / FCF", "15.8× ✓"],
+        ["PEG", "0.64 ✓"],
+        ["FCF yield", "6.45% ✓"]
+      ],
+      "balance": [
+        ["Cash & ST inv.", "$6.1B"],
+        ["Total debt", "$12.4B"],
+        ["Net debt", "$2.5B"],
+        ["Equity stakes (LT inv.)", "$8.4B"],
+        ["ROE", "35.3%"],
+        ["ROIC", "19.3%"],
+        ["Net cash position", "-$2.5B"]
+      ],
+      "capitalReturn": [
+        ["Buyback FY24", "$1.25B"],
+        ["Buyback FY25", "$6.52B ✓"],
+        ["SBC (TTM)", "$1.86B ⚠"],
+        ["Net buyback yield", "~3.0%"],
+        ["Dividend", "None"],
+        ["Shares Δ YoY", "-2.5%"],
+        ["Shareholder yield", "2.5%"]
+      ]
+    }
+  },
+
+  "sections": [
+    {
+      "id": "business",
+      "label": "Section 1 of 3",
+      "title": "Business · Do I truly understand it?",
+      "questions": [
+        {
+          "id": "b1",
+          "n": 1,
+          "title": "What does Uber actually do?",
+          "sub": "Explain like to a 10-year-old.",
+          "chip": "Clear",
+          "chipTone": "pos",
+          "body": "Uber runs an app that matches three groups who have something to give with three groups who need it: **riders ↔ drivers**, **eaters ↔ restaurants ↔ couriers**, **shippers ↔ truckers**. It owns the matching engine — maps, pricing, ratings, fraud checks — and skims ~25–30¢ of every dollar that flows through."
+        },
+        {
+          "id": "b2",
+          "n": 2,
+          "title": "How do they make money, and from whom?",
+          "sub": "Who pays, for what, at what margin.",
+          "chip": "Diversified",
+          "chipTone": "pos",
+          "table": {
+            "header": ["Segment", "What's sold", "Who pays", "% rev", "Take rate", "Seg EBITDA (% bookings)"],
+            "rows": [
+              ["Mobility", "Rides", "Riders", "~57%", "~30%", "~7–8%"],
+              ["Delivery", "Food / grocery / Uber Direct / ads", "Eaters · merchants · advertisers", "~37%", "~19–20%", "~3.5–4%"],
+              ["Freight", "Shipping bookings", "Shippers", "~6%", "~100%", "~0%"]
+            ]
+          },
+          "footnote": "Hidden engine: **advertising** (~$1.5B run-rate, very high incremental margin) — most under-appreciated lever in the P&L."
+        },
+        {
+          "id": "b3",
+          "n": 3,
+          "title": "Am I pretending to understand it, or do I really?",
+          "chip": "~80%",
+          "chipTone": "warn",
+          "splitList": {
+            "leftTitle": "I do understand",
+            "leftTone": "pos",
+            "left": [
+              "Two-sided marketplaces with network effects",
+              "Why Mobility > Delivery as a business (denser network, less SKUs)",
+              "Why asset-light platforms compound FCF post-scale"
+            ],
+            "rightTitle": "I don't fully understand",
+            "rightTone": "warn",
+            "right": [
+              "Gross-vs-net revenue accounting by jurisdiction (real complexity)",
+              "True unit economics in an AV world (driver line gone, but exclusivity over supply gone too)",
+              "Insurance reserve actuarial volatility (CA, NJ)"
+            ]
+          }
+        },
+        {
+          "id": "b4",
+          "n": 4,
+          "title": "Happy owning it 10 years if the market shut tomorrow?",
+          "chip": "Cautious yes",
+          "chipTone": "warn",
+          "body": "Yes — provided management doesn't burn $10B trying to \"own AVs too,\" driver-classification rules don't get globally codified into employment, and buybacks continue meaningfully shrinking share count. The 10-year window is exactly when the AV question resolves; Uber is positioned on _both_ sides as partner and demand aggregator."
+        },
+        {
+          "id": "b5",
+          "n": 5,
+          "title": "What could kill this business?",
+          "sub": "Technology, regulation, changing habits.",
+          "chip": "Real risks",
+          "chipTone": "neg",
+          "riskMatrix": [
+            ["AVs bypass demand layer", "Medium", "Severe", "Consumer-app switching cost; Uber's demand-pattern data"],
+            ["Driver reclassification", "Med-High", "High", "Survived AB5; ability to re-price"],
+            ["Insurance cost spiral", "Medium", "Medium", "Consumer-paid surcharges piloting"],
+            ["Recession crushes Delivery", "Medium", "Medium", "Delivery now profitable, not a cash sink"],
+            ["Major safety/data incident", "Low-Med", "High", "Tighter post-2016 controls"],
+            ["Founder-tier governance accident", "Low", "High", "Dara tenure clean"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "management",
+      "label": "Section 2 of 3",
+      "title": "Management · Can I trust these people with my capital?",
+      "questions": [
+        {
+          "id": "m1",
+          "n": 1,
+          "title": "Trust them to run my family's money?",
+          "chip": "Yes, with eyes open",
+          "chipTone": "pos",
+          "body": "**Dara Khosrowshahi** (CEO since Aug 2017) inherited a dumpster fire from Travis Kalanick. Eight years later: GAAP profitable, S&P 500 (Dec 2023), $10B FCF, no major scandals. From Expedia, where he was a respected low-drama operator (2005–2017). New CFO **Prashanth Mahendra-Rajah** (2024) comes from Analog Devices — manufacturing-discipline DNA, fitting Uber's evolution from growth-at-all-costs to compound-cash."
+        },
+        {
+          "id": "m2",
+          "n": 2,
+          "title": "Minority shareholder treatment",
+          "chip": "Mostly fair",
+          "chipTone": "warn",
+          "splitList": {
+            "leftTitle": "Pro-minority signals",
+            "leftTone": "pos",
+            "left": [
+              "Buybacks initiated FY24 ($1.25B), scaled FY25 ($6.5B)",
+              "Killed dual-class super-vote in 2023 — one share, one vote",
+              "Segment-level economics disclosed in plain English since 2022"
+            ],
+            "rightTitle": "Yellow flags",
+            "rightTone": "warn",
+            "right": [
+              "SBC $1.86B/yr (~3.5% of revenue, ~19% of FCF)",
+              "Foodpanda Taiwan deal blocked by regulators Dec 2024 — still an M&A itch",
+              "Insider ownership only 0.17%"
+            ]
+          }
+        },
+        {
+          "id": "m3",
+          "n": 3,
+          "title": "10-year capital allocation track record",
+          "chip": "B+ overall",
+          "chipTone": "warn",
+          "timeline": [
+            {"era": "2014–2018 · Kalanick", "tone": "neg", "note": "Burned ~$10B on China, SE Asia, ATG. Disaster, but instructive."},
+            {"era": "2018–2020 · Dara P1",  "tone": "pos", "note": "Sold China→Didi, SE Asia→Grab, Russia→Yandex, ATG→Aurora — for equity. Bought Postmates ($2.65B), Cornershop. **Excellent.**"},
+            {"era": "2021–2023 · Dara P2",  "tone": "pos", "note": "May-22 \"sea change\" memo: cost discipline, meritocracy at promotion. Stopped speculative M&A. **Strong.**"},
+            {"era": "2024–2026 · Dara P3",  "tone": "warn", "note": "Initiated buybacks, paid down converts, Foodpanda Taiwan blocked. **Good so far, watch closely.**"}
+          ]
+        },
+        {
+          "id": "m4",
+          "n": 4,
+          "title": "Do they tell the truth in good years and bad?",
+          "sub": "Read 3 annual letters.",
+          "chip": "Above average",
+          "chipTone": "pos",
+          "bullets": [
+            "**FY22 (bad):** $9.1B GAAP loss from equity write-downs — Dara owned it, didn't hide behind non-GAAP.",
+            "**FY23 (breakthrough):** Did _not_ spike the football; warned 2023 GAAP NI was flattered by equity revaluations and wouldn't repeat.",
+            "**FY24:** Led with the disclosure that $5.8B of NI came from a deferred-tax valuation allowance release — a one-time non-cash gain. Could have buried it. Didn't."
+          ]
+        },
+        {
+          "id": "m5",
+          "n": 5,
+          "title": "Real skin in the game?",
+          "chip": "Weak",
+          "chipTone": "neg",
+          "body": "Total insider ownership **0.17%** (~$258M). Dara holds ~1.5M shares + options (~$110–150M) — meaningful for him but he sells programmatically every quarter via 10b5-1. **Travis Kalanick exited his entire 8.6% stake by 2020.** No founder remains. Compare Meta (Zuckerberg 13%), Amazon (Bezos 9%). This is firmly the \"professionally-managed\" camp — incentives run through comp plan design, not equity ownership. The 2026 proxy is worth reading: TSR-linked PSUs = positive signal; pure RSU grants = neutral-negative."
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "label": "Section 3 of 3",
+      "title": "Price · Am I paying a sensible price?",
+      "questions": [
+        {
+          "id": "p1",
+          "n": 1,
+          "title": "What am I paying today?",
+          "sub": "P/E, earnings yield, or whichever lens fits.",
+          "chip": "Fair",
+          "chipTone": "warn",
+          "body": "Most honest single number: **16× EV/FCF** on a business that compounded FCF ~25% over four years. Not expensive. Not the bargain it was at $40 in 2022. **Fair.**",
+          "chart": "valuation"
+        },
+        {
+          "id": "p2",
+          "n": 2,
+          "title": "What is the market implicitly expecting?",
+          "chip": "In-line with my model",
+          "chipTone": "neutral",
+          "body": "Reverse-DCF: today's price requires ~10–12% FCF CAGR for 10 years, then 3% terminal. My base case: 15–18% near-term, 10–12% mid-term FCF growth as Delivery scales and advertising mixes up. Conclusion: **the market is pricing roughly what I'd model — no big upside or downside embedded.** The 52-week -18.6% reflects fears about Tesla robotaxi (Austin) and Waymo (SF/LA), in my view over-discounted: Waymo today ~250k rides/wk vs Uber ~33M/day globally."
+        },
+        {
+          "id": "p3",
+          "n": 3,
+          "title": "What would I pay for the whole business?",
+          "chip": "~$74",
+          "chipTone": "warn",
+          "tiles": [
+            {"label": "Normalized FCF", "value": "$11B"},
+            {"label": "Implied EV (10% req, 3% terminal)", "value": "$157B"},
+            {"label": "Equity value / share", "value": "~$74"}
+          ],
+          "footnote": "Today's quote ≈ what a rational private buyer would pay. Nibble below **$65** (13% MOS, ~13× EV/FCF). Back up the truck below **$55** (~11× EV/FCF on a 15%-grower)."
+        },
+        {
+          "id": "p4",
+          "n": 4,
+          "title": "At what price would I sell, and why?",
+          "sub": "Decided before buying.",
+          "chip": "Sell > $120",
+          "chipTone": "neg",
+          "triggers": [
+            {"title": "Price trigger", "tone": "neg", "body": "> **$120** (~25× fwd EV/FCF, ~27× 2027 P/E). Trim 50%."},
+            {"title": "Fundamental trigger", "tone": "neg", "body": "FCF margin contracts 2 consecutive Qs with no one-off cause → AV take-rate compression is real → exit."},
+            {"title": "Capital allocation trigger", "tone": "neg", "body": "> $10B acquisition or re-entry into China / own AV fleet → exit."}
+          ]
+        },
+        {
+          "id": "p5",
+          "n": 5,
+          "title": "If it drops 40% next month — buy or panic?",
+          "chip": "Buy, with checks",
+          "chipTone": "pos",
+          "body": "$45 ≈ market cap $92B, EV/FCF ~9×. **Pre-commitment: buy aggressively,** unless the drop is accompanied by one of:",
+          "ordered": [
+            "Federal US or top-3 market driver-reclassification ruling",
+            "Step-function AV consumer adoption (Tesla 100k+ public robotaxis or Waymo signing a Tesla-style OEM deal + direct apps in 10+ cities)",
+            "Dara departure / large insider sale / surprise CFO change"
+          ],
+          "footnote": "The pre-commitment matters more than the analysis. Most investors fail not by picking wrong, but by selling at $45 and buying back at $90."
+        }
+      ]
+    }
+  ],
+
+  "scorecard": {
+    "dimensions": [
+      {"label": "Business quality",                  "score": 4.0},
+      {"label": "Business durability (10y)",         "score": 3.0},
+      {"label": "Management quality",                "score": 4.0},
+      {"label": "Skin in game",                      "score": 2.0},
+      {"label": "Capital allocation track record",   "score": 3.5},
+      {"label": "Price today",                       "score": 3.0},
+      {"label": "Price if -40%",                     "score": 5.0},
+      {"label": "Upside / downside asymmetry",       "score": 3.5}
+    ],
+    "summary": "Position sizing: 2–3% at today's quote; scale to 5–6% on AV-fear sell-off. Conviction: Medium-High on business, Medium on management, Medium on price."
+  }
+}

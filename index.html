@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Equity Analyst — Stock Picker</title>
+<meta name="description" content="A 15-question equity review framework. Pick a stock to see the full analysis." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container flex ai-c jc-b" style="padding:.85rem 1.5rem;">
+    <div class="flex ai-c gap-3">
+      <div class="logo" style="background:linear-gradient(135deg,#7c3aed,#22d3ee);">A</div>
+      <div>
+        <div class="text-xs text-soft">Equity Analyst</div>
+        <div class="text-base font-semibold" id="siteTitle">Equity Analyst</div>
+      </div>
+    </div>
+    <div class="flex ai-c gap-3 text-xs text-soft">
+      <span id="stockCount" class="stat-pill">— tickers covered</span>
+      <a href="https://github.com/hariragu/Analyst" target="_blank" class="stat-pill" title="Source on GitHub">★ GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section class="grid-bg" style="border-bottom:1px solid var(--border);">
+  <div class="container" style="padding:4rem 1.5rem 3rem;">
+    <div class="flex ai-c gap-2 text-xs text-soft mb-3">
+      <span class="pulse-dot"></span> Updated <span class="mono" id="lastUpdated"></span>
+      <span style="margin:0 .5rem;">·</span> <span id="siteFramework">Vishal Khandelwal · safalniveshak.com</span>
+    </div>
+    <h1 class="text-5xl font-extrabold tracking-tight leading-tight">
+      Which company is <span class="gradient-text">worth owning</span>?
+    </h1>
+    <p class="mt-3 text-lg text-soft" style="max-width:48rem;" id="siteTagline">A 15-question, three-section investigation across Business, Management, and Price. Pick a stock to read the full analysis.</p>
+
+    <div class="grid md:cols-2 gap-3 mt-8" style="max-width:42rem;">
+      <div class="search-box">
+        <span class="text-mute">🔍</span>
+        <input id="search" type="text" placeholder="Search ticker, company, or sector…" autocomplete="off" />
+      </div>
+      <div id="filters" class="flex gap-2" style="flex-wrap:wrap;">
+        <button class="filter-chip active" data-filter="all">All</button>
+        <button class="filter-chip" data-filter="buy">Buy</button>
+        <button class="filter-chip" data-filter="hold">Hold</button>
+        <button class="filter-chip" data-filter="sell">Sell / Trim</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container" style="padding:2.5rem 1.5rem 4rem;">
+  <div id="grid" class="grid md:cols-2 lg:cols-3 gap-4"></div>
+  <div id="empty" class="text-center text-mute" style="display:none; padding:2rem;">No matches.</div>
+</main>
+
+<footer class="text-center text-xs text-mute" style="padding:2rem 0; border-top:1px solid var(--border);">
+  Educational analysis · Not investment advice · <a href="https://safalniveshak.com" target="_blank" class="underline">Vishal Khandelwal framework</a>
+</footer>
+
+<script>document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);</script>
+<script type="module" src="./assets/js/index-renderer.js"></script>
+</body>
+</html>

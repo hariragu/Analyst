@@ -1,0 +1,15 @@
+# Build & cache
+node_modules/
+.DS_Store
+*.log
+.vscode/
+.idea/
+
+# Python (used to generate docx)
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# OS
+Thumbs.db
