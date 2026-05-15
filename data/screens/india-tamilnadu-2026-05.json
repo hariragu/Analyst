@@ -1,0 +1,139 @@
+{
+  "id": "india-tamilnadu-2026-05",
+  "title": "Tamil Nadu · Regional Cut · May 2026",
+  "market": "India (NSE) · Tamil Nadu-HQ companies",
+  "asOf": "2026-05-15",
+  "methodologyType": "Systematic (NSE 500 → TN-HQ filter → quant gates)",
+  "analystVoice": "Senior value analyst, Khandelwal lens — regional cut for an investor with TN domicile-edge",
+  "universe": "NSE 500 ∩ Tamil Nadu-headquartered (Chennai, Coimbatore, Karur, Kumbakonam, Hosur, Madurai, Salem, Trichy)",
+  "theme": "TN has produced more durable family-run institutions than any state in India: Murugappa (Chola, EID, Coromandel, Tube, Carborundum, Wendt), TVS (TVS Motor, Sundaram Finance, Sundaram Clayton, Sundaram-Multi-Pap), Ramco, Apollo, Shriram, plus deep regional banks (Karur Vysya, City Union, Indian Bank). Many are 50-100+ year old houses with conservative balance sheets and proven cycle survival.",
+  "honestyNote": "The user explicitly asked: 'if nothing fits the bill we don't need to force fit to 5 or even 1.' Of ~30 NSE 500 TN-HQ companies in our snapshot, only **2 pass our standard quant gates** (CAMS, CAPLIPOINT — both already in our small/mid-cap screens). For a TN-only screen, we apply NBFC/bank-adjusted gates and surface 2 high-conviction NBFCs + 1 PSU-bank watchlist. We do NOT force-fit to 5.",
+  "filters": {
+    "standardGates": [
+      "Mkt cap > ₹5,000 Cr (liquidity)",
+      "ROE > 18%",
+      "Debt/Equity < 0.6",
+      "Operating Margin > 15%",
+      "P/E sanity (0, 60)"
+    ],
+    "nbfcAdjustedGates": [
+      "ROA > 1.8% (true profitability)",
+      "ROE > 15% sustained 3y",
+      "GNPA < 6%, NNPA < 2.5%",
+      "Tier-1 capital > 16%",
+      "P/B < 5× (NBFC) or < 2.5× (bank)",
+      "Promoter / institutional skin in game; no ownership flux"
+    ],
+    "qualitative": [
+      "Family-promoted with > 30y group lineage OR PSU passing the psuFramework",
+      "Conservative balance sheet (no aggressive growth-at-any-cost expansion)",
+      "Boring → diagnostics, RTA, NBFC vehicle finance, branded generic pharma — not story-stocks"
+    ]
+  },
+  "auditTrail": {
+    "tnCompaniesScanned": 30,
+    "passedStandardGates": ["CAMS", "CAPLIPOINT"],
+    "alreadyCoveredInOtherScreens": [
+      { "ticker": "CAMS", "screen": "india-midcap-2026-05", "note": "Chennai-HQ MF RTA — counted as TN exposure already" },
+      { "ticker": "CAPLIPOINT", "screen": "india-smallcap-2026-05", "note": "Chennai-HQ pharma exporter — counted as TN exposure already" }
+    ],
+    "newPicksUsingNbfcGates": ["CHOLAFIN", "SUNDARMFIN"],
+    "newWatchlist": ["INDIANB"],
+    "qualitativeRejects": [
+      { "ticker": "TVSMOTOR", "reason": "ROE 31.6% great but D/E 3.06× (TVS Credit consolidation), P/E 54×, OPM 12.5% — auto cycle peak + rich. Wait." },
+      { "ticker": "MRF", "reason": "Quality slippage — ROE 12.3% (was 18-22% historically), OPM 10.7% (rubber input cost pressure). Once-great franchise losing edge." },
+      { "ticker": "APOLLOHOSP", "reason": "Best-in-class hospital chain but P/E 65× + P/B 12.8× = priced for perfection. OPM only 11.5% (capital intensity)." },
+      { "ticker": "TIINDIA", "reason": "Murugappa quality (Tube Investments) but P/E 87×, OPM 7%. Late re-rate after the conglomerate-discount unlock 2022-24. Wait." },
+      { "ticker": "CARBORUNIV", "reason": "Murugappa quality (abrasives, ceramics) but P/E 85×, OPM 7.4%. Same late-re-rate concern as TIINDIA." },
+      { "ticker": "EIDPARRY", "reason": "Sugar + nutraceuticals (Murugappa) — sugar is commodity-cyclical, OPM 6%. Pass." },
+      { "ticker": "COROMANDEL", "reason": "Fertiliser commodity, OPM 5.4%, FCF -₹1,368 Cr (working-capital intensive). Pass. Note: registered HQ Secunderabad, listed here for Murugappa lineage but technically borderline TN." },
+      { "ticker": "NLCINDIA", "reason": "PSU lignite — Coal India lite but smaller scale, less efficient, FCF -₹4,489 Cr (capex on green expansion). Apply psuFramework: fails 'normalised earnings + cash conversion' criterion." },
+      { "ticker": "INDIACEM", "reason": "ROE -0.7% (loss-making), cement cycle weakness, family-control issues. Hard pass." },
+      { "ticker": "RAMCOCEM", "reason": "Cement cycle weakness — OPM 4.5%, ROE empty (compressed). Wait for cycle." },
+      { "ticker": "ELGIEQUIP", "reason": "Compressors/engineering quality but P/E 41× + OPM 12.2% — full price for a cyclical." },
+      { "ticker": "CUB", "reason": "Kumbakonam private bank — quality OK historically but ROE 13.2% (low for a bank). Stagnant growth." },
+      { "ticker": "KARURVYSYA", "reason": "Cheap private bank (P/B 2.3) but TN-concentration risk; on watchlist (see watchlist section) below threshold for full pick." },
+      { "ticker": "IOB", "reason": "PSU bank — Govt holding 96%+ (massive disinvestment overhang). Fails psuFramework on govt-holding criterion." },
+      { "ticker": "SHRIRAMFIN", "reason": "Post-merger Shriram Finance — large NBFC but ROE 16.4% is on lower end of NBFC peer set; rural/used-vehicle lending faces credit cycle risk. Skip." }
+    ]
+  },
+  "nbfcFramework": {
+    "rationale": "Standard quality gates (ROE>18, D/E<0.6) auto-reject NBFCs because lenders run on equity-leverage by design. We use NBFC-appropriate gates: ROA, asset-quality, Tier-1, P/B.",
+    "investableWhen": [
+      "ROA > 1.8% sustained 3y (true asset productivity)",
+      "ROE 15-22% (over 22% suggests unsustainable leverage)",
+      "GNPA < 6%, NNPA < 2.5%, PCR > 50%",
+      "Tier-1 > 16% (cushion for credit cycle)",
+      "Conservative loan book mix — vehicle/MSME/gold backed > unsecured personal/MFI",
+      "Family-promoted or institutional with > 30y record (Murugappa, TVS, Bajaj — not first-generation NBFCs)",
+      "P/B reasonable: < 5× (NBFC), < 2.5× (bank)"
+    ],
+    "rejectWhen": [
+      "Unsecured-heavy loan book at the credit cycle turn",
+      "ROE > 22% (suspect leverage or fee-income unsustainable)",
+      "Promoter pledging > 10%",
+      "Auditor changes / governance flags",
+      "Tier-1 < 13% (can't absorb a credit shock)"
+    ]
+  },
+  "picks": [
+    {
+      "ticker": "CHOLAFIN",
+      "name": "Cholamandalam Investment & Finance",
+      "exchange": "NSE",
+      "sector": "NBFC · Vehicle + LAP + Home Finance",
+      "logoText": "C",
+      "logoFrom": "#7c2d12",
+      "logoTo": "#fb923c",
+      "thesis": "Murugappa Group's flagship NBFC — gold-standard governance among Indian NBFCs (no related-party abuse, conservative provisioning, 4-decade lineage). Vehicle finance #2 nationally, expanding into LAP / home / SME.",
+      "valueAngle": "P/E 26.9 · P/B 4.3 · ROE 19.3% · ROA ~2.5% · Tier-1 ~17%. Not cheap — quality demands a premium — but Murugappa governance is real value. Buy on 15%+ correction.",
+      "stockData": { "mktCapCr": 131794.9, "pe": 26.9, "pb": 4.3, "roePct": 19.3, "deRatio": 6.93, "divYieldPct": 0.13, "opMarginPct": 56.1 },
+      "tnAngle": "Chennai-HQ; Murugappa Group flagship; one of TN's most respected institutions",
+      "priorityRank": 1
+    },
+    {
+      "ticker": "SUNDARMFIN",
+      "name": "Sundaram Finance Ltd.",
+      "exchange": "NSE",
+      "sector": "NBFC · Vehicle Finance",
+      "logoText": "S",
+      "logoFrom": "#1e3a8a",
+      "logoTo": "#3b82f6",
+      "thesis": "TVS Group's NBFC arm — 70+ year old institution, ultra-conservative underwriting, family-run (Krishnamurthi family). Asset quality has been best-in-class through every cycle since 1954.",
+      "valueAngle": "P/E 24.7 · P/B 3.4 (cheaper than CHOLAFIN despite arguably better quality) · OPM 61.7%. Lower growth than CHOLAFIN by design — they refuse to chase risk. Slow-and-steady compounder.",
+      "stockData": { "mktCapCr": 50787.3, "pe": 24.7, "pb": 3.4, "deRatio": 3.77, "divYieldPct": 0.8, "opMarginPct": 61.7 },
+      "tnAngle": "Chennai-HQ; TVS Group; fund manager's quiet favourite for 'sleep-well-at-night' NBFC exposure",
+      "priorityRank": 2
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "INDIANB",
+      "name": "Indian Bank",
+      "sector": "PSU Bank · Chennai-HQ",
+      "stockData": { "mktCapCr": 110531.9, "pe": 9.4, "pb": 1.4, "roePct": 15.4, "divYieldPct": 2.19, "opMarginPct": 47.1 },
+      "thesis": "Chennai-HQ PSU bank — ROE 15.4%, P/B 1.4× (cheapest large-bank P/B in our list), post-Allahabad-merger integration largely done. CASA mix decent (~38%).",
+      "whyWatchlist": "PSU banks have historically been cyclical (NPA cycles every 7-10 years). Govt holding 73% creates OFS overhang. Trade is 'value if bank cycle holds; value-trap if it doesn't.' Not a moat business — pass the psuFramework on most criteria but fail 'cost-curve advantage that survives cycles.'",
+      "entryTrigger": "Add only if (a) bank-cycle credit-cost normalisation continues for 4+ consecutive quarters, OR (b) P/B drops below 1.1× on macro stress (then scale-in), OR (c) clear capital-allocation discipline announced (sub-1.0× P/B share buyback)."
+    }
+  ],
+  "alreadyInOtherScreens": [
+    {
+      "ticker": "CAMS",
+      "name": "Computer Age Management Services",
+      "screen": "india-midcap-2026-05",
+      "tnAngle": "Chennai-HQ MF Registrar & Transfer Agent — TN's quiet financial-infra champion"
+    },
+    {
+      "ticker": "CAPLIPOINT",
+      "name": "Caplin Point Laboratories",
+      "screen": "india-smallcap-2026-05",
+      "tnAngle": "Chennai-HQ pharma exporter (LatAm/Africa branded generics) — debt-free, OPM 31%"
+    }
+  ],
+  "sources": [
+    { "title": "NIFTY 500 constituent list (CSV)", "url": "https://niftyindices.com/IndexConstituent/ind_nifty500list.csv" },
+    { "title": "Yahoo Finance via yfinance (per-ticker fundamentals)", "url": "https://pypi.org/project/yfinance/" },
+    { "title": "Audit trail — NSE 500 snapshot", "url": "https://github.com/hariragu/Analyst/blob/main/data/screens/raw/nse500-snapshot.json" }
+  ]
+}

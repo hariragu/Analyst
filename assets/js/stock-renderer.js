@@ -571,11 +571,11 @@ function bootCharts(s){
   const palette = { violet:'#a78bfa', cyan:'#22d3ee', amber:'#fcd34d', ink:'#aab1c0' };
   setupCharts(palette);
   const f = s.financials;
-  if(!f) return;
   const C = cur(s), U = unitSuffix(s);
 
-  const finCanvas = document.getElementById('finChart');
-  if(finCanvas && Array.isArray(f.years) && f.years.length){
+  if(f){
+    const finCanvas = document.getElementById('finChart');
+    if(finCanvas && Array.isArray(f.years) && f.years.length){
     new Chart(finCanvas, {
       data: {
         labels: f.years,
@@ -622,6 +622,26 @@ function bootCharts(s){
         }]
       },
       options:{ indexAxis:'y', plugins:{ legend:{ display:false } }, scales:{ x:{ grid:{ color:'rgba(255,255,255,0.05)' } }, y:{ grid:{ display:false } } } }
+    });
+  }
+  } // end if(f)
+
+  const indCanvas = document.getElementById('industryShareChart');
+  const sc = s.industry && s.industry.competitive && s.industry.competitive.share_chart;
+  if(indCanvas && sc && Array.isArray(sc.values) && sc.values.length){
+    new Chart(indCanvas, {
+      type:'doughnut',
+      data: {
+        labels: sc.labels,
+        datasets:[{ data: sc.values, backgroundColor:['#22c55e','#a78bfa','#22d3ee','#fcd34d','#fca5a5','#60a5fa','#f59e0b'], borderColor:'#10131c', borderWidth:3 }]
+      },
+      options:{
+        cutout:'62%',
+        plugins:{
+          legend:{ position:'bottom', labels:{ boxWidth:10, padding:10, font:{ size:11 } } },
+          tooltip:{ callbacks:{ label:(ctx) => `${ctx.label}: ${ctx.parsed}%` } }
+        }
+      }
     });
   }
 }

@@ -27,6 +27,14 @@
       "asOf": "2026-05-15",
       "pickCount": 10,
       "methodologyType": "Systematic (NSE 500 → quant gates → qualitative overlay)"
+    },
+    {
+      "id": "india-tamilnadu-2026-05",
+      "title": "Tamil Nadu · Regional Cut · May 2026",
+      "market": "India (NSE) · Tamil Nadu-HQ",
+      "asOf": "2026-05-15",
+      "pickCount": 2,
+      "methodologyType": "Systematic (NSE 500 -> TN-HQ filter -> NBFC-adjusted gates)"
     }
   ],
   "stocks": [
@@ -438,6 +446,49 @@
       "thesis": "Best-in-cohort PSU on numbers (ROE 29%, D/E 0.28, Op margin 49%). Vertically integrated — Panchpatmali bauxite is among world's lowest-cost mines.",
       "valueAngle": "P/E 12 looks cheap but on PEAK earnings (LME aluminum ~$2,500/ton). Normalised P/E ~20×. Watchlist — buy < ₹150 OR after aluminum cycle correction.",
       "watchlistEntryTrigger": "LME Al < $2,000/ton OR price < ₹150 OR op margin < 35%"
+    },
+    {
+      "ticker": "CHOLAFIN",
+      "name": "Cholamandalam Investment & Finance",
+      "exchange": "NSE",
+      "sector": "NBFC · Vehicle/LAP/Home Finance",
+      "logoText": "C",
+      "logoFrom": "#7c2d12",
+      "logoTo": "#fb923c",
+      "status": "screened",
+      "screenId": "india-tamilnadu-2026-05",
+      "priorityRank": 1,
+      "thesis": "Murugappa NBFC — gold-standard governance among Indian NBFCs; vehicle finance #2 nationally.",
+      "valueAngle": "P/E 27 · P/B 4.3 · ROE 19.3% · ROA ~2.5% · Tier-1 ~17%. Quality demands premium."
+    },
+    {
+      "ticker": "SUNDARMFIN",
+      "name": "Sundaram Finance Ltd.",
+      "exchange": "NSE",
+      "sector": "NBFC · Vehicle Finance",
+      "logoText": "S",
+      "logoFrom": "#1e3a8a",
+      "logoTo": "#3b82f6",
+      "status": "screened",
+      "screenId": "india-tamilnadu-2026-05",
+      "priorityRank": 2,
+      "thesis": "TVS Group's NBFC arm; ultra-conservative underwriting; 70+y record; family-run.",
+      "valueAngle": "P/E 24.7 · P/B 3.4 (cheaper than CHOLAFIN); slow-and-steady compounder."
+    },
+    {
+      "ticker": "INDIANB",
+      "name": "Indian Bank",
+      "exchange": "NSE",
+      "sector": "PSU Bank · Chennai-HQ",
+      "logoText": "I",
+      "logoFrom": "#475569",
+      "logoTo": "#94a3b8",
+      "status": "watchlist",
+      "screenId": "india-tamilnadu-2026-05",
+      "priorityRank": 3,
+      "thesis": "Chennai PSU bank — P/B 1.4 (cheapest large-bank P/B); post-Allahabad merger integration done.",
+      "valueAngle": "P/E 9.4, ROE 15.4%, Div yield 2.2%. Value if bank cycle holds; value-trap if NPA cycle turns.",
+      "watchlistEntryTrigger": "Buy if credit-cost normalisation 4+ Qs OR P/B < 1.1 OR sub-1.0 P/B buyback announced"
     }
   ]
 }
