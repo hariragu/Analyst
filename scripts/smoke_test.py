@@ -77,7 +77,15 @@ def main():
             print(f"CAMS page has 'HOLD': {'HOLD' in body_c}")
             print(f"CAMS page has 'duopoly': {'duopoly' in body_c.lower()}")
 
-            # Home page should now show 3 analyzed cards (UBER + COALINDIA + CAMS) and exclude watchlist
+            page.goto(f"{base}/stock.html?ticker=MARUTI")
+            page.wait_for_function("document.body.innerText.includes('Maruti')", timeout=10_000)
+            time.sleep(0.5)
+            body_m = page.locator("body").inner_text()
+            print(f"MARUTI page has '\u20b913,221': {'\u20b913,221' in body_m}")
+            print(f"MARUTI page has 'BUY': {'BUY' in body_m}")
+            print(f"MARUTI page has 'Suzuki': {'Suzuki' in body_m}")
+
+            # Home page should now show 4 analyzed cards and exclude watchlist
             page.goto(f"{base}/index.html")
             page.wait_for_function("document.querySelector('#grid')?.children.length > 0", timeout=10_000)
             time.sleep(0.5)

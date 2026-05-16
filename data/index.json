@@ -202,11 +202,18 @@
       "logoText": "M",
       "logoFrom": "#0c4da2",
       "logoTo": "#2563eb",
-      "status": "screened",
-      "screenId": "india-value-2026-05",
-      "priorityRank": 10,
-      "thesis": "PV leader (~40% share); deepest distribution; Suzuki tech parent.",
-      "valueAngle": "~25× earnings; SUV refresh + export ramp under-appreciated; net cash ₹50,000Cr+."
+      "status": "analyzed",
+      "rating": "BUY",
+      "price": 13221,
+      "priceChange52w": -24,
+      "marketCap": "₹4,15,672 Cr (~$50B)",
+      "fcfTtm": "₹7,713 Cr",
+      "evFcf": "~45×",
+      "asOf": "2026-05-15",
+      "summary": "PV market leader (~42% share) at margin-cycle low. 28× TTM / 21× fwd / 18× ex-cash. ₹66K Cr net cash. 190K-unit order book + 500K new capacity FY27. Buy with margin of safety.",
+      "buyBelow": 13500,
+      "loadBelow": 11000,
+      "trimAbove": 17000
     },
     {
       "ticker": "VINATIORGA",

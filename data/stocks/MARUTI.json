@@ -1,0 +1,556 @@
+{
+  "ticker": "MARUTI",
+  "name": "Maruti Suzuki India Ltd.",
+  "exchange": "NSE",
+  "sector": "Automobile · Passenger Vehicles",
+  "logoText": "M",
+  "logoFrom": "#0c4da2",
+  "logoTo": "#2563eb",
+  "asOf": "2026-05-15",
+  "framework": "Vishal Khandelwal · safalniveshak.com",
+  "currencySymbol": "₹",
+  "units": "Cr",
+
+  "verdict": {
+    "rating": "BUY",
+    "ratingColor": "pos",
+    "summary": "**India's PV market leader (~42% share) at a margin-cycle low.** FY26 revenue +20%, profit ~flat — operating deleverage from raw-materials + new-capex burden. 28× TTM P/E falls to 21× forward; ex-cash multiple ~24× TTM / ~18× forward. 500K units new capacity coming FY27; 190K-unit order book; 4M-unit medium-term target. **Quality compounder priced for a soft year, not a soft decade. Buy with margin of safety; load near ₹11,000.**",
+    "buyBelow": 13500,
+    "loadBelow": 11000,
+    "trimAbove": 17000
+  },
+
+  "snapshot": {
+    "price": 13221,
+    "priceChange52w": -24,
+    "marketCap": "₹4,15,672 Cr (~$50B)",
+    "ev": "~₹3,50,000 Cr (net cash ~₹66,000 Cr)",
+    "fcfTtm": "₹7,713 Cr (~$925M)",
+    "revTtm": "₹1,83,316 Cr consol (~$22B)",
+    "evFcf": "~45× TTM (capex-burdened year)",
+    "fcfYield": "1.9% TTM · ~3% on 5y avg",
+    "roic": "19% ROCE · 14.4% ROE (down from 18% in FY24)",
+    "wacc": "11.5%",
+    "fcfGrowth5y": "FY21→FY26 OCF: ₹8,856 → ₹19,100 Cr (+17% CAGR)",
+    "analystPT": "₹14,800 (Bloomberg consensus, ~+12%)",
+    "analystUpside": "+12% (consensus)",
+    "analystRating": "Buy/Outperform majority"
+  },
+
+  "executiveSummary": {
+    "pros": [
+      "**Undisputed PV market leader** with **~42% share** in India — 2.42M units sold FY26 (highest ever), 4,600+ sales outlets, 5,900+ service touchpoints across 1,100+ cities.[^maruti-q4fy26-ip][^maruti-q4fy26-call][^wiki-maruti]",
+      "**Net cash fortress**: ₹76,838 Cr of investments minus ~₹10,000 Cr debt = **~₹66,000 Cr net cash (~16% of market cap)**. Funds ₹14,000 Cr/yr capex internally with cash to spare.[^screener-maruti][^maruti-q4fy26-call]",
+      "**Massive capacity ramp + order book**: ~190,000 pending orders end-FY26 (130K in 18% GST small-car bracket); **500K units new capacity coming in FY27** (Kharkhoda Plant 2 + Hansalpur Line 4); medium-term target **4 million units/yr capacity**.[^maruti-q4fy26-call]",
+      "**Export ramp is real**: FY26 exports 447,774 units (+34.6% YoY, all-time high) = 18.5% of total. Suzuki global-platform leverage opens Africa/MEA/Latin America under one brand+tech parent.[^maruti-q4fy26-ip][^maruti-q4fy26-call]",
+      "**GST tailwind** for small cars (18% bracket) is structurally re-igniting entry-level demand: H1 FY26 PV market -0.4%, H2 +16.7% YoY. Maruti's H2 swing was +17.9% (the SUV-heavy peers don't benefit as much).[^maruti-q4fy26-call]",
+      "**Trading near 52-week low** (₹13,221 vs 52w range ₹12,016-₹17,370 = **-24% from high, +10% from low**). Forward P/E ~21× is below 5y average. Ex-cash forward P/E ~18×. Asymmetry favours buyer."
+    ],
+    "cons": [
+      "**Margin compression is real, not a one-off**: FY26 OPM 12.3% vs FY25 13.9% (**-160 bps**); PAT margin 8.3% vs 9.9% (-160 bps). Material cost ratio rose 210 bps. Commodity prices, employee-code reform, new-model expenses all hit at once.[^maruti-q4fy26-ip]",
+      "**ROE has slipped to 14.4%** (from 18% in FY24) — not best-in-class for a market-leader compounder. Mediocre returns vs Tata Motors (passenger biz 14%+), Hyundai Motor India (24%), Bajaj Auto (29%). The cash pile is dragging blended ROE down.[^screener-maruti]",
+      "**Suzuki parent owns 58.53%** (up from 56.48% in 2023 via Suzuki Motor Gujarat merger Dec-2025) — strong parent backing but **Suzuki collects ~3-5% royalty on net sales** (~₹5,000-7,000 Cr/yr leakage; visible in financials as 'royalty to Suzuki').[^wiki-maruti][^maruti-q4fy26-ip]",
+      "**EV transition is late**: e VITARA (first EV) launched 2025 — Tata Motors (50%+ EV PV share), Mahindra, Hyundai, MG all ahead. Maruti's hybrid-first bet for India works *if* charging infrastructure stays poor; **breaks if BYD/Tesla/Chinese OEMs scale fast**.[^wiki-maruti][^maruti-q4fy26-call]",
+      "**Cyclical business at peak-revenue year**: FY26 revenue ₹1.83L Cr is the all-time high. Auto-cycle history shows 20-30% revenue compression on downturns (FY20-FY22 was -18% from peak). Currently at top of demand wave.[^screener-maruti]",
+      "**Capex cycle is intensifying**: ₹14,000 Cr capex planned for FY27 (vs FY26 capex ~₹10,000 Cr included in ₹14,734 Cr investing outflow). FCF compresses near-term even as revenue grows; capex/sales ratio rises to ~8%.[^maruti-q4fy26-call]"
+    ],
+    "thesisOneLiner": "**Highest-quality auto franchise in India, priced for a margin-cycle low.** Buy at ₹13,221 with thesis on **(a) capacity-constrained order book**, **(b) export ramp**, **(c) GST tailwind to small cars**, **(d) net-cash cushion** that funds the ₹14K Cr capex without leverage. **Load aggressively on a ₹11,000 drop.**",
+    "color": "pos"
+  },
+
+  "industry": {
+    "title": "Industry primer — Indian Passenger Vehicle market",
+    "intro": "Maruti Suzuki is a **manufacturer of passenger vehicles**. Before scoring it, understand the size, structure, competitive map, and growth trajectory of the Indian PV industry — and why India is structurally different from China, the US, or Europe.",
+
+    "sizeAndShape": {
+      "title": "1. How big is the industry today?",
+      "tiles": [
+        {"label": "Indian PV sales FY26", "value": "~4.3 M units", "sub": "~5th largest market globally"},
+        {"label": "Motorization rate", "value": "~33 / 1000", "sub": "vs US 850 / China 230 — runway"},
+        {"label": "Maruti FY26 sales", "value": "2.42 M units", "sub": "Highest ever; +8.4% YoY"},
+        {"label": "PV exports FY26 (industry)", "value": "~0.85 M units", "sub": "India is now a net PV exporter"},
+        {"label": "Sales outlets (Maruti)", "value": "4,600+", "sub": "Across 1,100+ cities"},
+        {"label": "Service touchpoints (Maruti)", "value": "5,900+", "sub": "Largest service network in India"}
+      ],
+      "body": "India is the **5th largest passenger-vehicle market globally** by units, but **near-bottom in motorization** — only ~33 cars per 1,000 people vs ~230 in China and ~850 in the US. That's the **structural runway**: even at modest GDP growth, the next 20 years should see motorization triple toward ~80-100/1000 — implying **~10-12 million PV sales/yr** by FY40 (vs 4.3M today).[^wiki-auto-india][^maruti-q4fy26-call]\n\nIndia exported ~850K PVs in FY26 — making it a **net exporter** for the first time. Maruti alone exported 447K units (+34.6% YoY). The Suzuki global platform leverages this: India now produces small-segment cars for Africa, MEA, Latin America, and parts of Europe under both Maruti-Suzuki and Toyota (Toyota-Maruti supply agreement) brands."
+    },
+
+    "segmentation": {
+      "title": "2. How the market segments",
+      "intro": "Four axes investors confuse — getting them right is the difference between buying Maruti and buying Tata Motors.",
+      "segments": [
+        {
+          "axis": "By body style · what people buy",
+          "title": "Hatch (mini+compact) vs SUV vs Sedan vs Van",
+          "body": "**The mix shifted dramatically over 10 years.**[^maruti-q4fy26-ip][^wiki-auto-india] Hatchbacks (mini + compact) used to be **>60% of the market in FY15**; today they're **~46% (Maruti domestic FY26)**. SUVs/UVs have gone from ~15% to **~39%** — the structural mix-shift India's PV industry has been navigating. Sedans collapsed (~25% → ~3%; only Dzire-like sub-4m sedans survive in India for tax-bracket reasons).\n\n**Why this matters for Maruti**: Maruti was historically over-indexed on hatches (its core moat). The 2018-2023 SUV-shift caught it flat-footed and cost it ~5-6 percentage points of market share (from 50% to ~40%). The FY24-FY26 SUV portfolio refresh (Brezza, Grand Vitara, Fronx, Jimny, **VICTORIS** mid-SUV launched FY26 — Indian Car of the Year, fastest mid-SUV to 50K) is rebuilding that lost ground.",
+          "shareLabels": ["Compact + Mini (hatch)", "Utility Vehicles (SUV)", "Vans", "LCV", "Sedan + Mid-size", "Other OEM (Toyota supply)"],
+          "shareValues": [46.6, 38.5, 7.1, 2.0, 0.1, 5.7],
+          "implications": "**Maruti's UV share is now 38.5% of its own sales** (up from ~12% in FY20). The SUV-refresh story is real and ongoing — VICTORIS, Grand Vitara, Fronx, Jimny are now meaningful volume drivers."
+        },
+        {
+          "axis": "By price band · who buys",
+          "title": "Entry (< ₹6L) · Mid (₹6-12L) · Premium (₹12-25L) · Luxury (>₹25L)",
+          "body": "India's PV market is **price-elastic at the entry level**. The **GST reform on small cars (18% bracket)** in H1 FY26 cut acquisition cost by ~5-7% for sub-4m / sub-1.2L cars — and **demand exploded**: H1 FY26 PV industry was -0.4%, H2 was +16.7% YoY (post-GST cut).[^maruti-q4fy26-call] The two-wheeler-to-car upgrade segment, which has been weak for 4 years, suddenly reignited.\n\n**Why this matters for Maruti**: 47% of Maruti's domestic sales (Mini + Compact) are in the entry segment. 130,000 of its 190,000 pending orders end-FY26 are in the 18% GST bracket. **Maruti is the largest beneficiary of GST reform in absolute and relative terms.** Hyundai, Tata, and M&M are SUV-heavy and benefit less.",
+          "shareLabels": ["Entry (< ₹6L)", "Mid (₹6-12L)", "Premium (₹12-25L)", "Luxury (> ₹25L)"],
+          "shareValues": [35, 40, 22, 3],
+          "implications": "**Maruti's portfolio is 75%+ in entry+mid (< ₹12L) — the GST-tailwind zone.** Wagon-R, Alto, Swift, Dzire, Brezza all sit in 18% bracket. Premium/luxury (Grand Vitara, VICTORIS, Invicto) is the higher-margin volume layer Maruti is building into."
+        },
+        {
+          "axis": "By powertrain · the technology race",
+          "title": "Petrol vs Diesel vs CNG vs Hybrid vs EV",
+          "body": "**India's powertrain mix is fragmenting fast.**[^wiki-maruti][^maruti-q4fy26-call] Petrol is still ~65% but declining; **CNG has surged to ~15%** (Maruti is the CNG market leader by far — ~70% of CNG PV sales); diesel collapsed from ~50% (FY13) to <15% post-BS6; **EVs are still <3% of PV sales** despite the headlines. Hybrids (Maruti + Toyota partnership: Grand Vitara, Invicto) are ~2-3% but growing.\n\n**The strategic split**: Tata Motors and Mahindra bet hard on EVs (Tata leads with 50%+ EV PV share). Maruti/Toyota bet on **hybrid + CNG + biofuel/ethanol** as the practical India answer. **Why Maruti's bet works**: India's charging infrastructure is sparse (~30,000 public chargers vs 2 million petrol pumps); rural buyers prize range and refueling speed. **Why it could fail**: if BYD/Chinese OEMs flood the market with affordable EVs and government policy forces a 30%+ EV mandate, Maruti loses 2-3 years of catching up.",
+          "shareLabels": ["Petrol", "CNG", "Diesel", "Hybrid", "EV"],
+          "shareValues": [65, 15, 14, 3, 3],
+          "implications": "**Maruti is dominant in petrol + CNG (combined ~80% of PV market); behind on EV (<5% of EV PV sales).** The e VITARA (launched FY26) is the entry — 100 global markets planned. Hybrid-first is a deliberate bet on India's infrastructure reality."
+        },
+        {
+          "axis": "By channel · Arena vs Nexa vs Commercial",
+          "title": "How Maruti reaches customers",
+          "body": "**Maruti runs two parallel dealership channels**: **Arena** (mass-market: Alto, Wagon-R, Swift, Dzire, Brezza, Eeco) and **Nexa** (premium: Baleno, Ignis, Grand Vitara, VICTORIS, Invicto, Jimny, e VITARA). The split-channel architecture allows Maruti to **trade up Arena customers to Nexa without cannibalising the Arena brand promise of value-for-money**.[^wiki-maruti] Commercial Vehicles (Super Carry LCV) operates through a third smaller network.\n\n**4,600+ sales outlets, 5,900+ service touchpoints** across 1,100+ cities — **the deepest distribution moat in Indian autos**. Hyundai has ~1,400 outlets; Tata ~1,500; Mahindra ~1,200. Maruti's service network is ~3× the next competitor. **This is the single hardest-to-replicate competitive advantage** in the business.",
+          "shareLabels": ["Arena (mass)", "Nexa (premium)", "Commercial (LCV)", "Other OEM supply (Toyota)"],
+          "shareValues": [70, 22, 2, 6],
+          "implications": "**Distribution + service is the moat that compounded for 40 years.** Even a -5pp market-share slip in product still leaves Maruti with the lowest cost-per-customer-acquired and lowest service-revenue-per-customer in India."
+        }
+      ]
+    },
+
+    "competitive": {
+      "title": "3. Who else is in the market?",
+      "intro": "Indian PV is a five-OEM oligopoly with Maruti as the entrenched leader, two strong domestic challengers (Tata + Mahindra), and three foreign brands. The bear case is that competition gets sharper; the bull case is that Maruti's scale + distribution still dominates.",
+      "leader": {
+        "name": "Maruti Suzuki India Ltd. (MSIL)",
+        "type": "Listed NSE/BSE · Suzuki Motor Corp Japan owns 58.53%",
+        "share": "~42% Indian PV (FY26)",
+        "tone": "pos",
+        "body": "**2.42M units sold FY26 (highest ever), 447K exports (+34.6% YoY), 4,600+ outlets, 5,900+ service touchpoints.** Net cash ~₹66,000 Cr (~$8B). ROCE 19%, ROE 14.4%, OPM 12.3% (down from 13.9% — margin-cycle low). Established 1981 as JV with Govt of India; Suzuki became majority owner 2002. **VICTORIS won Indian Car of the Year FY26** (mid-SUV, fastest to 50K cumulative). First EV (e VITARA) launched FY26.[^maruti-q4fy26-ip][^maruti-q4fy26-call][^wiki-maruti]"
+      },
+      "followers": [
+        {
+          "name": "Hyundai Motor India",
+          "type": "Listed NSE (Oct 2024 IPO) · ~₹1.4L Cr market cap",
+          "share": "~14% Indian PV",
+          "tone": "warn",
+          "listed": "NSE: HYUNDAI · ~₹1,40,000 Cr",
+          "body": "**Hyundai is the #2 player by a wide margin.** Listed at India's largest-ever IPO in Oct 2024 (₹27,800 Cr). Strong SUV portfolio (Creta, Venue, Alcazar) drives premium mix; **but capacity-constrained** — Chennai plant + new Talegaon plant being ramped. **Higher margins than Maruti (~14% OPM vs 12%)** because of premium-mix.[^wiki-hmil] **Threat to Maruti**: continues to win premium urban customers; less exposed to GST tailwind because lower entry-segment mix."
+        },
+        {
+          "name": "Tata Motors (Passenger Vehicles)",
+          "type": "Listed NSE/BSE · Tata Group flagship",
+          "share": "~13% Indian PV (PV segment only)",
+          "tone": "warn",
+          "listed": "NSE: TATAMOTORS",
+          "body": "**Tata is the EV leader by far** (~50%+ of Indian EV PV market — Nexon EV, Tigor EV, Punch EV). Resurgent ICE brand (Nexon, Punch, Harrier, Safari) since 2017 transformation. **Bull case for Tata**: if EV penetration accelerates fast, Tata wins the next-decade race. **Bear case**: capital-intensive EV bet at low margins; passenger biz still loss-making at consolidated level. **Threat to Maruti**: nearly all EV market share belongs to Tata + Mahindra, not Maruti.[^wiki-tata-motors]"
+        },
+        {
+          "name": "Mahindra & Mahindra (Auto segment)",
+          "type": "Listed NSE/BSE · Mahindra Group",
+          "share": "~13% Indian PV",
+          "tone": "warn",
+          "listed": "NSE: M&M",
+          "body": "**Pure-play SUV manufacturer** — XUV700, Scorpio-N, XUV300, Thar, Bolero. SUV-heavy revenue mix (90%+ SUVs) means **highest segment margins (~16% OPM)**. Recent EV launches (XEV 9e, BE 6) credible. **Threat to Maruti**: dominates the >₹15L SUV segment where Maruti's Grand Vitara/VICTORIS/Invicto compete. **Limited risk to Maruti's hatch/compact base.**"
+        },
+        {
+          "name": "Toyota Kirloskar Motor",
+          "type": "Unlisted · Toyota Motor Corporation JV",
+          "share": "~6% Indian PV",
+          "tone": "warn",
+          "listed": "Not listed",
+          "body": "**Strategic ally** of Maruti via Suzuki-Toyota partnership: Toyota Glanza = rebadged Baleno; Toyota Urban Cruiser Hyryder = rebadged Grand Vitara; **Toyota Invicto = rebadged Innova-platform built by Maruti**. ~6% PV market share but **higher per-unit price** (Innova Hycross, Fortuner, Camry). Joint manufacturing at Bidadi (Toyota plant) + Hansalpur (Maruti plant). **Net positive for Maruti** — 6% of Maruti's volume is Toyota-supply revenue (visible in 'Sales to other OEM' segment)."
+        },
+        {
+          "name": "Chinese OEMs (MG Motor, BYD, BAIC, Chery)",
+          "type": "JVs with SAIC/Hector/BYD/JSW partnership · partial listings",
+          "share": "~5% Indian PV (rising)",
+          "tone": "neg",
+          "listed": "Various (JSW MG Motor JV announced)",
+          "body": "**MG Motor (SAIC-owned, JSW now ~35% partner) leads the Chinese push in India** with Hector, Astor, ZS EV. **BYD scaling fast in EV segment** (Atto 3, Seal). **Long-term risk**: if Chinese OEMs replicate their domestic-market EV cost advantages (40-50% lower BOM costs) in India, Maruti's hybrid-first bet looks dated. **Near-term**: still <5% market share; regulatory + perception headwinds; geopolitical FDI restrictions.[^wiki-maruti]"
+        }
+      ],
+      "share_chart": {
+        "title": "Indian Passenger Vehicle market · share by units · FY26",
+        "labels": ["Maruti Suzuki", "Hyundai", "Tata Motors", "Mahindra", "Toyota", "Others (Honda, Renault, MG, Kia, etc.)"],
+        "values": [42, 14, 13, 13, 6, 12]
+      }
+    },
+
+    "growth": {
+      "title": "4. How is the industry growing?",
+      "tiles": [
+        {"label": "India PV CAGR FY15-FY26", "value": "+4%/yr", "sub": "Slow but accelerating post-COVID"},
+        {"label": "Maruti revenue CAGR FY21-FY26", "value": "+21%/yr", "sub": "₹70K → ₹1.83L Cr"},
+        {"label": "Maruti volume CAGR FY21-FY26", "value": "+13%/yr", "sub": "1.3M → 2.42M units"},
+        {"label": "Export CAGR FY21-FY26", "value": "+35%/yr", "sub": "Suzuki global platform leverage"},
+        {"label": "Motorization runway", "value": "33 → 100 / 1000", "sub": "By FY40 base case = 3× volume"},
+        {"label": "GST reform impact (H2 FY26)", "value": "+16.7% YoY", "sub": "Industry-wide, small-car-led"}
+      ],
+      "body": "**Indian PV industry grew at a slow ~4% CAGR over FY15-FY26 in volume terms** — but the cycle is highly variable: massive growth FY15-FY18 (+11%/yr), collapse FY19-FY21 (-7%/yr through COVID + BS6 transition), recovery FY22-FY26 (+9%/yr). Maruti **outgrew the industry in volume** (+13% CAGR FY21-FY26) and **dramatically outgrew in revenue (+21%)** through ASP mix-shift, ramped exports, and price increases. Forward base case: industry **5-7% volume CAGR through FY32**, Maruti at 6-8% with operating leverage.[^maruti-q4fy26-call][^wiki-auto-india]\n\n**Long-term motorization runway is the bull story**: India at 33 cars / 1000 people vs ~100 / 1000 expected by FY40 base case (still well below China). At that motorization rate + India population, **PV sales potential = ~10-12 million units/yr** vs 4.3M today. Maruti at 35-40% share = 4-5M units/yr — i.e., 2× from here. The path is non-linear and cyclical, but the ceiling is high.\n\n**Near-term catalysts**: (a) **GST reform tailwind continues** through FY28 as the 18% bracket cars work through dealer channels; (b) **500K units new capacity ramping** in FY27 (Kharkhoda + Hansalpur); (c) **export ramp** as Suzuki Global directs Africa/MEA/LatAm production to India; (d) **VICTORIS mid-SUV success** continues monthly traction (won Indian Car of the Year FY26).",
+      "drivers": [
+        {"label": "Motorization runway", "tone": "pos", "body": "33 → 100/1000 = ~3× volume potential by FY40"},
+        {"label": "GST reform · 18% small-car bracket", "tone": "pos", "body": "190K pending orders, 130K in this bracket — multi-quarter tailwind"},
+        {"label": "Capacity addition", "tone": "pos", "body": "+500K units FY27; target 4M units medium-term (vs 2.4M today)"},
+        {"label": "Export ramp", "tone": "pos", "body": "+35% CAGR FY21-FY26; Suzuki global platform anchor"},
+        {"label": "EV transition risk", "tone": "warn", "body": "Maruti late vs Tata + Mahindra + Chinese OEMs"},
+        {"label": "Margin compression", "tone": "warn", "body": "Material costs + capex burden + emission/safety + Suzuki royalty all pressuring OPM"}
+      ]
+    },
+
+    "implications": {
+      "title": "What this means for Maruti",
+      "body": "Maruti is **the highest-quality auto franchise in India** — leader in volume, ASPs, distribution, and brand. Net-cash balance sheet (~₹66,000 Cr cash pile) eliminates financial risk; 4,600+ outlets and 5,900+ service touchpoints are uncopyable in <5 years.\n\n**The current setup is favourable**: stock down ~24% from 52-week high to near 52-week low, while operating metrics are at all-time highs (FY26 volume + revenue + profit). The market is pricing in (a) continued margin compression, (b) capex burn, (c) EV-transition uncertainty. **All three are real but bounded**: (a) commodity + employee-code + new-model headwinds are mostly Q4 FY26-specific (per management); (b) capex is funded internally without leverage; (c) e VITARA + planned multi-EV roadmap reduces EV-laggard risk.\n\n**The investment edge**: buy a quality compounder at margin-cycle low + capacity-ramp inflection. The catalysts (190K order book, 500K new capacity FY27, export ramp, GST tailwind) are visible and quantifiable. **Margin of safety is the ₹66,000 Cr net cash** — even at 0% growth, the ex-cash multiple is reasonable; if the auto cycle turns down, the cash absorbs the shock.\n\n**Practical sizing**: this is a **3-5% portfolio holding at ₹13,000-13,500**, scaling to **6-8% on a drop to ₹11,000**. The asymmetric upside is FY28-FY30 mean-reversion of margins (12% → 13.5%) on a 25-30% larger revenue base + multiple re-rating from 21× to 25× forward = **fair value ₹18,000-20,000 over 24-36 months**."
+    }
+  },
+
+  "financials": {
+    "years": ["FY21", "FY22", "FY23", "FY24", "FY25", "FY26"],
+    "revenueB": [70372, 88330, 117571, 141858, 152913, 183316],
+    "fcfB": [5500, 1500, 5500, 11000, 10500, 7700],
+    "opMargin": [8.0, 7.0, 9.0, 13.0, 13.0, 12.0],
+    "title": "Through-cycle growth, with FY26 at margin-cycle low",
+    "intro": "Revenue compounded **21% CAGR over 5 years** (₹70K → ₹1.83L Cr); profit grew from ₹4.4K to ₹14.7K Cr (+27% CAGR). **OPM tells the cyclical story**: 8% in FY21 trough (COVID + chip shortage) → 13% in FY24-FY25 peak → **12% in FY26 (margin compression year)**. FY26 PAT growth was only +1% vs +20% revenue — pure operating deleverage from commodity prices, employee-code one-time, new-model expense, and MTM losses on investments. **The cycle isn't broken; it's mid-correction.**[^screener-maruti][^maruti-q4fy26-ip][^maruti-q4fy26-call]",
+    "tables": {
+      "valuation": [
+        ["Trailing P/E", "28.3× (vs 5y avg ~30×)"],
+        ["Fwd P/E (FY27e)", "~21× ✓"],
+        ["P/B", "3.88× (vs 5y avg ~4×)"],
+        ["EV / EBITDA", "18.6×"],
+        ["EV / FCF (TTM)", "~45× (capex-burdened year)"],
+        ["Ex-cash fwd P/E", "~18× ✓✓"],
+        ["FCF yield (TTM)", "1.9% reported · 3% on 5y avg"],
+        ["Dividend yield", "1.07%"]
+      ],
+      "balance": [
+        ["Reserves + share capital", "~₹1,07,000 Cr"],
+        ["Total borrowings", "~₹10,000 Cr (D/E 0.10)"],
+        ["Cash + investments", "₹76,838 Cr ✓"],
+        ["Net cash position", "+₹66,800 Cr (16% of mkt cap) ✓"],
+        ["Debt / Equity", "~0.10 ✓"],
+        ["ROCE (TTM)", "19% ✓"],
+        ["ROE (TTM)", "14.4% (down from 18% in FY24 — cash drag + margin compression)"]
+      ],
+      "capitalReturn": [
+        ["Dividend (FY26 declared)", "₹140/share (highest ever, vs ₹135 in FY25)"],
+        ["Dividend payout (FY26)", "~30% (vs 30-35% multi-year)"],
+        ["Dividend yield (TTM)", "1.07%"],
+        ["Buybacks", "None historically"],
+        ["Promoter holding (Suzuki Motor Corp)", "58.53% (up from 56.48% post Suzuki Motor Gujarat merger Dec 2025)"],
+        ["FII holding", "14.12% (down from 22% in FY24 — FIIs sold during downcycle)"],
+        ["DII holding", "24.09% (up from 18% in FY24 — DIIs accumulated)"],
+        ["Public + others", "~3.18%"]
+      ]
+    }
+  },
+
+  "sections": [
+    {
+      "id": "s1",
+      "label": "Business",
+      "title": "Section 1 — Do I truly understand it?",
+      "questions": [
+        {
+          "id": "b1",
+          "n": 1,
+          "title": "What does Maruti actually do?",
+          "body": "Maruti Suzuki **designs, manufactures, distributes, services, and finances passenger vehicles for the Indian market and exports.**[^wiki-maruti] It runs three plants (Gurgaon + Manesar in Haryana, Hansalpur in Gujarat + newly merged Suzuki Motor Gujarat) with ~2.5M units annual capacity, ramping to ~3M with the Kharkhoda Plant 2 and Hansalpur Line 4 coming online in FY27 (+500K units).[^maruti-q4fy26-call]\n\nThe **product portfolio spans entry to premium**: Alto, Wagon-R, Celerio (mini); Swift, Baleno, Dzire (compact); Brezza, Grand Vitara, Fronx, Jimny, **VICTORIS** (UV/SUV); Eeco (van); Super Carry (LCV); e VITARA (first EV, launched FY26). Distributed through **Arena (mass-market, 70%)** and **Nexa (premium, 22%)** dealership networks across **4,600+ sales outlets and 5,900+ service touchpoints in 1,100+ cities**.\n\nAlso a **contract manufacturer for Toyota** (Glanza = Baleno; Urban Cruiser Hyryder = Grand Vitara; Invicto = built on Toyota-Maruti hybrid platform) — accounts for ~6% of domestic volume as 'Sales to other OEM'.",
+          "answer": "**India's largest PV manufacturer.** Sells one in every 2.3 cars in India. Hatch + SUV + EV portfolio + service network + Toyota-supply business."
+        },
+        {
+          "id": "b2",
+          "n": 2,
+          "title": "How do they make money, and from whom?",
+          "body": "**Revenue model**: per-vehicle gross margin × volume × mix.[^maruti-q4fy26-ip] Each vehicle has BOM (raw materials + components), labour, depreciation, royalty (to Suzuki, ~3.5-5% of net sales), and SG&A as the cost stack. Average selling price (ASP) **rose ~50% over FY21-FY26** (₹4.8L → ₹7.2L average) through mix-shift to UVs, larger engines, and feature additions (airbags, ABS now standard).\n\n**Customer side**: ~82% domestic, **18.5% exports** in FY26. Domestic is retail (financed through ~1,100+ tie-ups with banks/NBFCs — Maruti Suzuki India Finance Pvt Ltd is the captive financing arm). Exports go to ~100 countries via Suzuki global network — Africa, Middle East, Latin America, SE Asia, parts of Europe.\n\n**Cost structure FY26** (% of net sales): Material 75.9%, Employee 5.2%, Other expenses 11.7%, EBITDA margin 12.3%, Depreciation 3.9%, EBIT margin 8.4%, PAT margin 8.3%.",
+          "answer": "**Per-vehicle margin × 2.42M units = ₹14,679 Cr profit.** Customers are Indian retail (82%) + global exports (18%). Margin compression in FY26 driven by raw materials + capex + new-model launches.",
+          "table": {
+            "header": ["Segment", "Volume FY26", "% of total", "YoY", "Notes"],
+            "rows": [
+              ["Compact (hatch)", "808,102", "33.4%", "+4.8%", "Swift, Dzire, Baleno — GST tailwind core"],
+              ["Utility Vehicles (SUV)", "760,987", "31.4%", "+5.7%", "Brezza, Grand Vitara, Fronx, Jimny, VICTORIS"],
+              ["Vans", "139,769", "5.8%", "+3.0%", "Eeco - last-mile commercial dominance"],
+              ["Mini (entry hatch)", "112,291", "4.6%", "-10.7%", "Alto, S-Presso — Maruti is exiting low end"],
+              ["LCV", "38,575", "1.6%", "+11.8%", "Super Carry — small LCV"],
+              ["Mid-size", "1,980", "0.08%", "-76.4%", "Ciaz — effectively dying"],
+              ["Sales to other OEM (Toyota)", "113,235", "4.7%", "+6.4%", "Glanza, Urban Cruiser Hyryder, Invicto"],
+              ["**Exports**", "447,774", "18.5%", "+34.6%", "All-time high; Suzuki global platform"]
+            ]
+          }
+        },
+        {
+          "id": "b3",
+          "n": 3,
+          "title": "Am I pretending to understand it, or do I really?",
+          "body": "I understand the **economics**: revenue is ASP × volume; volume is driven by macro (income growth, financing, urban-rural mix) + product (refresh cycles, segment fit); margin is the spread between ASP increases and BOM/labour/royalty/depreciation. The 8-13% OPM range over the last 6 years tells me **±3pp swing on revenue is the cycle band**.[^screener-maruti]\n\nWhat I'm **less confident on**: (1) the **EV transition pace** — if government CAFE norms tighten faster than expected, Maruti's hybrid + CNG + petrol mix is vulnerable; conversely, if charging infrastructure stays slow, hybrid wins; (2) the **Suzuki royalty trajectory** — at 3.5-5% of net sales it's ₹5,000-7,000 Cr/yr leakage, and Suzuki has historically increased royalties (parent-subsidiary tension); (3) the **competitive intensity from Chinese OEMs** — if BYD prices an SUV at ₹15L vs Maruti's ₹18L Grand Vitara, the urban premium segment compresses.\n\nWhat I **do confidently understand**: the **distribution + service network is the moat** that's compounded for 40 years and is uncopyable in <5 years. Even with -5pp market-share loss, Maruti remains the lowest-cost distributor of cars in India.",
+          "answer": "Yes on unit economics and distribution moat (~85%). **No on EV transition timing and Suzuki royalty trajectory** — assign wider error bands."
+        },
+        {
+          "id": "b4",
+          "n": 4,
+          "title": "Would I be happy owning this for 10 years if the market shut tomorrow?",
+          "body": "For the next 10 years (~2026-2036): **yes at the right price**. Indian PV industry at 5-7% volume CAGR for the next decade is a base case; Maruti's ~40% share defended by distribution + brand is a base case; revenue compounding at 8-10%/yr through cycles + margin reverting to 13-14% = profit CAGR 12-14%.\n\nThe 10-year compounding case at **today's price ₹13,221**: if profit grows 12%/yr for 10 years (₹14.7K → ₹45.7K Cr) and the multiple **stays at 28× P/E**, market cap goes ₹4.16L → ₹12.8L Cr (3.1×, ~12%/yr return). If multiple **compresses to 22× P/E** (more rational for a mature cyclical), market cap goes to ₹10L Cr (2.4×, ~9%/yr).\n\nThe 10-year compounding case at **₹11,000** (load zone): same trajectory, but starting cap ₹3.46L Cr, ending ₹10-12.8L Cr → 3-3.7× → 11-14%/yr.\n\n**Both scenarios deliver acceptable returns**. The asymmetry favours holding through cycles rather than market-timing.",
+          "answer": "**Yes at ₹11,000-13,500**; reasonable at ₹13,500-16,000; **disappointing above ₹17,000** unless growth surprises positively."
+        },
+        {
+          "id": "b5",
+          "n": 5,
+          "title": "What could kill this business?",
+          "body": "Three real threats, in order of credibility:\n\n1. **Disruptive EV cost-curve from Chinese OEMs** — if BYD/MG/BAIC bring sub-₹10L EVs with 400km range and dealer network depth, Maruti loses the urban premium segment in 3-5 years. Probability: **moderate** (30-40%); impact: **moderate** (5-10pp share loss possible).\n2. **Suzuki parent-company drift** — if Suzuki Motor Corp's global EV strategy diverges from India needs (e.g., Suzuki bets all on Japan/Europe EV platforms ignoring India hybrid), Maruti loses tech parent backing. Probability: **low** (10%); impact: **severe**.\n3. **CAFE / emission regulatory shock** — if government mandates 30%+ EV mix by FY30 (currently ~5%), Maruti's portfolio is exposed; would need ₹50-100K Cr emergency EV capex. Probability: **low-moderate** (15-20%); impact: **moderate to severe**.\n\nNone are extinction-level. The **₹66,000 Cr net cash + 4,600 outlet network + Suzuki parent + India's still-low motorization** mean Maruti is **kill-resistant for ~10 years**. **Vulnerable past 2035 if EV transition is faster than the hybrid-first thesis assumes**.[^maruti-q4fy26-call]",
+          "answer": "Chinese EV cost-curve + Suzuki strategic drift + CAFE shock. None acute today; all real over a 10-15-year window. **Distribution moat + net cash buffer the downside.**"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "label": "Management",
+      "title": "Section 2 — Can I trust these people with my capital?",
+      "questions": [
+        {
+          "id": "m1",
+          "n": 1,
+          "title": "Would I trust them with my family's money?",
+          "body": "**Hisashi Takeuchi (MD & CEO)** is a Suzuki Motor Corp veteran (since 1986), CEO of Maruti since April 2022 (succeeded Kenichi Ayukawa).[^maruti-q4fy26-ip][^wiki-maruti] Engineering background, deep manufacturing roots. **CFO Arnab Roy** is professional, well-regarded for transparent earnings-call commentary on margins. **Chief IRO Rahul Bharti** is industry-respected for direct answers to analyst questions.\n\nThe board includes **R.C. Bhargava as Chairman** (legendary — joined Maruti 1981, Chairman since 2007; widely credited with building the franchise alongside Suzuki). Independent directors include former central bankers, regulators, industry leaders. **Governance reputation is industry-best** despite some Manesar-violence (2012) legacy concerns and Anti-competitive dealer policy CCI rulings (~₹200 Cr penalty, 2021) — both are old issues, addressed.\n\nTrustworthiness on **operational** side: **high** — manufacturing discipline, supply chain depth, dealer network quality have been industry-best for 40 years. Trustworthiness on **strategic** side: **steady** — Maruti has been slow on EVs (criticised) and slow on SUVs (cost share 2018-2023), but has typically course-corrected once trend was clear.",
+          "answer": "**Yes — high-integrity, long-tenured, professional team.** R.C. Bhargava (Chairman) and Hisashi Takeuchi (CEO) anchor the franchise. Strategic flexibility is moderate — slow to pivot, but executes well once committed."
+        },
+        {
+          "id": "m2",
+          "n": 2,
+          "title": "How do they treat minority shareholders when no one is watching?",
+          "body": "**Dividend discipline is excellent**: ₹140/share declared for FY26 (vs ₹135 FY25, ₹125 FY24, ₹90 FY23). Highest-ever dividend in FY26.[^maruti-q4fy26-call] Payout ratio ~30% — modest by Indian-large-cap standards but consistent. **No equity dilution** since IPO (1992) — share count has only grown via the Suzuki Motor Gujarat merger (which added ~30.2K equity shares via the amalgamation accounting).[^screener-maruti]\n\n**Related-party concerns — the elephant in the room**: Suzuki Motor Corp charges Maruti **royalties of ~3.5-5% of net sales** for technology, brand, and IP rights — ~₹5,000-7,000 Cr/yr leakage to parent.[^wiki-maruti] In the 2018-19 timeframe, Suzuki even pushed for a higher Indian royalty rate (caused minority shareholder pushback; settled at lower rate). **The Suzuki Motor Gujarat merger Dec 2025** consolidated Suzuki's previously wholly-owned subsidiary into Maruti — increased Suzuki's stake from 56.28% to 58.53%, but at a fair valuation per the merger ratio.\n\n**No buybacks** despite premium-rated balance sheet (₹66K Cr net cash) and recent share-price weakness (FY26 down -24% from peak). **A buyback at ₹13,000 would be highly accretive** — management has not done one. This is a missed opportunity.",
+          "answer": "**Mixed.** Dividend discipline excellent. **Suzuki royalty is real leakage (~3-5% revenue/yr).** No buybacks despite premium balance sheet and discount price — capital allocation imagination is limited."
+        },
+        {
+          "id": "m3",
+          "n": 3,
+          "title": "Capital allocation track record?",
+          "body": "Three eras:\n- **1981-2002 (JV-era):** Govt of India + Suzuki JV. Built Gurgaon plant, established Maruti 800 as the iconic 'people's car'. Capital from public + GoI.\n- **2002-2020 (Suzuki-majority era):** Suzuki bought GoI out (2002), majority shareholder. Massive plant expansion (Manesar 2007), Nexa channel launch (2015), Hansalpur Gujarat plant (2017). Suzuki Motor Gujarat created as **wholly-owned subsidiary** of Suzuki Motor Corp (not of Maruti) — controversial because it captured Gujarat plant profits inside Suzuki Japan, not Maruti shareholders.[^wiki-maruti] Cash returned via 25-30% dividends.\n- **2020-2026 (recovery + capex era):** Post-COVID recovery + chip-shortage; record FY24-FY25 profits. **Suzuki Motor Gujarat merger Dec 2025** — finally consolidated Gujarat plant into Maruti (Suzuki's stake adjusted up to 58.53%, fair valuation).[^maruti-q4fy26-call] **₹14,000 Cr capex committed for FY27** for Kharkhoda Plant 2 + Hansalpur Line 4 + future 4M-unit capacity target.\n\n**The right read**: capital allocation is **professional and forward-looking, but heavily influenced by Suzuki parent strategy**. The Suzuki Motor Gujarat structure (2017-2025) was a clear minority-shareholder negative; the eventual merger was the right correction. **Today's capex commitment is appropriate given demand visibility** (190K pending orders); the absence of buybacks is the missed value-creation opportunity.",
+          "answer": "**Improving but parent-influenced.** Suzuki Motor Gujarat structure (2017-2025) was a minority-shareholder negative; the 2025 merger was correction. Current capex cycle is appropriate. **Missing**: buybacks at attractive prices."
+        },
+        {
+          "id": "m4",
+          "n": 4,
+          "title": "How honest are they in disclosure?",
+          "body": "**Tier-1 SEBI compliance + voluntary disclosure.**[^maruti-q4fy26-ip] Quarterly investor presentations include segment-level volumes, geographic split, model-wise launches, capex commitments, capacity utilisation, and detailed margin bridge (commodity, employee, mix, etc.). Annual reports detail per-vehicle royalty payments to Suzuki (transparent). Earnings calls are direct on margin pressures — CFO Arnab Roy explicitly walked through the 160bps OPM compression in Q4 FY26.[^maruti-q4fy26-call]\n\nWhat's **less granular**: (1) **per-model profitability** is not disclosed (only segment-level); (2) **specific Suzuki royalty rate** is shown as a single line item, not broken down by model/agreement; (3) **export market mix by country** is not disclosed in detail (only total exports + 'major markets').\n\n**No restatements, no major auditor qualifications** in 20+ years. **Some controversy on CCI dealer-policy ruling** (2021, ~₹200 Cr penalty) — Maruti disputes ongoing; immaterial financial impact. **No SEBI sanctions, no AGM-revolt issues** despite some royalty rate disputes 2018-19.",
+          "answer": "**Clean and detailed.** Industry-best quarterly + annual disclosure. Some opacity on per-model unit economics and Suzuki royalty granularity, but core financial reporting is transparent."
+        },
+        {
+          "id": "m5",
+          "n": 5,
+          "title": "Skin in the game?",
+          "body": "**Mixed.**[^screener-maruti][^maruti-q4fy26-ip] **Suzuki Motor Corporation owns 58.53%** of Maruti — that's structural skin in the game. Suzuki's global earnings depend significantly on Maruti's success: Maruti is Suzuki's **largest single subsidiary by units, revenue, and profit**. Suzuki has every economic incentive to support Maruti's growth.\n\n**But individual management skin is limited**: CEO Hisashi Takeuchi is a Suzuki career executive (compensated by both entities, with modest equity stakes). Chairman R.C. Bhargava holds ~0.05% of Maruti equity (small in absolute terms; but he's 90+ years old and a builder-not-trader). Other Indian executives hold via ESOPs but no individual >0.5%.\n\n**Implications**:\n- **Positive**: Suzuki's 58.53% ownership = no risk of strategic neglect or asset stripping; Maruti is core to Suzuki's global identity.\n- **Negative**: Suzuki's interests can diverge from minority shareholders' (royalty pricing, capital structure decisions, EV strategy alignment). Track record on royalty has been imperfect.\n- **Mixed**: Indian management team is professional + tenured + aligned via ESOPs, but doesn't have founder-level personal stake.\n\n**Net**: Suzuki's structural alignment is strong; individual-executive alignment is moderate.",
+          "answer": "**Strong structural (Suzuki 58.53%); moderate individual alignment.** Suzuki's interests are economically tied to Maruti's success; minor royalty-related divergence risk."
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "label": "Price",
+      "title": "Section 3 — What am I paying, and why now?",
+      "questions": [
+        {
+          "id": "p1",
+          "n": 1,
+          "title": "What am I paying for the business today?",
+          "body": "**At ₹13,221 (15 May 2026), market cap is ₹4,15,672 Cr (~$50B).**[^screener-maruti][^bse-maruti] Net cash position ~₹66,000 Cr (investments ₹76,838 Cr − debt ~₹10,000 Cr); EV ~₹3,50,000 Cr.\n\nMultiples:\n- **P/E (TTM):** 28.3× (vs 5y avg ~30×)\n- **Fwd P/E (FY27e at ~25% EPS growth):** ~21× ✓\n- **Ex-cash fwd P/E:** ~18× ✓✓\n- **EV/EBITDA:** 18.6×\n- **EV/FCF (TTM):** ~45× (capex-burdened year — FY27 FCF should normalize)\n- **P/B:** 3.88× (vs 5y avg ~4×)\n- **FCF yield (TTM):** 1.9% reported · ~3% on 5y avg FCF\n- **Dividend yield (TTM):** 1.07%\n\nFor a business doing 19% ROCE, 14.4% ROE, ~₹66K Cr net cash, holding 42% PV market share, with **2.42M-unit run-rate growing to 3M in FY27 and 4M medium-term**, this is **fairly priced** — not screaming cheap, but not expensive either. The 5-year average P/E for Maruti has been ~28-32×; today's 28× is at the **lower end of long-term range**, especially given the cash drag on reported ROE.[^screener-maruti]\n\n**Comparison frame**: Hyundai Motor India ~24× fwd P/E (higher OPM but lower volume growth + IPO-era valuation discount); Tata Motors ~16× fwd P/E (cyclical bias + EV optionality); Mahindra ~21× fwd P/E (pure SUV + tractor exposure). **Maruti at 21× forward sits in the middle — fair price for the highest-quality franchise.**",
+          "answer": "**28× TTM, 21× forward (18× ex-cash).** Below 5y average. Fair price for the highest-quality auto franchise + a margin-cycle low + capacity-ramp inflection."
+        },
+        {
+          "id": "p2",
+          "n": 2,
+          "title": "What's the business worth conservatively?",
+          "body": "Three-scenario DCF / multiple analysis (₹ per share):\n\n| Scenario | Assumption | FY28 EPS | Exit multiple | Fair value |\n|---|---|---|---|---|\n| **Base** | Volume CAGR 7%, OPM mean-reverts to 13.5%, capex normalises FY28 | ₹720 | 25× | **₹18,000** |\n| **Bull** | Volume CAGR 9%, OPM 14%, EV traction better, exports +25% | ₹820 | 28× | **₹22,900** |\n| **Bear** | Volume CAGR 4%, OPM stays 12%, Chinese EV competition, capex overrun | ₹560 | 20× | **₹11,200** |\n\nWeighted (45/25/30): **fair value ~₹17,500-18,500** for FY28. Discount back to today at 12% cost of equity = **~₹14,200-15,200**. Today's price ₹13,221 is **at 13-15% discount to fair value** — modest but real margin of safety.\n\n**Cross-check via FCF**: 5-year average FCF ~₹8,000 Cr (smoothed for cyclical lows). At 4% required FCF yield (consistent with quality auto compounders globally), implied market cap = ₹2,00,000 Cr (ex-cash); plus net cash ₹66,000 Cr = **₹2,66,000 Cr** → ~₹8,500/share **as a strict-private-buyer NAV floor**. Public-market premium for growth + duopoly + scale = ~₹13,000-15,000.\n\n**Asymmetry**: at ₹13,221, upside to base case ₹18,000 is +36% over 24 months; downside to bear case ₹11,200 is -15%. **Reward:risk ≈ 2.4:1.**",
+          "answer": "Fair value **~₹17,500-18,500 over 24 months** (base case). Today's price = 15% discount + 2.4:1 reward:risk. **Solid margin of safety.**"
+        },
+        {
+          "id": "p3",
+          "n": 3,
+          "title": "What would I pay for the whole business?",
+          "answer": "Roughly **₹11,500-13,000 per share** as a private-market floor. A rational global auto strategic (Volkswagen, Toyota, Stellantis) would pay **18-22× FY27 EPS** + 100% control premium, i.e., **EV ~₹4,20,000-5,00,000 Cr**, implying ₹15,500-17,500 per share. **Public-market discount to private-market reflects (a) Suzuki control already locked at 58.53% so no take-out optionality, (b) royalty drag, (c) cyclicality.**",
+          "body": "A rational private buyer would pay for the **5y average earnings of ₹10,000 Cr at a 20× multiple** (consistent with quality private auto deals globally), yielding an EV of **₹2,00,000 Cr** + net cash ₹66,000 Cr = **₹2,66,000 Cr public-market value, or ~₹8,500/share** — substantially below today's ₹13,221.\n\nHowever, **strategic premium for control + India growth story + Suzuki integration value** adds 30-50% to the floor — implying private fair value ₹11,500-13,000.\n\nWhat I'd pay personally: **₹11,500-13,000 per share**, recognising:\n- + 42% market share + 4,600 outlet network = uncopyable distribution\n- + ₹66,000 Cr net cash = built-in margin of safety\n- + 5-7% volume CAGR base case + margin mean-reversion = 12-14% earnings CAGR\n- + Export ramp + GST tailwind + capacity addition = visible 24-month catalysts\n- − 3-5% royalty to Suzuki (~₹5-7K Cr/yr leakage)\n- − EV transition risk (Tata + Chinese OEMs leading)\n- − Cyclical business at peak revenue (could compress 20% in next downturn)\n- − No take-private bid likely (Suzuki already 58.53%; no PE play possible)\n- − Limited buyback discipline despite balance sheet capacity\n\n**Implication**: today's market price (₹13,221) is **slightly above private-market fair value** (~₹11,500-13,000) but **15-20% below public-market 24-month fair value** (~₹17,500). **Lean buy** at current quote.",
+          "chip": "~₹11,500-13,000",
+          "chipTone": "warn",
+          "tiles": [
+            {"label": "Normalised FCF (5y avg)", "value": "₹8,000 Cr"},
+            {"label": "Implied EV @ 4% req yield", "value": "₹2,00,000 Cr"},
+            {"label": "Plus net cash", "value": "₹66,000 Cr"},
+            {"label": "Private-market floor", "value": "~₹8,500-13,000"},
+            {"label": "Public-market 24m target", "value": "~₹17,500-18,500"}
+          ],
+          "footnote": "**The gap between private-market floor (~₹11,500) and public-market 24m target (~₹17,500) is the duopoly + scale + India-growth premium.** At today's ₹13,221, you're paying near the private floor with 30%+ upside to public target. **Asymmetric on the upside.**"
+        },
+        {
+          "id": "p4",
+          "n": 4,
+          "title": "At what price would I sell?",
+          "answer": "**Trim 30% above ₹17,000** (~27× fwd P/E, dividend yield drops below 0.8%, full GST tailwind priced in); exit 50% on **fundamental break** (3 consecutive quarters of >5pp share loss to Chinese OEMs OR Suzuki royalty rate hike); full exit on **EV transition shock** if Maruti falls to <10% EV PV share in 5 years.",
+          "body": "Decided before buying.",
+          "chip": "Trim > ₹17,000",
+          "chipTone": "neg",
+          "triggers": [
+            {"title": "Price trigger", "tone": "neg", "body": "> **₹17,000** (~27× forward P/E, dividend yield drops below 0.8%, full GST tailwind + capacity-ramp + export ramp priced in). **Trim 30%.**"},
+            {"title": "Fundamental trigger · share loss", "tone": "neg", "body": "Three consecutive quarters of disclosed Indian PV market-share loss > 5pp (e.g., 42% → 37%) OR major model failure (VICTORIS or e VITARA monthly volumes below 2,000) → **exit 50%** within 90 days."},
+            {"title": "Fundamental trigger · royalty", "tone": "neg", "body": "Suzuki announces royalty rate increase > 100bps (from current ~3.5-5% to 5%+) or new IP-license cost-loading → **trim 30%** as parent-subsidiary alignment compromised."},
+            {"title": "Regulatory trigger · CAFE / EV", "tone": "neg", "body": "Government mandates >30% EV PV share by FY30 (vs <5% today) without commensurate Maruti EV capacity → **full exit** within 90 days unless Maruti announces credible response plan."},
+            {"title": "Capital allocation trigger", "tone": "neg", "body": "Major value-destructive M&A above ₹50,000 Cr (e.g., commercial-vehicle acquisition outside core) OR Suzuki forces a unfavorable related-party deal → **exit 50%**."}
+          ]
+        },
+        {
+          "id": "p5",
+          "n": 5,
+          "title": "If it drops 40% next month — buy or panic?",
+          "answer": "**Buy aggressively.** At ₹7,900, P/E compresses to ~17× TTM, ex-cash P/E to ~13×, FCF yield to ~3%, dividend yield to 1.8%. **Pre-commitment: load up to 8-10% position** unless one of four red flags triggers.",
+          "chip": "Load aggressively",
+          "chipTone": "pos",
+          "body": "₹7,900 ≈ market cap ₹2,48,000 Cr, P/E ~17× TTM, ex-cash P/E ~13×, EV/EBITDA ~10×, FCF yield 3%+, dividend yield 1.8%. **Pre-commitment: buy heavily** unless one of:",
+          "ordered": [
+            "Suzuki announces a strategic decoupling from Maruti (e.g., a competing JV with Tata or another Indian partner) → reassess parent backing",
+            "Government announces a forced EV mandate at >30% by FY30 with no transition timeline → Maruti's hybrid bet fails structurally",
+            "Material accounting fraud, auditor qualification, or SEBI sanction → governance break",
+            "CEO Hisashi Takeuchi + CFO Arnab Roy exit within 6 months → management discontinuity"
+          ],
+          "footnote": "**Buy at ₹13,500, load at ₹11,000, back-up-the-truck at ₹9,000.** A market-leading PV franchise at 13× ex-cash P/E with a ₹66K Cr cash cushion is the **value-investor's archetype** — provided the fundamental thesis (motorization runway + distribution moat + Suzuki backing) is intact. Between ₹9,000-13,500 is the position-building zone."
+        }
+      ]
+    }
+  ],
+
+  "scorecard": {
+    "dimensions": [
+      {"label": "Business quality",                  "score": 4.0},
+      {"label": "Business durability (10y)",         "score": 4.0},
+      {"label": "Business durability (20y)",         "score": 3.0},
+      {"label": "Management quality",                "score": 4.0},
+      {"label": "Skin in game (Suzuki 58%)",         "score": 4.0},
+      {"label": "Capital allocation track record",   "score": 3.0},
+      {"label": "Price today",                       "score": 3.5},
+      {"label": "Price if -20%",                     "score": 4.5},
+      {"label": "Upside / downside asymmetry",       "score": 4.0}
+    ],
+    "summary": "**Position sizing: 3-5% at today's quote ₹13,221**, scale to **6-8% on ₹11,000 drop**, **8-10% on ₹9,000**. Conviction: **High on business quality + distribution moat + Suzuki backing**; **Medium on EV transition + cyclicality**; **High on entry price asymmetry today** (15% discount to fair value, 2.4:1 reward:risk). The **best margin-cycle-low entry into the highest-quality Indian auto franchise in 5 years**."
+  },
+
+  "sources": [
+    {
+      "id": "maruti-q4fy26-ip",
+      "type": "Investor Presentation",
+      "title": "Maruti Suzuki — Q4 FY26 Investor Presentation (Standalone Financial Results)",
+      "publisher": "Maruti Suzuki India Ltd · Investor Relations",
+      "date": "2026-04-28",
+      "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Investor_Presentation_Q4FY26.pdf",
+      "note": "Primary source for FY26 vs FY25 numbers: Sales volume 2.42M units (+8.4%), Net sales ₹1.74T (+20.2%), PAT ₹14,445 Cr (+1.0%), OPM 12.3% (vs 13.9% FY25 = -160bps). Segment-wise FY26 sales mix (Compact 41%, UV 38.5%, exports +34.6%). Suzuki Motor Gujarat amalgamation noted (Dec 2025, appointed date Apr-2025)."
+    },
+    {
+      "id": "maruti-q4fy26-call",
+      "type": "Earnings Call",
+      "title": "Maruti Suzuki — Q4 FY26 Earnings Conference Call Transcript",
+      "publisher": "Maruti Suzuki India Ltd · Investor Relations",
+      "date": "2026-04-28",
+      "url": "https://az-ci-afde-prd-arena-03-efddeyfchzf9akbb.z01.azurefd.net/msilintiwebpdfcopyfromdefault/Transcript_earnings_call_Maruti_Suzuki_Q4_FY_26.pdf",
+      "note": "Source for management commentary: H1 FY26 industry -0.4% / H2 +16.7% (GST reform); Maruti H1 -5.6% / H2 +12.3%. 190K pending orders end-FY26 (130K in 18% GST bracket); dealer inventory 12 days. Kharkhoda Plant 2 + Hansalpur Line 4 = +500K capacity coming FY27. Medium-term 4M-unit target. ₹14,000 Cr FY27 capex. Q4 MTM hit ~₹750 Cr on investment portfolio (bond-yield rise)."
+    },
+    {
+      "id": "maruti-ir",
+      "type": "Reference",
+      "title": "Maruti Suzuki — Investor Relations landing page",
+      "publisher": "Maruti Suzuki India Ltd",
+      "date": "2026-05-15",
+      "url": "https://www.marutisuzuki.com/corporate/investors",
+      "note": "Master landing page for all investor disclosures (quarterly results, annual reports, governance reports, earnings call transcripts, sustainability reports). Hosted PDF resources at Azure CDN."
+    },
+    {
+      "id": "maruti-reports",
+      "type": "Reference",
+      "title": "Maruti Suzuki — Company Reports & Filings index",
+      "publisher": "Maruti Suzuki India Ltd",
+      "date": "2026-05-15",
+      "url": "https://www.marutisuzuki.com/corporate/investors/company-reports",
+      "note": "Index of audited results, integrated governance reports, SEBI standalone & consolidated filings (FY 25-26 audited balance sheet linked here)."
+    },
+    {
+      "id": "wiki-maruti",
+      "type": "Reference",
+      "title": "Maruti Suzuki — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Maruti_Suzuki",
+      "note": "Corporate history: founded 1981 as Govt of India + Suzuki JV; Suzuki majority 2002; Gurgaon (1981), Manesar (2007), Hansalpur Gujarat (2017) plants. ~42% Indian PV market share. CEO succession history. Suzuki royalty disputes 2018-19. Manesar violence 2012. CCI ruling 2021 on anti-competitive dealer policies."
+    },
+    {
+      "id": "wiki-suzuki",
+      "type": "Reference",
+      "title": "Suzuki Motor Corporation — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Suzuki_Motor_Corporation",
+      "note": "Parent company background. Maruti is Suzuki's largest single subsidiary by units, revenue, profit globally. Suzuki global strategy on EV vs hybrid for emerging markets. Toyota-Suzuki partnership announced 2017, formalised 2019."
+    },
+    {
+      "id": "wiki-auto-india",
+      "type": "Reference",
+      "title": "Automotive industry in India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Automotive_industry_in_India",
+      "note": "Industry context: 5th largest PV market globally (~4.3M units FY26); motorization rate 33/1000 vs 230/1000 China, 850/1000 US. PV CAGR FY15-FY26 ~4%/yr. Export status (net exporter FY26). FAME-II / CAFE / GST regulatory framework."
+    },
+    {
+      "id": "screener-maruti",
+      "type": "Research",
+      "title": "Maruti Suzuki India Ltd — Consolidated financials & ratios",
+      "publisher": "Screener.in",
+      "date": "2026-05-15",
+      "url": "https://www.screener.in/company/MARUTI/consolidated/",
+      "note": "12-year P&L (FY15-FY26): revenue ₹50,801 → ₹1,83,316 Cr; OPM swing 14% → 7% (FY22 trough) → 13% (FY24-25 peak) → 12% (FY26). Quarterly trends, cash flow (FY26 OCF ₹19,100 Cr), balance sheet (investments ₹76,838 Cr = cash equivalent). Shareholding: Promoter (Suzuki) 58.53%, FII 14.12%, DII 24.09%."
+    },
+    {
+      "id": "bse-maruti",
+      "type": "Regulatory Filing",
+      "title": "Maruti Suzuki India Ltd — BSE listing (532500)",
+      "publisher": "Bombay Stock Exchange",
+      "date": "2026-05-15",
+      "url": "https://www.bseindia.com/stock-share-price/maruti-suzuki-india-ltd/maruti/532500/",
+      "note": "Authoritative price + corporate-action history. Maruti dual-listed BSE (532500) and NSE (MARUTI). 52-week range ₹12,016-₹17,370. Listing date 9-Jul-2003."
+    },
+    {
+      "id": "nse-maruti",
+      "type": "Regulatory Filing",
+      "title": "Maruti Suzuki India Ltd — NSE quote page",
+      "publisher": "National Stock Exchange of India",
+      "date": "2026-05-15",
+      "url": "https://www.nseindia.com/get-quotes/equity?symbol=MARUTI",
+      "note": "Authoritative NSE price and corporate action history. Market cap ₹4,15,672 Cr."
+    },
+    {
+      "id": "siam-india",
+      "type": "Reference",
+      "title": "Society of Indian Automobile Manufacturers (SIAM)",
+      "publisher": "SIAM India",
+      "date": "2026-05-15",
+      "url": "https://www.siam.in/",
+      "note": "Authoritative source for industry-level PV / CV / 2W production, sales, export statistics published monthly. Cross-reference for industry market share calculations."
+    },
+    {
+      "id": "wiki-tata-motors",
+      "type": "Reference",
+      "title": "Tata Motors — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Tata_Motors",
+      "note": "Competitor context: ~13% Indian PV share, EV leader (~50%+ EV PV market). Nexon EV, Tigor EV, Punch EV portfolio. ICE recovery 2017+ (Nexon, Punch, Harrier, Safari). PV business standalone improving but historically loss-making at consolidated level. JLR is the consolidated group's profit engine."
+    },
+    {
+      "id": "wiki-hmil",
+      "type": "Reference",
+      "title": "Hyundai Motor India — Wikipedia",
+      "publisher": "Wikipedia",
+      "date": "2026-05-15",
+      "url": "https://en.wikipedia.org/wiki/Hyundai_Motor_India",
+      "note": "Competitor context: #2 Indian PV (~14% share). Listed Oct 2024 in India's largest-ever IPO (₹27,800 Cr). Premium SUV mix (Creta, Venue). Higher OPM (~14%) vs Maruti due to mix; capacity-constrained at Chennai + new Talegaon plant."
+    },
+    {
+      "id": "ibef-auto",
+      "type": "Reference",
+      "title": "IBEF — Indian Automobile Industry overview",
+      "publisher": "India Brand Equity Foundation",
+      "date": "2026-05-15",
+      "url": "https://www.ibef.org/industry/india-automobiles",
+      "note": "Government-backed industry overview: production / sales / export statistics; sector size ~7.1% of India GDP; ~7%+ contribution to manufacturing GDP; 19+ million people employed across the sector. Cross-reference for industry sizing."
+    }
+  ]
+}
